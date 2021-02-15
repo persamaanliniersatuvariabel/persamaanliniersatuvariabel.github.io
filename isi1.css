@@ -38,7 +38,7 @@ mjx-container {
 .soal_nav {
     width: 10%;
     text-align: center;
-    line-height: 0.5;
+    line-height: 0.5px;
     border: 2px solid #660033;
     border-radius: 5px;
     float: left;
@@ -574,7 +574,7 @@ a {
 
     .maju {
         display: inline-block;
-        width: 300px;
+        width: 350px;
         padding: 5px 5px;
     }
 
@@ -582,6 +582,7 @@ a {
         
         margin-left: 32px !important;
     }
+
 
     #nama,
     #sekolah,
