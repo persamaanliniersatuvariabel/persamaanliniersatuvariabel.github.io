@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="pp2.css">
+<meta charset="utf-8">
+<script src="jquery.js"></script>
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <a href="index.html"><img src="home.svg" class="home"></a>
+</header>
+
+<section>
+<nav>
+  <ul>
+      <li class="item">
+          <div class="btn">
+            <a href="home.html">Apersepsi</a>
+          </div>
+        </li>
+
+        <li class="item" id="materi1">
+          <div class="btn">
+           <a href="#materi1">Persamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+               <a href="materi1.html">Pengertian PLSV</a>
+               <a href="materi2.html">Subtitusi</a>
+               <a href="pp1.html">Penjumlahan/Pengurangan</a>
+               <a href="pp2.html">Perkalian/Pembagian</a>
+               <a href="soalcerita1.html">Soal Cerita</a>
+               <a href="kuis1.html">Kuis</a>
+            </div>
+        </li>
+
+        <li class="item" id="materi2">
+          <div class="btn">
+           <a href="#materi2">Pertidaksamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+              <a href="materi3.html">Pengertian PTLSV</a>
+              <a href="materi4.html">Penyelesaian PtLSV</a>
+              <a href="soalcerita2.html">Soal Cerita</a>
+              <a href="kuis2.html">Kuis</a>
+            </div>
+        </li>
+
+          <li class="item">
+              <div class="btn">
+                <a href="evaluasi.html">Evaluasi</a>
+              </div>
+         </li>
+    </ul> 
+  </nav>
+
+  <section>
+  <article>
+    <div class="cities">
+      <center><h2 class="judul">Pertidaksamaan Linier Satu Variabel</h2></center>
+        <h3 style="border: 2px solid rgb(218, 101, 88); border-radius: 10px; width: 135px; padding: 8px;">Contoh Soal</h3>
+        <br><center>
+          <button class="no1">&nbsp;Contoh 1</button>
+          <button class="no2">&nbsp;Contoh 2</button>
+          <button class="no3">&nbsp;Contoh 3</button>
+          </center>
+          <br>
+           <div class="contoh1">
+             <table>
+               <tr>
+                 <th colspan="3">Apakah pernyataan berikut termasuk pertidaksamaan atau bukan?</th>
+               </tr>
+               <tr>
+                 <th>1.</th>
+                 <th>p + 6  ≤ 10</th>
+                 <th>
+                  <button class="cekulang" id="him1" onclick="him1()"><b>Pertidaksamaan</b></button>
+                  <button class="cekulang" id="bhim1" onclick="bhim1()"><b>Bukan</b></button>
+                  <span id="icon1" class="icon"></span>
+                </th>
+                <tr class="hilang" id="bahas1">
+                  <th>Pembahasan</th>
+                  <th colspan="2">p + 6  ≤ 10 merupakan pertidaksamaan linier dengan satu variabel yaitu p.</th>
+                </tr>
+               </tr>
+               <tr class="hilang" id="himpunan2">
+                 <th>2.</th>
+                 <th>2y – 18 > 12</th>
+                 <th>
+                  <button class="cekulang" id="him2" onclick="him2()"><b>Pertidaksamaan</b></button>
+                  <button class="cekulang" id="bhim2" onclick="bhim2()"><b>Bukan</b></button>
+                  <span id="icon2" class="icon"></span>
+                </th>
+               </tr>
+               <tr class="hilang" id="bahas2">
+                <th>Pembahasan</th>
+                <th colspan="2">2y – 18 > 12 merupakan pertidaksamaan linier dengan satu variabel yaitu y.</th>
+              </tr>
+             </tr>
+               <tr class="hilang" id="himpunan3">
+                 <th>3.</th>
+                 <th>2x + y ≥ 8</th>
+                 <th>
+                  <button class="cekulang" id="him3" onclick="him3()"><b>Pertidaksamaan</b></button>
+                  <button class="cekulang" id="bhim3" onclick="bhim3()"><b>Bukan</b></button>
+                  <span id="icon3" class="icon"></span>
+                </th>
+               </tr>
+               <tr class="hilang" id="bahas3">
+                <th>Pembahasan</th>
+                <th colspan="2">2x + y ≥ 8 <b><i>bukan</i></b> merupakan pertidaksamaan linier ssatu vaariabel satu variabel karena memuat dua variabel yaitu x dan y.</th>
+              </tr>
+             </tr>
+               <tr class="hilang" id="himpunan4">
+                 <th>4.</th>
+                 <th>x<sup>2</sup> – 2x = 4</th>
+                 <th>
+                  <button class="cekulang" id="him4" onclick="him4()"><b>Pertidaksamaan</b></button>
+                  <button class="cekulang" id="bhim4" onclick="bhim4()"><b>Bukan</b></button>
+                  <span id="icon4" class="icon"></span>
+                 </th>
+               </tr>
+               <tr class="hilang" id="bahas">
+                <th>Pembahasan</th>
+                <th colspan="2">x<sup>2</sup> – 2x = 4 <b><i>bukan</i></b> merupakan pertidaksamaan linier satu variabel karena pangkat tertinggi variabelnya adalah dua.</th>
+              </tr>
+             </tr>
+             </table>
+             <br>
+
+           <!--  <div class="bahas hilang" id="bahas">
+            <center><h4><b><u>Pembahasan</u></b></h4></center>
+            <p class="indent">p + 6  ≤ 10 merupakan pertidaksamaan linier dengan satu variabel yaitu p.</p>
+            <p class="indent">2y – 18 > 12 merupakan pertidaksamaan linier dengan satu variabel yaitu y.</p>
+            <p class="indent">2x + y ≥ 8 <b><i>bukan</i></b> merupakan pertidaksamaan linier ssatu vaariabel satu variabel karena memuat dua variabel yaitu x dan y.</p>
+            <p class="indent">x<sup>2</sup> – 2x = 4 bukan merupakan pertidaksamaan linier satu variabel karena pangkat tertinggi variabelnya adalah dua.</p>
+             </div> -->
+
+           </div>
+
+            
+            <div class="contoh2 kotak">
+            <p>Tulislah kalimat berikut menjadi sebuah pertidaksamaan linear satu variabel!</p>
+            <p>Suatu bilangan <span id="h11" class="">m</span> ditambah <span id="h12" class="">5</span> hasilnya lebih dari atau sama dengan <span id="h13" class="">-7</span>.</p>
+            <br>
+            <input type="text" class="input1" id="var1" onclick="ubah1_1()" maxlength="1"> +
+            <input type="text" class="input1" id="ang1" onclick="ubah1_2()" maxlength="1"> ≥ 
+            <input type="text" class="input1" id="ang2" onclick="ubah1_3()" maxlength="2">
+            <span id="icon1" class="icon"></span>
+            <br><br>
+            <button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+            <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br><br>
+            <div class="bahas" id="bahasbnr1">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, pertidaksamaan dari kalimat tersebut adalah m + 5 ≥ -7
+            </div>
+            <div class="bahas" id="bahasslh1">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+            </div>
+          </div>
+
+          <div class="contoh3 kotak">
+            <p>Gambarkan himpunan selesaian dari pertidaksamaan z > − 8 dengan garis bilangan.</p>
+            <button style="font-size: 15px;" class=" lanjut01">Gambarkan</button>
+            <p class="tampil01"><b>Penyelesaian :</b></p>
+            <p class="tampil01"><u>Petunjuk</u></p>
+            <p class="tampil01">klik grafik, tekan <img src="pause.svg" alt="stop" style="width:15px;height:15px;"> untuk stop</p>
+            <p class="tampil01">tekan <img src="kacapembesar.jpg" alt="kaca pembesar" style="width:15px;height:15px;"> untuk memperkecil dan memperbesar grafik</p>
+            <p class="tampil01">tekan <img src="pembesar.png" alt="layar full" style="width:15px;height:15px;"> untuk layar penuh</p>
+            <center><iframe class="tampil01" src="grafik1.html" style="height:460px; width:100%; border: none;"></iframe></center><br>
+          </div>
+  </div>
+  </div>
+  </article>
+  <div class="bawah">
+    <center>
+      <a href="materi3_2.html">Sebelumnya</a>
+      <a href="materi3.html">1</a>
+      <a href="materi3_1.html">2</a>
+      <a href="materi3_2.html">3</a>
+      <a href="materi3_3.html">4</a>
+      <a href="materi3_4.html">5</a>
+      <a href="materi3_4.html">Selanjutnya</a>
+    </center>
+  </div>
+</section>
+
+<script src="materi3.js"></script>
+
+
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+</body>
+</html>

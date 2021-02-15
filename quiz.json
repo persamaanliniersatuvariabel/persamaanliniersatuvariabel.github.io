@@ -1,0 +1,84 @@
+[
+    {
+       "question0" : {
+       "question" : "Tentukanlah nilai x yang memenuhi dari persamaan berikut, x + 3 = 7 ",
+        "choiceA" : "2",
+        "choiceB" : "3",
+        "choiceC" : "4",
+        "choiceD" : "5",
+        "correct" : "C"
+       }
+    },{
+        "question1" : {
+        "question" : "Tentukanlah nilai x yang memenuhi dari persamaan berikut, x – 4 = 12 ",
+        "choiceA" : "15",
+        "choiceB" : "16",
+        "choiceC" : "17",
+        "choiceD" : "18",
+        "correct" : "B"
+        }
+    },{
+        "question2" : {
+        "question" : "Tentukanlah nilai x yang memenuhi dari persamaan berikut, 2x = 18",
+        "choiceA" : "9",
+        "choiceB" : "10",
+        "choiceC" : "11",
+        "choiceD" : "12",
+        "correct" : "A"
+        }
+    },{
+        "question3" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, x + 5 = 6 ",
+        "choiceA" : "1",
+        "choiceB" : "2",
+        "choiceC" : "3",
+        "choiceD" : "4",
+        "correct" : "A"
+        }
+    },{
+        "question4" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, w – 11 = 3 ",
+        "choiceA" : "11",
+        "choiceB" : "12",
+        "choiceC" : "13",
+        "choiceD" : "14",
+        "correct" : "D"
+        }
+    },{
+        "question5" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, 5 + a = –5",
+        "choiceA" : "-10",
+        "choiceB" : "-11",
+        "choiceC" : "-12",
+        "choiceD" : "-13",
+        "correct" : "A"
+        }
+    },{
+        "question6" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, –8 = –2 + a",
+        "choiceA" : "-4",
+        "choiceB" : "-5",
+        "choiceC" : "-6",
+        "choiceD" : "-7",
+        "correct" : "C"
+        }
+    },{
+        "question7" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, 9 = –1 + t",
+        "choiceA" : "7",
+        "choiceB" : "8",
+        "choiceC" : "9",
+        "choiceD" : "10",
+        "correct" : "D"
+        }
+    },{
+        "question8" : {
+        "question" : "Tentukan penyelesaian dari setiap persamaan berikut menggunakan bentuk setara, 16 + m = 16 ",
+        "choiceA" : "0",
+        "choiceB" : "1",
+        "choiceC" : "2",
+        "choiceD" : "3",
+        "correct" : "A"
+        }
+    }
+]

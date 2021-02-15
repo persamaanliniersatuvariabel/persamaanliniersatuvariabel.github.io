@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi</title>
+    <link rel="shortcut icon" type="icon" href="../../img/ico.png">
+    <link rel="stylesheet" type="text/css" href="isi1.css">
+    <link rel="stylesheet" type="text/css" href="lat.css">
+    <script src="jquery.js"></script>
+    <script src="https://kit.fontawesome.com/317815b2fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+            <a href="index.html"><img src="home.svg" class="home"></a>
+      </header>      
+
+                <!-- BADAN KONTEN -->
+
+                <div class="inti-konten">
+                    <div class="data" id="data">
+                        <div class="data_diri">
+                            <nav class="petunjuk ">
+                                <i class="far fa-hand-point-right"></i>&nbsp; Petunjuk
+                            </nav>
+
+                            <div class="isinya">   
+                                <p>- &nbsp;Terdapat 10 soal pilihan ganda pada latihan ini.<br>
+                                - &nbsp;Sebelum mengerjakan soal, isi nama, kelas, dan sekolah pada kolom yang tersedia kemudian tekan "Mulai".<br>
+                                - &nbsp;Jika kolom bewarna merah, berarti masih terdapat isian kosong.</p>     
+                            </div>
+
+                            <br>
+                            <!--<p>DATA DIRI</p>-->
+                            <br>
+                            <label for="nama"> Nama&emsp;&emsp;
+                                <input type="text" id="nama" class="maju" placeholder="Masukkan nama anda . . . ">
+                            </label>
+                            <label for="nama"> Sekolah&emsp;&emsp;
+                            	<input type="text" id="sekolah" name="sekolah" class="mundur" placeholder="Nama sekolah . . . ">                               
+                            </label>
+                            <label for="nama"> Kelas&emsp;&emsp;
+                            	<input type="text" id="kelas" name="kelas" class="maju aaa" placeholder="Kelas . . . ">                                
+                            </label>
+
+                            <div class="lanjut">MULAI</div>
+                        </div>
+                    </div>
+
+                    <!-- KONTEN KIRI -->
+                    <div class="kiri hilang" id="kiri">
+                        
+                        
+                    </div>
+                    <!-- BATAS KONTEN KIRI -->
+
+
+                    <!-- KONTEN DI KANAN -->
+                    <div class="kanan hilang" id="kanan">
+
+                        <div class="bg_nav">
+                            <div class="bg_full">
+                                <p class="text">Nomor Soal</p>
+                            </div>
+                            <div class="bg_soal">
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang ">1</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">2</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">3</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">4</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">5</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">6</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">7</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">8</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">9</p>
+                                </div>
+                                <div class="soal_nav belum">
+                                    <p class="text fontsedang">10</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="ket fontsedang">
+                                    <p>Keterangan:</p>
+                                    <p><span class="belum">Putih</span> = Belum dijawab</p>
+                                    <p><span class="sudah">Ungu</span> = Sudah dijawab</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    <div class="selesai">SELESAI</div>
+
+                    </div>
+                    <!-- BATAS KONTEN KANAN -->
+
+                    <!-- skor -->
+                    <div class="dataaa hilang">
+                        <center>
+                        <div class="skornya">
+                            <br>
+                            <br>
+                            <table class="t_hasil">
+                                <tr>
+                                    <td class="ket_hasil">
+                                        <p>NAMA</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="nama">SISWA</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ket_hasil">
+                                        <p>HASIL</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="sekolah">SEKOLAH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ket_hasil">
+                                        <p>KELAS</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="kelas">7</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ket_hasil">
+                                        <p>SKOR</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="hasill">50</p>
+                                    </td>
+                                </tr>
+                            </table>   
+                        <br>
+                        <div id="ulang" class="ket_ulang hilang">
+                            Nilai kamu kurang dari 70, kamu belum memahami materi listrik statis<br>
+                            <button class="tmbl" button onclick="location.href='kuis2.html'">Ulang Evaluasi</a></button>                            
+                        </div>
+                        <br>
+                        <div id="next" class="hilang1">
+                            Selamat kamu sudah menyelesaikan materi listrik statis dengan baik<br>
+                        <button class="tmbl" button onclick="location.href='index.html'">Home</button><br>
+                        </div>
+
+                </div>
+                    </center>
+                    </div> 
+
+
+    <script src="evaluasi2.js"></script>
+    <script src="mathjax.js"></script>
+    <script src="button.js"></script>
+</body>
+
+</html>

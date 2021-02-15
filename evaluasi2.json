@@ -1,0 +1,91 @@
+[{
+    "soal0": {
+        "soal": "Perhatikan kalimat terbuka dibawah ini!<br>(i)&emsp;4x + 1 < 7<br>(ii)&ensp; 2x + y > 0<br>(iii)&ensp;5p + 8 ≤ 3<br>(iv)&ensp; x<sup>2</sup> ≥ 16<br>Manakah yang termasuk pertidaksamaan linier satu variabel?",
+        "a": "(i) dan (ii)",
+        "b": "(i) dan (iii)",
+        "c": "(ii) dan (iv)",
+        "d": "(iii) dan (iv) ",
+        "benar": "b"
+    }
+},{
+    "soal1": {
+        "soal": "Nilai x berikut yang memenuhi pertidaksamaan x + 5 < 2 adalah ....",
+        "a": "-1",
+        "b": "-2",
+        "c": "-3",
+        "d": "-4",
+        "benar": "c"        
+    }        
+},{
+    "soal2": {
+        "soal": "Tentukan penyelesaian dari 3x – 4 ≤ 1 + 2x untuk x bilangan asli ....",
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "6",
+        "benar": "c"
+    }
+},{
+    "soal3": {
+        "soal": "Himpunan penyelesaian pertidaksamaa 5x + 3 ≤ 3x + 11 dengan x anggota bilangan asli adalah ....",
+        "a": "{1, 2, 3, 4, 5}",
+        "b": "{1, 2, 3, 4}",
+        "c": "{1, 2, 3}",
+        "d": "{1, 2}",
+        "benar": "b"
+    }
+},{
+    "soal4": {
+        "soal": "Tentukan penyelesaian dari 5x > 15 untuk x anggota bilangan asli yang kurang dari 8....",
+        "a": "{4, 5, 6, 7}",
+        "b": "{4, 5, 6, 7, 8}",
+        "c": "{3, 4, 5}",
+        "d": "{2, 4, 5, 6}",
+        "benar": "a"
+    }
+},{    
+    "soal5": {
+        "soal": "Tentukan penyelesaian dari 10 – 4x > x + 15 untuk x anggota bilangan bulat.... ",
+        "a": "x < -1",
+        "b": "x > -1",
+        "c": "x > -2",
+        "d": "x < -2",
+        "benar": "a"
+    }
+},{ 
+    "soal6": {
+        "soal": "<img src='gambargrafik1.png'><br>Grafik penyelesaian dari 3x – 5 < x + 5 untuk x anggota bilangan cacah adalah....",
+        "a": "(i)",
+        "b": "(ii)",
+        "c": "(iii)",
+        "d": "(iv)",
+        "benar": "a"
+    }
+},{ 
+    "soal7": {
+        "soal": "<img src='gambargrafik2.png'><br>Grafik Penyelesaian dari 3x – (2 + 5x) > 16 untuk x anggota bilangan real ....",
+        "a": "(i)",
+        "b": "(ii)",
+        "c": "(iii)",
+        "d": "(iv)",
+        "benar": "b"
+    }
+},{ 
+    "soal8": {
+        "soal": "Jumlah dua bilangan asli kurang dari 20. Bilangan kedua sama dengan tiga kali bilangan pertama. Nilai maksimum bilangan pertama adalah ....",
+        "a": "6",
+        "b": "5",
+        "c": "4",
+        "d": "3",
+        "benar": "b"
+    }
+},{
+    "soal9": {
+        "soal": "Diana mempunyai uang Rp.12,000,00. Diana membeli buku seharga Rp.3,000,00. Uang yang tersisa akan dibelikan sejumlah bolpoin, jika harga sebuah bolpoin Rp.2,000,00. Diana akan memperoleh bolpoin maksimal sejumlah ....",
+        "a": "5 buah",
+        "b": "4 buah",
+        "c": "3 buah",
+        "d": "2 buah",
+        "benar": "b"
+    }
+}]

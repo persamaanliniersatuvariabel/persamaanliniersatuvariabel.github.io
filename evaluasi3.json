@@ -1,0 +1,181 @@
+[{
+    "soal0": {
+        "soal": "Kalimat tertutup berikut yang bernilai salah adalah ....",
+        "a": "24 – 8 = 16",
+        "b": "8 : 4 – 3 = 8",
+        "c": "20 – 5 × 3 = 5",
+        "d": "10 + 24 : 8 = 13",
+        "benar": "b"
+    }
+},{
+    "soal1": {
+        "soal": "Kalimat berikut yang merupakan kalimat terbuka adalah ....",
+        "a": "18 dibagi oleh 3 sama dengan 21",
+        "b": "5 dikali 2 sama dengan -10",
+        "c": "8 dikurangkan dari 10 sama dengan 2",
+        "d": "10 dijumlahkan dengan 5 sama dengan 3y",
+        "benar": "d"        
+    }        
+},{
+    "soal2": {
+        "soal": "Perhatikan kalimat terbuka berikut.<br>(i) x – 7 = 2<br>(ii) 6 – x = 11<br>(iii) 2x + 6 = -4<br>(iv) -3x + 5 = 10<br>Jika variabel x diganti dengan -5, kalimat terbuka tersebut akan menjadi kalimat tertutup yang bernilai benar adalah ...",
+        "a": "(i) dan (ii)",
+        "b": "(i) dan (iv)",
+        "c": "(ii) dan (iii)",
+        "d": "(ii) dan (iv)",
+        "benar": "c"
+    }
+},{
+    "soal3": {
+        "soal": "Kalimat terbuka “10 – 4a = -2” akan menjadi kalimat tertutup bernilai benar jika nilai a diganti dengan .....",
+        "a": "3",
+        "b": "2",
+        "c": "-2",
+        "d": "-3",
+        "benar": "a"
+    }
+},{
+    "soal4": {
+        "soal": "Nilai pengganti variabel x yang membuat kalimat terbuka “8 – 3x ≤ 2” menjadi kalimat bernilai benar adalah ....",
+        "a": "-2",
+        "b": "-1",
+        "c": "1",
+        "d": "2",
+        "benar": "d"
+    }
+},{    
+    "soal5": {
+        "soal": "Suatu bilangann dikalikan 3, lalu ditambah 5 hasilnya -4. Jika x menyatakan bilangan yang dimaksud. Kalimat terbuka yang sesuai dengan permasalahan tersebut adalah ....",
+        "a": "3x – 5 = -4",
+        "b": "3x + 5 = -4",
+        "c": "3x – 5 = 4",
+        "d": "3x + 5 = 4",
+        "benar": "b"
+    }
+},{ 
+    "soal6": {
+        "soal": "Penyelesaian persamaaan 2(x + 3) = 5x – 24 adalah ....",
+        "a": "10",
+        "b": "6",
+        "c": "-6",
+        "d": "-10",
+        "benar": "a"
+    }
+},{ 
+    "soal7": {
+        "soal": "Nilai yang memenuhi persamaan x – 5(3 – x) = 9 adalah ....",
+        "a": "-4",
+        "b": "-1",
+        "c": "1",
+        "d": "4",
+        "benar": "d"
+    }
+},{ 
+    "soal8": {
+        "soal": "Penyelesaian persamaan 4(1 – x) – 3(x + 2) = 19 adalah ....",
+        "a": "-7",
+        "b": "-3",
+        "c": "3",
+        "d": "7",
+        "benar": "b"
+    }
+},{
+    "soal9": {
+        "soal": "Dua tahun lalu, umur Resa dua kali umur Tere. Jika jumlah umur Resa dan Tere sekarang 40 tahun, umur Resa sekarang adalah ....",
+        "a": "22 tahun",
+        "b": "24 tahun",
+        "c": "26 tahun",
+        "d": "28 tahun",
+        "benar": "c"
+    }
+},{
+    "soal10": {
+        "soal": "Rini dan Roni mendapatkan nilai ulangaan matematika sama besar. Tiga kali nilai Rini dikurangi 5 sama dengan dua kali nilai Roni ditambah 3. Nilai ulangan mereka adalah ....",
+        "a": "7",
+        "b": "8",
+        "c": "9",
+        "d": "10",
+        "benar": "b"
+    }
+},{
+    "soal11": {
+        "soal": "Tentukan penyelesaian dari 3x – 4 ≤ 1 + 2x untuk x anggota bilangan asli ....",
+        "a": "x ≤ 5",
+        "b": "x ≤ 6",
+        "c": "x ≤ 7",
+        "d": "x ≤ 8",
+        "benar": "a"        
+    }        
+},{
+    "soal12": {
+        "soal": "Tentukan penyelesaian dari 7x – 2 < 3x + 6 untuk x anggota bilangan asli ....",
+        "a": "x < 1",
+        "b": "x < 2",
+        "c": "x < 3",
+        "d": "x < 4",
+        "benar": "b"
+    }
+},{
+    "soal13": {
+        "soal": "Tentukan penyelesaian dari 10 – 4x > x + 15 dengan x anggota bilangan bulat ....",
+        "a": "x < -1",
+        "b": "x < -2",
+        "c": "x < -3",
+        "d": "x < -4",
+        "benar": "a"
+    }
+},{
+    "soal14": {
+        "soal": "Himpunan penyelesaian 2x + 3 ≤ 21 + 4x dengan x bilangaan bulat adalah ....",
+        "a": "{-12, -11, -10, -9, ...}",
+        "b": "{-9, -8, -7, -6, ...}",
+        "c": "{..., -15, -14, -13, -12}",
+        "d": "{..., -12, -11, -10, -9}",
+        "benar": "d"
+    }
+},{    
+    "soal15": {
+        "soal": "Gambarlah grafik penyelesaian dari pertidaksamaan 4 ≤ 2x + 6 < 10 untuk x bilangan bulat ..... ",
+        "a": "x < -1",
+        "b": "x > -1",
+        "c": "x > -2",
+        "d": "x < -2",
+        "benar": "a"
+    }
+},{ 
+    "soal16": {
+        "soal": "Garis bilangan yang merupakan penyelesaian pertidaksamaan 8 – 5x ≥ 6(x – 6) adalah ....",
+        "a": "<img src='gambarg1.png'>",
+        "b": "<img src='gambarg2.png'></img>",
+        "c": "<img src='gambarg3.png'></img>",
+        "d": "<img src='gambarg4.png'></img>",
+        "benar": "d"
+    }
+},{ 
+    "soal17": {
+        "soal": "Umur suci 5 tahun lebihnya dari umur tasya. Jika jumlah umur mereka 25 tahun, maka umur suci adalah ....",
+        "a": "5 Tahun",
+        "b": "10 Tahun",
+        "c": "15 Tahun",
+        "d": "20 Tahun",
+        "benar": "c"
+    }
+},{ 
+    "soal18": {
+        "soal": "Sebuah toko menjual buku tulis dan buku gambar. Harga sebuah buku gambar dua kali harga sebuah buku tulis. Jika harga 2 buku gambar dan 3 buku tulis tidak lebih dari Rp21.000,00, harga tertinggi sebuah buku tilis adalah ....",
+        "a": "Rp2.000,00",
+        "b": "Rp3.000,00",
+        "c": "Rp4.000,00",
+        "d": "Rp6.000,00",
+        "benar": "b"
+    }
+},{
+    "soal19": {
+        "soal": "Harga sebuah baju sama dengan harga 2 buah kaos, sedangkan harga 3 buah kaos dan 2 buah baju adalah Rp140.000,00. Harga 4 buah kaos adalah ....",
+        "a": "Rp60.000,00",
+        "b": "Rp80.000,00",
+        "c": "Rp100.000,00",
+        "d": "Rp120.000,00",
+        "benar": "b"
+    }
+}]

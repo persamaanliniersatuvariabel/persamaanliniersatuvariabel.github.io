@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="materi1.css">
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <a href="index.html"><img src="home.svg" class="home"></a>
+</header>
+
+<section>
+<nav>
+  <ul>
+    <li class="item">
+      <div class="btn">
+          <a href="home.html">Apersepsi</a>
+      </div>
+    </li>
+
+    <li class="item" id="materi1">
+      <div class="btn">
+       <a href="#materi1">Persamaan Linier Satu Variabel</a>
+      </div>
+        <div class="smenu">
+           <a href="materi1.html">Pengertian PLSV</a>
+           <a href="materi2.html">Subtitusi</a>
+           <a href="pp1.html">Penjumlahan/Pengurangan</a>
+           <a href="pp2.html">Perkalian/Pembagian</a>
+           <a href="soalcerita1.html">Soal Cerita</a>
+           <a href="kuis1.html">Kuis</a>
+        </div>
+    </li>
+
+    <li class="item" id="materi2">
+      <div class="btn">
+       <a href="#materi2">Pertidaksamaan Linier Satu Variabel</a>
+      </div>
+        <div class="smenu">
+          <a href="materi3.html">Pengertian PTLSV</a>
+          <a href="materi4.html">Penyelesaian PtLSV</a>
+          <a href="soalcerita2.html">Soal Cerita</a>
+          <a href="kuis2.html">Kuis</a>
+        </div>
+    </li>
+    
+    <li class="item">
+      <div class="btn">
+          <a href="evaluasi.html">Evaluasi</a>
+      </div>
+    </li>
+  </ul> 
+</nav>
+
+<section>
+<article>
+  <div class="cities" id="KTT">
+    <center><h2 class="judul">Persamaan Linier Satu Variabel</h2></center>
+      <center><h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3></center>
+      <p>Kerjakan latihan soal berikut!</p>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+         <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
+            <div id="warna">1. x adalah gunung tertinggi di Indonesia</div><br>
+            <button onclick="benar()">Terbuka</button>
+            <button onclick="salah()">Tertutup</button>
+            <p id="soal"></p>
+        </div>
+
+        
+        <div class="mySlides">
+        <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
+        <div id="warna1">2. Jakarta adalah ibukota Negara Indonesia</div><br>
+            <button onclick="salah1()">Terbuka</button>
+            <button onclick="benar1()">Tertutup</button>
+            <p id="soal1"></p>
+        </div>
+        
+        <div class="mySlides">
+        <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
+            <div id="warna2">3. 2 dikali k ditambah 3 adalah 15</div><br>
+            <button onclick="benar2()">Terbuka</button>
+            <button onclick="salah2()">Tertutup</button>
+            <p id="soal2"></p>
+        </div>
+        
+        <div class="mySlides">
+        <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
+            <div id="warna3">4. y habis dibagi 9</div><br>
+            <button onclick="benar3()">Terbuka</button>
+            <button onclick="salah3()">Tertutup</button>
+            <p id="soal3"></p>
+        </div>
+        
+        <div class="mySlides">
+        <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
+            <div id="warna4">5. Satu tahun terdiri dari 1 bulan</div><br>
+            <button onclick="salah4()">Terbuka</button>
+            <button onclick="benar4()">Tertutup</button>
+            <p id="soal4"></p>
+        </div>
+        
+        <a class="pre" onclick="plusSlides(-1)">❮</a>
+        <a class="nex" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)">1</span> 
+          <span class="dot" onclick="currentSlide(2)">2</span> 
+          <span class="dot" onclick="currentSlide(3)">3</span> 
+          <span class="dot" onclick="currentSlide(4)">4</span>
+          <span class="dot" onclick="currentSlide(5)">5</span>
+        </div>       
+  </div>
+  
+</div>
+
+</article>
+<div class="bawah">
+  <center>
+    <a href="materi1_2.html">Sebelumnya</a>
+    <a href="materi1.html">1</a>
+    <a href="materi1_1.html">2</a>
+    <a href="materi1_2.html">3</a>
+    <a href="materi1_3.html">4</a>
+    <a href="materi2.html">Selanjutnya</a>
+  </center>
+</div>
+</section>
+
+<script src="materi1_1.js"></script>
+
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+
+</body>
+</html>

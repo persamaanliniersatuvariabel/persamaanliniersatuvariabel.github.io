@@ -1,0 +1,293 @@
+h1{
+  font-family: 'Adobe Caslon Pro', sans-serif;
+  text-align: center;
+  color: #ddd;
+  text-shadow: 3px 3px 10px #000;
+}
+
+h2{
+  font-family: 'Adobe Fangsong Std R';
+}
+
+.indent{
+  line-height: 25px;
+}
+
+.text {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #a6294b;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  height: 100px;
+}
+
+.home {
+  width: 3%;
+  float: right;
+  margin-right: 10px;
+  margin-top: -50px;
+}
+
+
+p.note{
+  border: 2px solid lightslategray;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+p.rumus{
+  border: 2px solid lightslategray;
+  border-radius: 5px;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+
+p.rata{
+  text-align: justify;
+  padding: 10px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: 550px;
+  background: #e6e6e6;
+  padding: 5px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.smenu{
+  background: #333;
+  transition: max-height 0.3s;
+  max-height: 0;
+  overflow: auto;
+}
+
+.smenu a{
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+
+.smenu a:before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #3498db;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.smenu a:hover:before{
+  opacity: 1;
+}
+
+.item:target .smenu{
+  max-height: 10em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  width: 200 px;
+  background-color: #e6e6e6;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  background-color: #d9d9d9;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background: #ffffff;
+  height: 500px;
+}
+
+.cities {
+  background-color: white;
+  border: 1px solid #3385ff;
+  color: black;
+  float: left;
+  margin: 10px;
+  width: 48%;
+  height: 450px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.citie {
+  background-color: white;
+  border: 1px ridge;
+  color: black;
+  margin: 10px;
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.citi {
+  background-color: white;
+  border: 3px dashed #7d9c9c;
+  color: black;
+  margin: 10px;
+  width: 123%;
+  height: 450px;
+  padding: 10px;
+  overflow: auto;
+}
+
+
+.bawah a {
+  background-color: white;
+  color: black;
+  border: 2px solid #660033;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+}
+
+.bawah a:hover{
+  background-color:  #d27979;
+  color: white;
+}
+
+.kotak{
+  text-align: center;
+  width: 60px;
+  height: 55px;
+  border: 1px solid #aaaaaa;
+}
+
+.video{
+  margin-top: 0px;
+  margin-left: 8px;
+  padding: 10px;
+  border: 1px ridge;
+}
+
+.hilang{
+  display:none;
+  }
+
+  .lanjut:hover {background-color: #b3b3b3}
+  
+  .lanjut:active {
+    background-color: #b3b3b3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .no1, .no2, .no3 {
+    display: inline-block;
+    color: white;
+    background-color: #993333;
+    font-family: sans-serif;
+    width: 30%;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: -15px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 18px
+  }
+  
+  .no1:hover{
+    background-color: #7d9c9c;
+    cursor: pointer;
+  }
+  
+  .no2:hover{
+    background-color: #7d9c9c;
+    cursor: pointer;
+  }
+  
+  .no3:hover{
+    background-color: #7d9c9c;
+    cursor: pointer;
+  }
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #a6294b;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width:992px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+  h2{
+    font-family: 'Adobe Fangsong Std R';
+    font-size: 22px;
+  }
+
+  .home {
+    width: 7%;
+    float: right;
+    margin-top: -30px;
+  }
+
+  .bawah a {
+    background-color: white;
+    color: black;
+    border: 2px solid #660033;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .bawah a:hover{
+    background-color:  #d27979;
+    color: white;
+  }
+}

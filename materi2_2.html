@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="materi2.css">
+<meta charset="utf-8">
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <a href="index.html"><img src="home.svg" class="home"></a>
+</header>
+
+<section>
+<nav>
+  <ul>
+      <li class="item">
+          <div class="btn">
+            <a href="home.html">Apersepsi</a>
+          </div>
+        </li>
+
+        <li class="item" id="materi1">
+          <div class="btn">
+           <a href="#materi1">Persamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+               <a href="materi1.html">Pengertian PLSV</a>
+               <a href="materi2.html">Subtitusi</a>
+               <a href="pp1.html">Penjumlahan/Pengurangan</a>
+               <a href="pp2.html">Perkalian/Pembagian</a>
+               <a href="soalcerita1">Soal Cerita</a>
+               <a href="kuis1">Kuis</a>
+            </div>
+        </li>
+
+        <li class="item" id="materi2">
+          <div class="btn">
+           <a href="#materi2">Pertidaksamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+              <a href="materi3.html">Pengertian PTLSV</a>
+              <a href="materi4.html">Penyelesaian PtLSV</a>
+              <a href="soalcerita2">Soal Cerita</a>
+              <a href="kuis2">Kuis</a>
+            </div>
+        </li>
+
+          <li class="item">
+              <div class="btn">
+                <a href="evaluasi.html">Evaluasi</a>
+              </div>
+         </li>
+    </ul> 
+  </nav>
+
+  <section>
+  <article>
+    <div class="cities" id="KTT">
+        <center><h2 class="judul">Persamaan Linier Satu Variabel</h2></center>
+      
+      <center><h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3></center>
+      <p>Kerjakan latihan soal berikut!</p>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides">
+          <p>1. Tentukan penyelesaian dari persamaan x + 16 = 19, jika pengganti bilangan antara {1, 2, 3, 4, 5}?<br>
+			    <input type="text" id="input" value="" placeholder=" ... " style="width: 28px; text-align: center;"> </p>
+          <button onclick="pertama()">Cek</button>
+					<p id="cek"></p>
+          </div>
+          
+          <div class="mySlides">
+          <p>2. Tentukan penyelesaian dari persamaan y - 8 = 2, jika pengganti bilangan antara {6, 7, 8, 9, 10}?<br>
+		      <input type="text" id="input2" value=""  placeholder=" ... " style="width: 28px; text-align: center;"></p>
+          <button onclick="kedua()">Cek</button>
+					<p id="ccek"></p>
+          </div>
+          
+          <div class="mySlides">
+          <p>3. Tentukan penyelesaian dari persamaan 7 = - 8 + a, jika pengganti bilangan antara {11, 12, 13, 14, 15}?<br>
+		      <input type="text" id="input3" value="" placeholder=" ... " style="width: 28px; text-align: center;"> </p>
+          <button onclick="ketiga()">Cek</button>
+					<p id="cccek"></p>
+          </div>
+          
+          
+          <a class="pre" onclick="plusSlides(-1)">❮</a>
+          <a class="nex" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          
+          <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)">1</span> 
+          <span class="dot" onclick="currentSlide(2)">2</span> 
+          <span class="dot" onclick="currentSlide(3)">3</span> 
+    </div>
+    </div>
+  </article>
+  <div class="bawah">
+    <center>
+    <a href="materi2_1.html">Sebelumnya</a>
+    <a href="materi2.html">1</a>
+    <a href="materi2_1.html">2</a>
+    <a href="materi2_2.html">3</a>
+    <a href="pp1.html">Selanjutnya</a>
+    </center>
+  </div>
+</section>
+
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+<script src="materi2.js"></script>
+</body>
+</html>

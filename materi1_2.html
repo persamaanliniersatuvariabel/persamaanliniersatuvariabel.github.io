@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="materi1_2.css">
+<meta charset="utf-8">
+<script src="jquery.js"></script>
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <a href="index.html"><img src="home.svg" class="home"></a>
+</header>
+
+<section>
+<nav>
+  <ul>
+      <li class="item">
+          <div class="btn">
+            <a href="home.html">Apersepsi</a>
+          </div>
+        </li>
+
+        <li class="item" id="materi1">
+          <div class="btn">
+           <a href="#materi1">Persamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+               <a href="materi1.html">Pengertian PLSV</a>
+               <a href="materi2.html">Subtitusi</a>
+               <a href="pp1.html">Penjumlahan/Pengurangan</a>
+               <a href="pp2.html">Perkalian/Pembagian</a>
+               <a href="soalcerita1.html">Soal Cerita</a>
+               <a href="kuis1.html">Kuis</a>
+            </div>
+        </li>
+
+        <li class="item" id="materi2">
+          <div class="btn">
+           <a href="#materi2">Pertidaksamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+              <a href="materi3.html">Pengertian PTLSV</a>
+              <a href="materi4.html">Penyelesaian PtLSV</a>
+              <a href="soalcerita2.html">Soal Cerita</a>
+              <a href="kuis2.html">Kuis</a>
+            </div>
+        </li>
+
+          <li class="item">
+              <div class="btn">
+                <a href="evaluasi.html">Evaluasi</a>
+              </div>
+         </li>
+    </ul> 
+  </nav>
+
+  <section>
+  <article>
+    <div class="cities">
+      <center><h2 class="judul">Persamaan Linier Satu Variabel</h2></center>
+        <h3 style="border: 2px solid rgb(218, 101, 88); border-radius: 10px; width: 135px; padding: 8px;">Contoh Soal</h3>
+        <br><center>
+          <button class="no1">&nbsp;Contoh 1</button>
+          <button class="no2">&nbsp;Contoh 2</button>
+          </center>
+          <br>
+           <div class="contoh1">
+             <table>
+               <tr>
+                 <th colspan="3">Apakah kalimat berikut termasuk kalimat terbuka atau kalimat tertutup?</th>
+               </tr>
+               <tr>
+                 <th>1.</th>
+                 <th>Provinsi S terletak di Pulau Sulawesi.</th>
+                 <th>
+                  <button class="cekulang" id="him1" onclick="him1()"><b>Terbuka</b></button>
+                  <button class="cekulang" id="bhim1" onclick="bhim1()"><b>Tertutup</b></button>
+                  <span id="icon1" class="icon"></span>
+                </th>
+                <tr class="hilang" id="bahas1">
+                  <th>Pembahasan</th>
+                  <th colspan="2">Kalimat Terbuka karena variabel s tidak dapat kita tentukan nilai kebenarannya</th>
+                </tr>
+               </tr>
+               <tr class="hilang" id="himpunan2">
+                 <th>2.</th>
+                 <th>Dua adalah bilangan ganjil</th>
+                 <th>
+                  <button class="cekulang" id="him2" onclick="him2()"><b>Terbuka</b></button>
+                  <button class="cekulang" id="bhim2" onclick="bhim2()"><b>Tertutup</b></button>
+                  <span id="icon2" class="icon"></span>
+                </th>
+               </tr>
+               <tr class="hilang" id="bahas2">
+                <th>Pembahasan</th>
+                <th colspan="2">Kalimat Tertutup, karna kalimat tersebut bernilai salah (dapat dinyatakan nilai kebenarannya)</th>
+              </tr>
+             </tr>
+               <tr class="hilang" id="himpunan3">
+                 <th>3.</th>
+                 <th>x + 4 = 6</th>
+                 <th>
+                  <button class="cekulang" id="him3" onclick="him3()"><b>Terbuka</b></button>
+                  <button class="cekulang" id="bhim3" onclick="bhim3()"><b>Tertutup</b></button>
+                  <span id="icon3" class="icon"></span>
+                </th>
+               </tr>
+               <tr class="hilang" id="bahas3">
+                <th>Pembahasan</th>
+                <th colspan="2">Kalimat Terbuka karena variabel x tidak dapat kita tentukan nilai kebenarannya</th>
+              </tr>
+             </tr>
+             </table>
+             <br>
+
+           </div>
+
+            
+            <div class="contoh2 kotak">
+            <p>Tulislah kalimat berikut menjadi sebuah persamaan linear satu variabel!</p>
+            <p>1. Jumlah suatu bilangan <span id="h11" class="">n</span> dan <span id="h12" class="">7</span> sama dengan <span id="h13" class="">15</span>.</p>
+            <br>
+            <input type="text" class="input1" id="var1" onclick="ubah1_1()" maxlength="1"> +
+            <input type="text" class="input1" id="ang1" onclick="ubah1_2()" maxlength="1"> =
+            <input type="text" class="input1" id="ang2" onclick="ubah1_3()" maxlength="2">
+            <span id="icon1" class="icon"></span>
+            <br><br>
+            <button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+            <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br><br>
+            <div class="bahas" id="bahasbnr1">
+            <span class="bnr">Jawaban kamu benar</span>. Jadi, persamaan dari kalimat tersebut adalah n + 7 = 15.
+            </div>
+            <div class="bahas" id="bahasslh1">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+            </div>
+
+            <div class="hilang" id="lanjut1">
+            <p>2. Selisih bilangan <span id="h21" class="">y</span> dan <span id="h22" class="">7</span> sama dengan <span id="h23" class="">3</span>.</p>
+            <br>
+            <input type="text" class="input1" id="var01" onclick="ubah2_1()" maxlength="1"> -
+            <input type="text" class="input1" id="ang01" onclick="ubah2_2()" maxlength="1"> =
+            <input type="text" class="input1" id="ang02" onclick="ubah2_3()" maxlength="2">
+            <span id="icon2" class="icon"></span>
+            <br><br>
+            <button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+            <button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br><br>
+            <div class="bahas" id="bahasbnr2">
+            <span class="bnr">Jawaban kamu benar</span>. Jadi, persamaan dari kalimat tersebut adalah y – 7 = 3.
+            </div>
+            <div class="bahas" id="bahasslh2">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+            </div>
+          </div>
+        </div>
+          
+  </div>
+  </div>
+  </article>
+  <div class="bawah">
+    <center>
+        <a href="materi1_1.html">Sebelumnya</a>
+        <a href="materi1.html">1</a>
+        <a href="materi1_1.html">2</a>
+        <a href="materi1_2.html">3</a>
+        <a href="materi1_3.html">4</a>
+        <a href="materi1_3.html">Selanjutnya</a>
+    </center>
+  </div>
+</section>
+
+<script src="materi1.js"></script>
+<script src="pp1.js"></script>
+
+
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+</body>
+</html>

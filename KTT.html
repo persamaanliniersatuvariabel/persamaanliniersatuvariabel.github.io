@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="awal.css">
+<meta charset="utf-8">
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <div class="atas">      
+        <a href="#">About</a>
+        <a href="index.html">Home</a>
+  </div>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li class="item">
+            <div class="btn">
+              <a href="home.html">Pendahuluan</a>
+            </div>
+          </li>
+
+          <li class="item" id="materi">
+            <div class="btn">
+            <a href="KTT.html">Kalimat Tertutup & Terbuka</a>
+            </div>
+          </li>
+  
+          <li class="item" id="materi1">
+            <div class="btn">
+             <a href="#materi1">Materi PLSV</a>
+            </div>
+              <div class="smenu">
+                 <a href="materi1.html">Pengertian dan Sifat-sifat PLSV</a>
+                 <a href="materi2.html">Cara Subtitusi</a>
+                 <a href="pp1.html">Penjumlahan/Pengurangan</a>
+                 <a href="pp2.html">Perkalian/Pembagian</a>
+              </div>
+          </li>
+  
+          <li class="item" id="materi2">
+            <div class="btn">
+             <a href="#materi2">Materi PTLSV</a>
+            </div>
+              <div class="smenu">
+                <a href="materi3.html">Pengertian dan Sifat-sifat PTLSV</a>
+                <a href="materi4.html">Cara Subtitusi</a>
+                <a href="pp3.html">Penjumlahan/Pengurangan</a>
+                <a href="pp4.html">Perkalian/Pembagian</a>
+              </div>
+          </li>
+
+          <li class="item">
+              <div class="btn">
+                <a href="quiz.html">Quiz</a>
+              </div>
+         </li>
+    </ul> 
+  </nav>
+
+  <section>
+  <article>
+    <div class="cities" id="KTT">
+      <h4 class="text">Kalimat Terbuka</h4>
+      <center><p><u>Kalimat Terbuka adalah kalimat yang memuat variabel atau peubah
+        dan belum diketahui nilai kebenarannya.</u>
+      </p></center>
+      <p>
+        Untuk memahami kalimat terbuka, perhatikanlah kalimat-kalimat berikut ini.<br>
+        a. x + 8 = 14<br>
+        b. y + 4 = 10<br>
+        b. z habis dibagi 9<br>
+        Variabel x, y, dan z itu belum diketahui nilai kebenarannya.
+      </p>
+      <p>Pada x + 8 = 14, terdapat huruf x yang dinamakan <b>Variabel</b>.
+        <br>Sedangkan Bilangan 8 dan 14 disebut <b>Konstanta</b>.
+      </p>
+
+      <h4 class="text">Kalimat Tertutup</h4>
+      <center>
+        <p><u>Kalimat tertutup adalah kalimat yang mempunyai nilai benar atau nilai salah saja,
+        silahkan perhatikan animasi dibawah ini!</u>
+      </p>
+     <iframe src="percakapan.html" style="height:365px;width:470px;"></iframe><br>
+    </center>
+    <p>
+      1. Ir. Soekarno adalah presiden pertama Indonesia <br>
+      2. Kusbini adalah pencipta lagu indonesia raya <br>
+      3. 21 + 7 = 28 <br><br>
+      Kalimat di atas merupakan kalimat tertutup karena no 1 dan 3 kalimat bernilai benar lalu no 2 kalimat yang bernilai salah.
+    </p>
+    </div>
+    <div class="citi" id="KTT">
+      <center><h4>Contoh Soal</h4></center>
+      <p>
+        Perhatikan kalimat-kalimat dibawah ini, tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!<br>
+        <div id="warna">1. X adalah gunung tertinggi di Indonesia</div><br>
+        <button style="margin-left: 15%;" onclick="benar()">Terbuka</button>
+        <button onclick="salah()">Tertutup</button>
+        <div id="soal"></div>
+
+        <br><div id="warna1">2. Jakarta adalah ibukota Negara Indonesia</div><br>
+        <button style="margin-left: 15%;" onclick="salah1()">Terbuka</button>
+        <button onclick="benar1()">Tertutup</button>
+        <div id="soal1"></div>
+
+        <br><div id="warna2">3. 2 dikali K ditambah 3 adalah 15</div><br>
+        <button style="margin-left: 15%;" onclick="benar2()">Terbuka</button>
+        <button onclick="salah2()">Tertutup</button>
+        <div id="soal2"></div>
+
+        <br><div id="warna3">4. Y habis dibagi 9</div><br>
+        <button style="margin-left: 15%;" onclick="benar3()">Terbuka</button>
+        <button onclick="salah3()">Tertutup</button>
+        <div id="soal3"></div>
+
+        <br><div id="warna4">5. Satu tahun terdiri dari 1 bulan</div><br>
+        <button style="margin-left: 15%;" onclick="salah4()">Terbuka</button>
+        <button onclick="benar4()">Tertutup</button>
+        <div id="soal4"></div>
+      </p>
+    </div>
+  </article>
+</section>
+<script>
+  function benar(){
+    document.getElementById('soal').innerHTML="=>Benar";
+    document.getElementById('warna').style.color="green";
+  }
+  function salah(){
+    document.getElementById('soal').innerHTML="=>Salah, Karena ada variabel X";
+    document.getElementById('warna').style.color="red";
+  }
+
+  function benar1(){
+    document.getElementById('soal1').innerHTML="=>Benar";
+    document.getElementById('warna1').style.color="green";
+  }
+  function salah1(){
+    document.getElementById('soal1').innerHTML="=>Salah, Karena kalimat diatas sudah pasti bernilai benar";
+    document.getElementById('warna1').style.color="red";
+  }
+
+  function benar2(){
+    document.getElementById('soal2').innerHTML="=>Benar";
+    document.getElementById('warna2').style.color="green";
+  }
+  function salah2(){
+    document.getElementById('soal2').innerHTML="=>Salah, Karena ada variabel K";
+    document.getElementById('warna2').style.color="red";
+  }
+
+  function benar3(){
+    document.getElementById('soal3').innerHTML="=>Benar";
+    document.getElementById('warna3').style.color="green";
+  }
+  function salah3(){
+    document.getElementById('soal3').innerHTML="=>Salah, Karena ada variabel Y";
+    document.getElementById('warna3').style.color="red";
+  }
+
+  function benar4(){
+    document.getElementById('soal4').innerHTML="=>Benar";
+    document.getElementById('warna4').style.color="green";
+  }
+  function salah4(){
+    document.getElementById('soal4').innerHTML="=>Salah, Karena kalimat diatas sudah pasti bernilai salah";
+    document.getElementById('warna4').style.color="red";
+  }
+</script>
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+
+</body>
+</html>

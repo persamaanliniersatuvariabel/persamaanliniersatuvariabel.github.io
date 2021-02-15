@@ -1,0 +1,91 @@
+[{
+    "soal0": {
+        "soal": "Kalimat tertutup berikut yang bernilai salah adalah ....",
+        "a": "24 – 9 = 15",
+        "b": "96 : 4 = 24",
+        "c": "20 – 6 × 3 = 2",
+        "d": "40 + 24 : 8 = 8 ",
+        "benar": "d"
+    }
+},{
+    "soal1": {
+        "soal": "Kalimat berikut yang merupakan kalimat terbuka adalah ....",
+        "a": "84 dibagi oleh 4 sama dengan 21",
+        "b": "-15 dikali 2 sama dengan -30",
+        "c": "6 dikurang dari 2 sama dengan 4",
+        "d": "10 dijumlahkan dengan 2 sama dengan 3p",
+        "benar": "d"        
+    }        
+},{
+    "soal2": {
+        "soal": "Kalimat terbuka 10 – 2a = 6 akan menjaadi kalimat bernilai benar jika nilai a diganti dengan ....",
+        "a": "-2",
+        "b": "-1",
+        "c": "1",
+        "d": "2",
+        "benar": "d"
+    }
+},{
+    "soal3": {
+        "soal": "Penyelesaian persamaan x – 2 = -4 adalah ....",
+        "a": "-6",
+        "b": "-2",
+        "c": "2",
+        "d": "6",
+        "benar": "b"
+    }
+},{
+    "soal4": {
+        "soal": "Penyelesaian persamaaan 3x – 2 = 1 adalah ....",
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4",
+        "benar": "a"
+    }
+},{    
+    "soal5": {
+        "soal": "Jika k penyelesaian persamaan 2x + 7 = 5x – 11 nilai k + 3 adalah ...",
+        "a": "9",
+        "b": "6",
+        "c": "-3",
+        "d": "-6",
+        "benar": "a"
+    }
+},{ 
+    "soal6": {
+        "soal": "Pak Rendi mempunyai uang Rp.100,000,00. Sebagian uang tersebut digunakan untuk membeli obat, lalu sisa uang dibagikan kepada 3 anaknya sama banyak. Jika setiap anak memperoleh Rp.19,000,00, uang yang digunakan membeli obat sebanyak ....",
+        "a": "Rp47,000,00",
+        "b": "Rp45,000,00",
+        "c": "Rp43,000,00",
+        "d": "Rp41,000,00",
+        "benar": "c"
+    }
+},{ 
+    "soal7": {
+        "soal": "Sebanyak 48 buku dibagikan kepada Andi, Beru, dan Coki. Buku yang diterima Andi sebanyak 6 buah. Banyak buku yang diterima Beni dua kali dari banyak buku yang diterima Coki. Banyak buku yang diterima Beni adalah ....",
+        "a": "28 buah",
+        "b": "24 buah",
+        "c": "14 buah",
+        "d": "12 buah",
+        "benar": "a"
+    }
+},{ 
+    "soal8": {
+        "soal": "Perhatikan kalimat berikut.<br>(i) Indonesia termasuk negara Asia Tenggara<br>(ii) Jawa Barat beribukotakan di Bogor<br>(iii) 6 + 4 = 10<br>(iv) 5 – 2 > 4<br>Kalimat yang bernilai benar adalah....",
+        "a": "(i) dan (ii)",
+        "b": "(i) dan (iii)",
+        "c": "(ii) dan (iv)",
+        "d": "(iii) dan (iv)",
+        "benar": "a"
+    }
+},{
+    "soal9": {
+        "soal": "Perhatikan kalimat terbuka berikut.<br>(i) x – 3 = 2<br>(ii) 12 – x = 7<br>(iii) 2x – x = 7<br>(iv) -3x + 20 = 5<br>jika variabel x diganti dengan 5, kalimat terbuka tersebut akan menjadi kalimat tertutup. Kalimat tertutup yang bernilai benar adalah ....",
+        "a": "(i), (ii) dan (iii)",
+        "b": "(i), (ii) dan (iv)",
+        "c": "(i), (iii) dan (iii)",
+        "d": "(ii), (iii) dan (iv)",
+        "benar": "b"
+    }
+}]

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Interaktif</title>
+<link rel="stylesheet" href="materi4_2.css">
+<meta charset="utf-8">
+<script src="jquery.js"></script>
+</head>
+<body>
+<header>
+  <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+  <a href="index.html"><img src="home.svg" class="home"></a>
+</header>
+
+<section>
+<nav>
+  <ul>
+      <li class="item">
+          <div class="btn">
+            <a href="home.html">Apersepsi</a>
+          </div>
+        </li>
+
+        <li class="item" id="materi1">
+          <div class="btn">
+           <a href="#materi1">Persamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+               <a href="materi1.html">Pengertian PLSV</a>
+               <a href="materi2.html">Subtitusi</a>
+               <a href="pp1.html">Penjumlahan/Pengurangan</a>
+               <a href="pp2.html">Perkalian/Pembagian</a>
+               <a href="soalcerita1.html">Soal Cerita</a>
+               <a href="kuis1.html">Kuis</a>
+            </div>
+        </li>
+
+        <li class="item" id="materi2">
+          <div class="btn">
+           <a href="#materi2">Pertidaksamaan Linier Satu Variabel</a>
+          </div>
+            <div class="smenu">
+              <a href="materi3.html">Pengertian PTLSV</a>
+              <a href="materi4.html">Penyelesaian PtLSV</a>
+              <a href="soalcerita2.html">Soal Cerita</a>
+              <a href="kuis2.html">Kuis</a>
+            </div>
+        </li>
+
+          <li class="item">
+              <div class="btn">
+                <a href="evaluasi.html">Evaluasi</a>
+              </div>
+         </li>
+    </ul> 
+  </nav>
+
+  <section>
+  <article>
+    <div class="cities">
+      <center><h2 class="judul">Pertidaksamaan Linier Satu Variabel</h2></center>
+      <center><h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3></center>
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+              <center>
+              <table class="kotak1">
+                <tr id="pil1" ondragover="allowDrop(event)">
+                    <td draggable='true' ondragstart='drag(event)' id='p11' class='pilihan'>{1, 2, 3, 4, 5}</td>
+                    <td draggable='true' ondragstart='drag(event)' id='p12' class='pilihan'>{1, 2, 3, 4}</td>
+                </tr>
+              </table>
+              <br>
+        </center>
+        Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari	p < 6<br><br>
+        p < 6 =  <span id="no1" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+        <span id="icona" class="icon"></span>
+        <br>
+        <br>
+        <button class="cekulang" onclick="ceka()"><b>Cek Jawaban</b></button>
+        <button class="cekulang ulang" onclick="ulanga()" id="ulanga"><b>Ulang</b></button>
+        <br><br>
+        <div class="bahas" id="bahasbnra">
+            <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian p < 6 = {1, 2, 3, 4, 5}.
+        </div>
+        <div class="bahas" id="bahasslha">
+            <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+        </div>   
+            </div>
+
+            <div class="mySlides">
+              <center>
+              <table class="kotak1">
+                <tr id="pil4" ondragover="allowDrop(event)">
+                    <td draggable='true' ondragstart='drag(event)' id='p13' class='pilihan'>{1, 2, 3}</td>
+                    <td draggable='true' ondragstart='drag(event)' id='p14' class='pilihan'>{1, 2, 3, 4, 5}</td>
+                </tr>
+              </table>
+              <br>
+        </center>
+        Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari -2p < 10<br><br>
+        -2p < 10  <span id="no2" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+        <span id="iconb" class="icon"></span>
+        <br>
+        <br>
+        <button class="cekulang" onclick="cekb()"><b>Cek Jawaban</b></button>
+        <button class="cekulang ulang" onclick="ulangb()" id="ulangb"><b>Ulang</b></button>
+        <br><br>
+        <div class="bahas" id="bahasbnrb">
+            <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian -2p < 10 = {1, 2, 3, 4, 5}.
+        </div>
+        <div class="bahas" id="bahasslhb">
+            <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+        </div>   
+            </div>
+
+            <div class="mySlides">
+            <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+            <p>3x + 1 > -14</p>
+            <span class="popup lebar1">
+            <input type="text" class="input11" id="var1" onclick="info()" maxlength="1">
+			      <span class="popuptext" id="infovar">variabel</span> 
+            </span>
+
+            <span class="popup1 lebar1">
+            <input type="text" class="input11" id="ang1" onclick="info1()" maxlength="1"> 
+            <span class="popuptext1" id="infoth">tanda hubung</span> 
+            </span>
+
+            <span class="popup2 lebar1">
+            <input type="text" class="input11" id="ang2" onclick="info2()" maxlength="2">
+            <span class="popuptext2" id="infokon">konstanta</span> 
+            </span>
+            
+            <span id="icon1" class="icon"></span>
+            <br><br><br><br>
+            <button class="cekulang" onclick="cek1()"><b>Cek Jawaban</b></button>
+            <button class="cekulang ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button><br><br>
+            <div class="bahas" id="bahasbnr1">
+            <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket"></span> > -5
+            </div>
+            <div class="bahas" id="bahasslh1">
+              <span class="slh">Jawaban kamu salah</span>.<span id="ket"></span> Silahkan tekan tombol "Ulang"
+            </div>
+            </div>
+
+            <div class="mySlides">
+            <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+            <p>7 – 2x < 13</p>
+                <input type="text" class="input1" id="var2" onclick="info4()" maxlength="1">
+                <input type="text" class="input1" id="ang3" onclick="info5()" maxlength="1"> 
+                <input type="text" class="input1" id="ang4" onclick="info6()" maxlength="2">
+            
+                <span id="icon2" class="icon"></span>
+                <br><br>
+                <button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+                <button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br><br>
+                <div class="bahas" id="bahasbnr2">
+                <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket1"></span> > -3
+                </div>
+                <div class="bahas" id="bahasslh2">
+                  <span class="slh">Jawaban kamu salah</span>.<span id="ket1"></span> Silahkan tekan tombol "Ulang"
+            </div>
+        </div>
+
+        <div class="mySlides">
+          <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+          <p>2x + 8 ≥ -6 – 5x</p>
+              <input type="text" class="input1" id="var3" onclick="info4()" maxlength="1">
+              <input type="text" class="input1" id="ang5" onclick="info5()" maxlength="1"> 
+              <input type="text" class="input1" id="ang6" onclick="info6()" maxlength="2">
+          
+              <span id="icon3" class="icon"></span>
+              <br><br>
+              <button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br><br>
+              <div class="bahas" id="bahasbnr3">
+              <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket2"></span> > -2
+              </div>
+              <div class="bahas" id="bahasslh3">
+                <span class="slh">Jawaban kamu salah</span>.<span id="ket2"></span> Silahkan tekan tombol "Ulang"
+          </div>
+      </div>
+
+        <a class="pre" onclick="plusSlides(-1)">❮</a>
+        <a class="nex" onclick="plusSlides(1)">❯</a>
+    </div>  
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)">1</span> 
+        <span class="dot" onclick="currentSlide(2)">2</span> 
+        <span class="dot" onclick="currentSlide(3)">3</span> 
+        <span class="dot" onclick="currentSlide(4)">4</span>
+        <span class="dot" onclick="currentSlide(5)">5</span>
+      </div>    
+</div>
+  </article>
+  <div class="bawah">
+    <center>
+        <a href="maateri4_2.html">Sebelumnya</a>
+        <a href="materi4.html">1</a>
+        <a href="materi4_1.html">2</a>
+        <a href="materi4_2.html">3</a>
+        <a href="materi4_3.html">4</a>
+        <a href="soalcerita2.html">Selanjutnya</a>
+    </center>
+  </div>
+</section>
+
+<script src="materi4_3.js"></script>
+<script src="pp1.js"></script>
+
+
+<footer>
+    <p><marquee>Copyright Siti Aisyah</marquee></p>
+</footer>
+</body>
+</html>
