@@ -26,6 +26,7 @@ h1{
   p.indent{
     padding-left: 1.5em;
     line-height: 25px;
+    text-align: justify;
   }
 
   * {
@@ -70,6 +71,10 @@ h1{
   p.rata{
     text-align: justify;
     padding: 5px;
+  }
+
+  .gambar{
+    width: 30%;
   }
   
   nav {
@@ -474,18 +479,18 @@ h1{
     color: white;
   }
   
-  @media (max-width: 600px) {
+  @media screen and (max-width:992px) {
     nav, article {
       width: 100%;
       height: auto;
     }
     h2{
       font-family: 'Adobe Fangsong Std R';
-      font-size: 22px;
+      font-size: 20px;
     }
 
     h3{
-      font-size: 18px;
+      font-size: 17px;
     }
     h4{
       font-size: 17px;
@@ -508,8 +513,7 @@ h1{
     }
 
     .gambar{
-      width: 200px;
-      height: 100px;
+      width: 70%;
     }
 
     p.note{
@@ -517,6 +521,7 @@ h1{
       border-radius: 5px;
       margin: 5px;
       padding: 10px;
+      text-align: justify;
     }
 
     table{
@@ -548,24 +553,6 @@ h1{
       font-size: 15px;
       cursor: pointer;
       border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    
-    .indikator:hover {background-color: #b3b3b3}
-    
-    .indikator:active {
-      background-color: #b3b3b3;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }
-    #indikator {
-      width: 100%;
-      height: 200px;
-      text-align: left;
-      background-color: #ffffff;
-      border: 2px ridge;
-      border-radius: 4px;
-      margin-top: 10px;
       margin-bottom: 10px;
     }
 
