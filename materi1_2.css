@@ -195,6 +195,10 @@ h1{
     padding: 10px;
     overflow: auto;
   }
+
+  .gambarr{
+    width: 30%;
+  }
   
   .kotak{
     text-align: left;
@@ -554,6 +558,7 @@ h1{
           border-style:solid;
           border-color:transparent transparent transparent #555;
           }
+
           .popup .show{
           visibility:visible;
           -webkit-animation:fadeIn 1s;
@@ -689,6 +694,14 @@ h1{
       font-size: 15px;
     }
 
+    .gambar{
+      width: 90%;
+    }
+
+    .gambarr{
+      width: 100%;
+    }
+
     .jwb{
       width:20%;
       height:20px;
@@ -698,11 +711,45 @@ h1{
       padding-left:3%
     }
 
+    .lebar1{
+      width:15%;
+      margin-right:5px;
+      }
+
     .input1{
       text-align:center;
       width:15%;
       height:25px;
       }
+
+      .popup .popuptext{
+        width:230%;
+        font-size: 14px;
+        }
+
+      .popup .popuptext::after{
+        top: 7px;
+        }
+
+        .popup1 .popuptext1{
+          width:400%;
+          font-size: 14px;
+          }
+
+          .popup1 .popuptext1::after{
+            top: -50%;
+            }
+
+            .popup2 .popuptext2{
+              width:260%;
+              left: 260%;
+              font-size: 14px;
+              }
+
+              .popup2 .popuptext2::after{
+                left: 135%;
+                }
+
 
     .bawah a {
       background-color: white;

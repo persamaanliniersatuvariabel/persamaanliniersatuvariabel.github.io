@@ -493,7 +493,7 @@ h1{
       font-size: 17px;
     }
     h4{
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .judul{
@@ -533,6 +533,7 @@ h1{
       border-collapse: collapse;
       font-weight: normal;
       margin-left: 0.5em;
+      font-size: 15px;
     }
     
     th, td {
@@ -541,18 +542,14 @@ h1{
       font-weight: normal;
     }
   
-    .indikator{
-      background-color: #666666;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      border: none;
-      color: white;
-      padding: 7px 10px;
+    #indikator {
+      width: 100%;
+      height: 100px;
       text-align: left;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
-      cursor: pointer;
-      border-radius: 8px;
+      background-color: #ffffff;
+      border: 2px ridge;
+      border-radius: 4px;
+      margin-top: 10px;
       margin-bottom: 10px;
     }
 
