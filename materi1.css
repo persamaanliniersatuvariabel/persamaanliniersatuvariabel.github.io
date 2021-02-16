@@ -392,28 +392,6 @@ h1{
       padding: 10px;
     }
   
-    .indikator{
-      background-color: #666666;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      border: none;
-      color: white;
-      padding: 7px 10px;
-      text-align: left;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
-      cursor: pointer;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    
-    .indikator:hover {background-color: #b3b3b3}
-    
-    .indikator:active {
-      background-color: #b3b3b3;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }
     #indikator {
       width: 100%;
       height: 200px;
