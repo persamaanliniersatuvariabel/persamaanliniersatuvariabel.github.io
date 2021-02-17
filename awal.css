@@ -290,7 +290,8 @@ footer {
     margin-top: -30px;
   }
 
-  .citi, .citie {
+  .citi, .citie{
+    width: 100%;
     margin: 0px;
   }
 
