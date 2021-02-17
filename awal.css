@@ -290,16 +290,8 @@ footer {
     margin-top: -30px;
   }
 
-  .citi {
-    background-color: white;
-    border: 3px dashed #7d9c9c;
-    color: black;
+  .citi, .citie {
     margin: 0px;
-    width: 100%;
-    height: 450px;
-    padding: 10px;
-    overflow: auto;
-  }
 
   table{
     font-size: 15px;
