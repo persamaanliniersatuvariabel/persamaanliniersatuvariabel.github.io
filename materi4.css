@@ -537,6 +537,7 @@ h1{
     .gambar{
       width:200px;
       height:90px;
+      margin: 10px 20px;
       float: left;
     }
 
