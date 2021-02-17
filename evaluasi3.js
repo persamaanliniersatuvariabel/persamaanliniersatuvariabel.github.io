@@ -1,3 +1,4 @@
+
 let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
 namanya = document.getElementById('nama');
