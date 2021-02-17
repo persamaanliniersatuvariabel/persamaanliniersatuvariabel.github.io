@@ -755,6 +755,10 @@ h1{
       font-size: 15px;
     }
 
+    .citi, .citie, .cities {
+      margin: 0px;
+    }
+
     .kotak1{
       width:100%;
       height:20px;
@@ -871,8 +875,4 @@ h1{
       margin-bottom: 10px;
     }
     
-    .bawah a:hover{
-      background-color:  #d27979;
-      color: white;
-    }
   }

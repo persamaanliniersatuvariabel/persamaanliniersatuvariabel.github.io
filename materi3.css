@@ -496,6 +496,10 @@ h1{
       font-size: 16px;
     }
 
+    .citi, .citie, .cities {
+      margin: 0px;
+    }
+
     .judul{
       border-bottom: 3px solid palevioletred;
       font-size: 20px;
@@ -565,8 +569,4 @@ h1{
       margin-bottom: 10px;
     }
     
-    .bawah a:hover{
-      background-color:  #d27979;
-      color: white;
-    }
   }

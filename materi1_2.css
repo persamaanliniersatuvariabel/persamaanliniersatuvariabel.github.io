@@ -690,6 +690,10 @@ h1{
       margin-top: -30px;
     }
 
+    .citi, .citie, .cities {
+      margin: 0px;
+    }
+
     b{
       font-size: 15px;
     }
@@ -764,10 +768,5 @@ h1{
       text-decoration: none;
       display:inline-block;
       margin-bottom: 10px;
-    }
-    
-    .bawah a:hover{
-      background-color:  #d27979;
-      color: white;
     }
   }

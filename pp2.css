@@ -666,6 +666,10 @@ footer {
       font-weight: normal;
       font-size: 14px;
     }
+
+    .citi, .citie, .cities {
+      margin: 0px;
+    }
   
     #indikator {
       width: 100%;
@@ -725,8 +729,4 @@ footer {
       margin-bottom: 10px;
     }
     
-    .bawah a:hover{
-      background-color:  #d27979;
-      color: white;
-    }
   }

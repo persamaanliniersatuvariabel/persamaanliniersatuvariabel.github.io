@@ -215,7 +215,7 @@ h1{
   .gambar{
     width:300px;
     height:150px;
-    float: left;"
+    float: left;
   }
 
   table{
@@ -537,12 +537,16 @@ h1{
     .gambar{
       width:200px;
       height:90px;
-      float: left;"
+      float: left;
     }
 
     .batas{
       padding: 0px;
       margin: 0px 25px;
+    }
+
+    .citi, .citie, .cities {
+      margin: 0px;
     }
   
     #indikator {
@@ -567,9 +571,5 @@ h1{
       display:inline-block;
       margin-bottom: 10px;
     }
-    
-    .bawah a:hover{
-      background-color:  #d27979;
-      color: white;
-    }
+
   }
