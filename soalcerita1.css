@@ -226,6 +226,11 @@ h1{
     margin-right: 40px;
   }
 
+  .batas2{
+    margin-top: 50px;
+    line-height: 25px;
+  }
+
   .batass{
     padding: 10px; 
     margin-left: 40px; 
@@ -266,7 +271,7 @@ h1{
     width:250px;
     height:150px;
     float:left;
-    margin:10px;
+    margin:10px 20px;
     border:1px ridge gray;
   }
   
@@ -527,6 +532,10 @@ h1{
       margin: 0px 20px;
     }
 
+    .batas2{
+      margin-top: 0px;
+    }
+
     .gambar{
       width:180px;
       height:150px;
@@ -535,8 +544,8 @@ h1{
     }
 
     .gambarr{
-      width:100px;
-      height:60px;
+      width:120px;
+      height:70px;
       float:left;
       margin:10px;
       border:1px ridge gray;
