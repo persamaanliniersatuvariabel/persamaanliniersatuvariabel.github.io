@@ -43,7 +43,12 @@
                             	<input type="text" id="sekolah" name="sekolah" class="mundur" placeholder="Nama sekolah . . . ">                               
                             </label>
                             <label for="nama"> Kelas&emsp;&emsp;
-                            	<input type="text" id="kelas" name="kelas" class="maju aaa" placeholder="Kelas . . . ">                                
+                                <select id="kelas" name="kelas" class="maju aaa" >
+                                    <option value="0" selected="selected"> Pilih Kelas </option>
+                                    <option value="1">VII A</option>
+                                    <option value="2">VII B</option>
+                                    <option value="3">VII C</option>
+                                </select>
                             </label>
 
                             <div class="lanjut">MULAI</div>
@@ -152,6 +157,28 @@
                                 </tr>
                                 <tr>
                                     <td class="ket_hasil">
+                                        <p>HARI</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="hari ket_hasilnya">Senin</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ket_hasil">
+                                        <p>WAKTU SELESAI</p>
+                                    </td>
+                                    <td>
+                                        <p>:</p>
+                                    </td>
+                                    <td>
+                                        <p class="waktu ket_hasilnya">12:00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ket_hasil">
                                         <p>SKOR</p>
                                     </td>
                                     <td>
@@ -164,18 +191,21 @@
                             </table>   
                         <br>
                         <div id="ulang" class="ket_ulang hilang">
-                            Nilai kamu kurang dari 70, kamu belum memahami materi listrik statis<br>
+                            Nilai kamu kurang dari 70, kamu belum memahami materi Pertidaksamaan Linier Satu Variabel<br>
                             <button class="tmbl" button onclick="location.href='kuis2.html'">Ulang Evaluasi</a></button>                            
                         </div>
                         <br>
                         <div id="next" class="hilang1">
-                            Selamat kamu sudah menyelesaikan materi listrik statis dengan baik<br>
+                            Selamat kamu sudah menyelesaikan materi Pertidaksamaan Linier Satu Variabel dengan baik<br>
                         <button class="tmbl" button onclick="location.href='index.html'">Home</button><br>
                         </div>
 
                 </div>
                     </center>
                     </div> 
+                    
+                    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 
 
     <script src="evaluasi2.js"></script>

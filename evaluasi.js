@@ -1,4 +1,17 @@
-
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQhkrFFaD8E7rPtIPojOEhgBEZIVhC7nc",
+    authDomain: "sitiaisyah29-908bf.firebaseapp.com",
+    databaseURL: "https://sitiaisyah29-908bf-default-rtdb.firebaseio.com",
+    projectId: "sitiaisyah29-908bf",
+    storageBucket: "sitiaisyah29-908bf.appspot.com",
+    messagingSenderId: "116183119026",
+    appId: "1:116183119026:web:fc997b43ef6f0028ed85ab",
+    measurementId: "G-Y0FYEEWYP7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
@@ -22,12 +35,19 @@ selanjutnya.addEventListener('click', function () {
 
     }
 
-    if (kelasnya.value == "") {
+    if (kelasnya.value == "0") {
         if (kelasnya.className.indexOf('tt_salah') == -1) {
             kelasnya.className += ' tt_salah';
         }
     } else {
-        kelasnya.className = kelasnya.className.replace('tt_salah', '');        
+        kelasnya.className = kelasnya.className.replace('tt_salah', '');
+        if (kelasnya.value == "1") {
+            kelasfix = "VII A";
+        } else if (kelasnya.value == "2") {
+            kelasfix = "VII B";
+        } else if (kelasnya.value == "3") {
+            kelasfix = "VII C";
+        } 
         cek += 1;
     }
 
@@ -395,6 +415,11 @@ dat.onreadystatechange = function () {
                 console.log(sekolah);
                 console.log(kelasfix);
                 console.log(hasilakhir);
+
+                let harinya = hari();
+                let waktunya = waktu();
+
+                createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya);
                 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value.toUpperCase();
@@ -403,7 +428,14 @@ dat.onreadystatechange = function () {
                 sekolahinput.innerText = sekolah.value.toUpperCase();
 
                 let kelasinput = document.querySelector('.kelas');
-                kelasinput.innerText = kelasnya.value.toUpperCase();            
+                kelasinput.innerText = kelasfix;
+                // kelasinput.innerText = kelasnya.value.toUpperCase();
+
+                let hariinput = document.querySelector('.hari');
+                hariinput.innerText = harinya;
+
+                let waktuinput = document.querySelector('.waktu');
+                waktuinput.innerText = waktunya;
 
                 let hasillinput = document.querySelector('.hasill');
                 hasillinput.innerText = hasilakhir;
@@ -460,5 +492,53 @@ dat.onreadystatechange = function () {
 dat.open('GET', 'evaluasi.json', true);
 dat.send();
 
+// menyimpan ke dalam databasenya
+
+var d = new Date();
+var t = d.getTime();
+var counter = t;
+
+// ambil jamnya
+window.setTimeout("waktu()", 1000);
+
+function waktu() {
+    var tanggal = new Date();
+    setTimeout("waktu()", 1000);
+    return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+}
+
+// harinya
+function hari() {
+    tanggallengkap = new String();
+    namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+    namahari = namahari.split(" ");
+    namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+    namabulan = namabulan.split(" ");
+    tgl = new Date();
+    hari = tgl.getDay();
+    tanggal = tgl.getDate();
+    bulan = tgl.getMonth();
+    tahun = tgl.getFullYear();
+    tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+    return (tanggallengkap);
+}
+
+
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+    counter += 1;
+    var task = {
+        id: counter,
+        sekolah: sekolah,
+        nama: nama,
+        kelas: kelas,
+        nilai: nilai,        
+        waktu: waktunya,
+        hari: hari
+    }
+
+    let database = firebase.database().ref("kuis1/" + counter);
+    database.set(task);
+
+}
 
 
