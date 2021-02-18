@@ -633,7 +633,7 @@ footer {
 
     .grafik{
       height:100px;
-       width:100%;
+       width:fit-content;
         border: none;
     }
 

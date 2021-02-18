@@ -790,7 +790,7 @@ h1{
 
     .grafikk{
       height:100px;
-       width:105%;
+       width:fit-content;
         border: none;
     }
 
