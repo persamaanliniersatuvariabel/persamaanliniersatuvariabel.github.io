@@ -135,7 +135,7 @@
     }
 },{    
     "soal15": {
-        "soal": "<img src='gambargrafik3.png'><br>Manakah grafik penyelesaian dari pertidaksamaan 4 ≤ 2x + 6 < 10 untuk x bilangan bulat ..... ",
+        "soal": "<img src='gambargrafik3.png' class='gambar1'><br>Manakah grafik penyelesaian dari pertidaksamaan 4 ≤ 2x + 6 < 10 untuk x bilangan bulat ..... ",
         "a": "(i)",
         "b": "(ii)",
         "c": "(iii)",
@@ -144,7 +144,7 @@
     }
 },{ 
     "soal16": {
-        "soal": "<img src='gambargrafik4.png'><br>Garis bilangan yang merupakan penyelesaian pertidaksamaan 8 – 5x ≥ 6(x – 6) adalah ....",
+        "soal": "<img src='gambargrafik4.png' class='gambar1'><br>Garis bilangan yang merupakan penyelesaian pertidaksamaan 8 – 5x ≥ 6(x – 6) adalah ....",
         "a": "(i)",
         "b": "(ii)",
         "c": "(iii)",

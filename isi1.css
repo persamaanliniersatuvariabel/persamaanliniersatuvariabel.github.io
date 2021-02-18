@@ -191,6 +191,10 @@ mjx-container {
     border-bottom: 1px solid #660033;
 }
 
+.gambar1{
+    width: 100%;
+}
+
 /* radio button */
 .gambar{
     width: 50px;
@@ -536,6 +540,10 @@ a {
 
     ol {
         margin-left: 30px;
+    }
+
+    .gambar1{
+        width: fit-content;
     }
 
     .petunjuk {

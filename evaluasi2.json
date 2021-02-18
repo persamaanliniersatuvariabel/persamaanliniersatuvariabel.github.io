@@ -54,7 +54,7 @@
     }
 },{ 
     "soal6": {
-        "soal": "<img src='gambargrafik1.png'><br>Grafik penyelesaian dari 3x – 5 < x + 5 untuk x anggota bilangan cacah adalah....",
+        "soal": "<img src='gambargrafik1.png' class='gambar1'><br>Grafik penyelesaian dari 3x – 5 < x + 5 untuk x anggota bilangan cacah adalah....",
         "a": "(i)",
         "b": "(ii)",
         "c": "(iii)",
@@ -63,7 +63,7 @@
     }
 },{ 
     "soal7": {
-        "soal": "<img src='gambargrafik2.png'><br>Grafik Penyelesaian dari 3x – (2 + 5x) > 16 untuk x anggota bilangan real ....",
+        "soal": "<img src='gambargrafik2.png' class='gambar1'><br>Grafik Penyelesaian dari 3x – (2 + 5x) > 16 untuk x anggota bilangan real ....",
         "a": "(i)",
         "b": "(ii)",
         "c": "(iii)",
