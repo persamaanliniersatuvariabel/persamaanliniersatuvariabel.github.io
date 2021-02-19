@@ -5,19 +5,6 @@ var x = document.getElementById("indikator");
   x.classList.toggle("hilang");
   })
 
-  var x1 = document.getElementById("ktt");
-  var xx1= document.querySelector('.ktt');
-
-  xx1.addEventListener("click",function(){
-  x1.classList.toggle("hilang");
-  })
-
-  var x2 = document.getElementById("kv");
-  var xx2= document.querySelector('.kv');
-
-  xx2.addEventListener("click",function(){
-  x2.classList.toggle("hilang");
-})
 
 /*kumpulan 1*/
 function him1(){

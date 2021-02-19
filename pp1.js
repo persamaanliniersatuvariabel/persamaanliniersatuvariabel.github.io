@@ -1,3 +1,10 @@
+var y = document.getElementById("tujuan");
+  var yy= document.querySelector('.tujuan');
+
+  yy.addEventListener("click",function(){
+  y.classList.toggle("hilang");
+  })
+
 $(document).ready(function(){
   $(".tampil").hide();
         $(".lanjut").click(function(){
@@ -26,7 +33,7 @@ $(document).ready(function(){
         });
 });
 
-  var slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
