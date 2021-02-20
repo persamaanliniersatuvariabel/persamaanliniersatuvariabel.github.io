@@ -4,22 +4,6 @@ var y = document.getElementById("tujuan");
   yy.addEventListener("click",function(){
   y.classList.toggle("hilang");
   })
-
-  $(document).ready(function(){
-    $(".tampil").hide();
-          $(".lanjut").click(function(){
-                $(".tampil").show(500);
-                $(".lanjut").hide();
-          });
-  });
-  
-  $(document).ready(function(){
-    $(".tampil1").hide();
-          $(".lanjut1").click(function(){
-                $(".tampil1").show(500);
-                $(".lanjut1").hide();
-          });
-  });
   
   $(document).ready(function(){
     $(".contoh2").hide();
