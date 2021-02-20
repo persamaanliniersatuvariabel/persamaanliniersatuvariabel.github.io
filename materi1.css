@@ -239,6 +239,13 @@ h1{
     margin-bottom: 10px;
   }
 
+  .bnr{
+    color:green;
+  }
+  
+  .slh{
+    color:red;
+  }
 
   .hilang{
     display:none;

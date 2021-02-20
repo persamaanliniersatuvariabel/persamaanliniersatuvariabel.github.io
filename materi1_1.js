@@ -26,46 +26,76 @@ function showSlides(n) {
 }
 
 function benar(){
-    document.getElementById('soal').innerHTML="Benar";
-    document.getElementById('warna').style.color="green";
+    var himpunan1 = document.getElementById("bahas1");
+    var bhim = document.getElementById("salah");
+    bhim.className += " hilang";
+    document.getElementById("icon1").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan1.className = himpunan1.className.replace("hilang","");
   }
   function salah(){
-    document.getElementById('soal').innerHTML="Salah, karena ada variabel x yang belum diketahui nilai kebenarannya";
-    document.getElementById('warna').style.color="red";
+    var himpunan2 = document.getElementById("bahas2");
+    var him = document.getElementById("benar");
+    him.className += " hilang";
+    document.getElementById("icon1").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan2.className = himpunan2.className.replace("hilang","");
   }
 
   function benar1(){
-    document.getElementById('soal1').innerHTML="Benar";
-    document.getElementById('warna1').style.color="green";
+    var himpunan3 = document.getElementById("bahas3");
+    var bhim1 = document.getElementById("salah1");
+    bhim1.className += " hilang";
+    document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan3.className = himpunan3.className.replace("hilang","");
   }
   function salah1(){
-    document.getElementById('soal1').innerHTML="Salah, karena kalimat diatas bernilai benar (dapat dinyatakan nilai kebenarannya)";
-    document.getElementById('warna1').style.color="red";
+    var himpunan4 = document.getElementById("bahas4");
+    var him1 = document.getElementById("benar1");
+    him1.className += " hilang";
+    document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan4.className = himpunan4.className.replace("hilang","");
   }
 
   function benar2(){
-    document.getElementById('soal2').innerHTML="Benar";
-    document.getElementById('warna2').style.color="green";
+    var himpunan5 = document.getElementById("bahas5");
+    var bhim2 = document.getElementById("salah2");
+    bhim2.className += " hilang";
+    document.getElementById("icon3").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan5.className = himpunan5.className.replace("hilang","");
   }
   function salah2(){
-    document.getElementById('soal2').innerHTML="Salah, karena ada variabel k yang belum diketahui nilai kebenarannya";
-    document.getElementById('warna2').style.color="red";
+    var himpunan6 = document.getElementById("bahas6");
+    var him2 = document.getElementById("benar2");
+    him2.className += " hilang";
+    document.getElementById("icon3").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan6.className = himpunan6.className.replace("hilang","");
   }
 
   function benar3(){
-    document.getElementById('soal3').innerHTML="Benar";
-    document.getElementById('warna3').style.color="green";
+    var himpunan7 = document.getElementById("bahas7");
+    var bhim3 = document.getElementById("salah3");
+    bhim3.className += " hilang";
+    document.getElementById("icon4").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan7.className = himpunan7.className.replace("hilang","");
   }
   function salah3(){
-    document.getElementById('soal3').innerHTML="Salah, karena ada variabel y yang belum diketahui nilai kebenarannya";
-    document.getElementById('warna3').style.color="red";
+    var himpunan8 = document.getElementById("bahas8");
+    var him3 = document.getElementById("benar3");
+    him3.className += " hilang";
+    document.getElementById("icon4").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan8.className = himpunan8.className.replace("hilang","");
   }
 
   function benar4(){
-    document.getElementById('soal4').innerHTML="Benar";
-    document.getElementById('warna4').style.color="green";
+    var himpunan9 = document.getElementById("bahas9");
+    var bhim4 = document.getElementById("salah4");
+    bhim4.className += " hilang";
+    document.getElementById("icon5").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan9.className = himpunan9.className.replace("hilang","");
   }
   function salah4(){
-    document.getElementById('soal4').innerHTML="Salah, karena kalimat diatas bernilai salah (dapat dinyatakan nilai kebenarannya)";
-    document.getElementById('warna4').style.color="red";
+    var himpunan10 = document.getElementById("bahas10");
+    var him4 = document.getElementById("benar4");
+    him4.className += " hilang";
+    document.getElementById("icon5").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan10.className = himpunan10.className.replace("hilang","");
   }
