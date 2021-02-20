@@ -99,3 +99,10 @@ function benar(){
     document.getElementById("icon5").innerHTML = "<img src='salah.png' width='15px'>";
     himpunan10.className = himpunan10.className.replace("hilang","");
   }
+
+  var y = document.getElementById("tujuan");
+  var yy= document.querySelector('.tujuan');
+
+  yy.addEventListener("click",function(){
+  y.classList.toggle("hilang");
+  })
