@@ -26,22 +26,34 @@ function showSlides(n) {
 }
 
 function benar(){
-    document.getElementById('soal').innerHTML="Benar";
-    document.getElementById('warna').style.color="green";
-  }
-  function salah(){
-    document.getElementById('soal').innerHTML="Salah, coba lagi";
-    document.getElementById('warna').style.color="red";
-  }
+  var himpunan1 = document.getElementById("bahas1");
+  var bhim = document.getElementById("salah");
+  bhim.className += " hilang";
+  document.getElementById("icon1").innerHTML = "<img src='benar.jpg' width='15px'>";
+  himpunan1.className = himpunan1.className.replace("hilang","");
+}
+function salah(){
+  var himpunan2 = document.getElementById("bahas2");
+  var him = document.getElementById("benar");
+  him.className += " hilang";
+  document.getElementById("icon1").innerHTML = "<img src='salah.png' width='15px'>";
+  himpunan2.className = himpunan2.className.replace("hilang","");
+}
 
-  function benar1(){
-    document.getElementById('soal1').innerHTML="Benar";
-    document.getElementById('warna1').style.color="green";
-  }
-  function salah1(){
-    document.getElementById('soal1').innerHTML="Salah, coba lagi";
-    document.getElementById('warna1').style.color="red";
-  }
+function benar1(){
+  var himpunan3 = document.getElementById("bahas3");
+  var bhim1 = document.getElementById("salah1");
+  bhim1.className += " hilang";
+  document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
+  himpunan3.className = himpunan3.className.replace("hilang","");
+}
+function salah1(){
+  var himpunan4 = document.getElementById("bahas4");
+  var him1 = document.getElementById("benar1");
+  him1.className += " hilang";
+  document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
+  himpunan4.className = himpunan4.className.replace("hilang","");
+}
 
   
   function pertama() {
@@ -58,10 +70,28 @@ function benar(){
  function kedua() {
   var x = document.getElementById("input2").value;
    var jawaban;
-   if (x == "8") {
+   if (x == "-3") {
     jawaban = "Jawaban Anda Benar";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
   }
    document.getElementById("ccek").innerHTML = jawaban;
  }
+
+ function ketiga() {
+  var x = document.getElementById("input3").value;
+   var jawaban;
+   if (x == "8") {
+    jawaban = "Jawaban Anda Benar";
+   }else {
+     jawaban = "Jawaban Anda Salah, Coba lagi!";
+  }
+   document.getElementById("cccek").innerHTML = jawaban;
+ }
+
+var y = document.getElementById("tujuan");
+var yy= document.querySelector('.tujuan');
+
+yy.addEventListener("click",function(){
+y.classList.toggle("hilang");
+})

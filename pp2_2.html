@@ -60,37 +60,65 @@
     <div class="cities" id="KTT">
       <center><h4>Menyelesaikan Persamaan Menggunakan Perkalian atau Pembagian</h4></center>
       <center> <h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3> </center>
+      
+      <button class="tujuan">Klik untuk melihat petunjuk</button><br>
+        <div id="tujuan" class="hilang">
+      			<ul class="noo">
+              <li>Latihan ini terdiri dari 5 soal!</li>
+              <li>Soal 1-2 dengan cara dibawah ini!</li>
+              <li>Soal Pilihlah salah satu jawaban antara <b>benar</b> atau <b>salah</b></li>
+      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
+      				<li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
+              <li>Soal 3-5 dengan cara dibawah ini!</li>
+              <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
+      				<li>Jika jawaban kamu benar, akan muncul "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul "jawaban anda salah, coba lagi!"</li>
+      			</ul>
+			</div>
+
       <div class="slideshow-container">
 
         <div class="mySlides">
          <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
-    <div id="warna">1.	2(x – 1) = x(2 – x)</div><br>
-      <button onclick="benar()">Benar</button>
-      <button onclick="salah()">Salah</button>
-     <p id="soal"></p>
+      <div>1.	2(x – 1) = x(2 – x)</div><br>
+      <button id="benar" onclick="benar()">Benar</button>
+      <button id="salah" onclick="salah()">Salah</button>
+      <span id="icon1" class="icon"></span>
+      <p class="hilang bnr" id="bahas1">Jawaban anda benar</p>
+      <p class="hilang slh" id="bahas2">Jawaban anda salah, coba lagi!</p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
-        <div id="warna1">2.	$\frac{1}{x}$ + $\frac{1}{y}$ = 2</div><br>
-      <button onclick="salah1()">Benar</button>
-      <button onclick="benar1()">salah</button>
-    <p id="soal1"></p>
+        <div>2.	$\frac{1}{x}$ + $\frac{1}{y}$ = 2</div><br>
+      <button id="salah1" onclick="salah1()">Benar</button>
+      <button id="benar1" onclick="benar1()">salah</button>
+      <span id="icon2" class="icon"></span>
+      <p class="hilang bnr" id="bahas3">Jawaban anda benar</p>
+      <p class="hilang slh" id="bahas4">Jawaban anda salah, coba lagi!</p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan penyelesaian setiap persamaan berikut.<br>3. 2x + 3 = 9</p>
-    <input type="text" id="input" value=""  placeholder=" ... " style="width: 28px; text-align: center;"></p>
-                  <button onclick="pertama()">Cek</button>
+        <input type="text" id="input" value="" style="width: 28px; text-align: center;"></p>
+        <button onclick="pertama()">Cek Jawaban</button>
         <p id="cek"></p>
         </div>
         
         <div class="mySlides">
-        <p>Tentukan penyelesaian setiap persamaan berikut.<br>4. 5x -12 = 2(x + 6)</p>
-    <input type="text" id="input2" value="" placeholder=" ... " style="width: 28px; text-align: center;"> </p>
-                  <button onclick="kedua()">Cek</button>
+        <p>Tentukan penyelesaian setiap persamaan berikut.<br>4. -3x = 18</p>
+        <input type="text" id="input2" value="" style="width: 28px; text-align: center;"> </p>
+        <button onclick="kedua()">Cek Jawaban</button>
         <p id="ccek"></p>
         </div>
+
+        <div class="mySlides">
+          <p>Tentukan penyelesaian setiap persamaan berikut.<br>5. 5x -12 = 2(x + 6)</p>
+          <input type="text" id="input3" value="" style="width: 28px; text-align: center;"> </p>
+          <button onclick="ketiga()">Cek Jawaban</button>
+          <p id="cccek"></p>
+          </div>
     
         
         <a class="pre" onclick="plusSlides(-1)">❮</a>
@@ -103,16 +131,17 @@
           <span class="dot" onclick="currentSlide(2)">2</span> 
           <span class="dot" onclick="currentSlide(3)">3</span> 
           <span class="dot" onclick="currentSlide(4)">4</span>
+          <span class="dot" onclick="currentSlide(5)">5</span>
         </div>       
     </div>
 
   </article>
   <div class="bawah">
     <center>
-    <a href="pp1_1.html">Sebelumnya</a>
-    <a href="pp1.html">1</a>
-    <a href="pp1_1.html">2</a>
-    <a href="pp1_2.html">3</a>
+    <a href="pp1_2.html">Sebelumnya</a>
+    <a href="pp2.html">1</a>
+    <a href="pp2_1.html">2</a>
+    <a href="pp2_2.html">3</a>
     <a href="soalcerita1.html">Selanjutnya</a>
     </center>
   </div>

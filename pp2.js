@@ -1,3 +1,10 @@
+var y = document.getElementById("tujuan1");
+var yy= document.querySelector('.tujuan1');
+
+yy.addEventListener("click",function(){
+y.classList.toggle("hilang");
+})
+
 $(document).ready(function(){
       $(".contoh2").hide();
       $(".contoh3").hide();
