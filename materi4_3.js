@@ -343,3 +343,10 @@ function ulang3(){
   document.getElementById("icon3").innerHTML = "";
   bahasslh.className = bahasslh.className.replace("tampil", "");
 }
+
+var y = document.getElementById("tujuan1");
+var yy= document.querySelector('.tujuan1');
+
+yy.addEventListener("click",function(){
+y.classList.toggle("hilang");
+})
