@@ -60,42 +60,65 @@
     <div class="cities" id="KTT">
       <center><h2 class="judul">Persamaan Linier Satu Variabel</h2></center>
       <center> <h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3> </center>
+      
+      <button class="tujuan">Klik untuk melihat petunjuk</button><br>
+        <div id="tujuan" class="hilang">
+      			<ul class="noo">
+              <li>Latihan ini terdiri dari 5 soal!</li>
+              <li>Soal 1-3 dengan cara dibawah ini!</li>
+              <li>Soal Pilihlah salah satu jawaban antara <b>benar</b> atau <b>salah</b></li>
+      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
+      				<li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
+              <li>Soal 4-5 dengan cara dibawah ini!</li>
+              <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
+      				<li>Jika jawaban kamu benar, akan muncul "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul "jawaban anda salah, coba lagi!"</li>
+      			</ul>
+			</div>
+
       <div class="slideshow-container">
 
         <div class="mySlides">
          <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
-    <div id="warna">1.	x<sup>2</sup> = 2x + 1</div><br>
-      <button onclick="salah()">Benar</button>
-      <button onclick="benar()">Salah</button>
-     <p id="soal"></p>
+    <div>1.	x<sup>2</sup> = 2x + 1</div><br>
+      <button id="salah" onclick="salah()">Benar</button>
+      <button id="benar" onclick="benar()">Salah</button>
+      <span id="icon1" class="icon"></span>
+      <p class="hilang bnr" id="bahas1">Jawaban anda benar</p>
+      <p class="hilang slh" id="bahas2">Jawaban anda salah, coba lagi!</p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
         <div id="warna1">2.	x + y = 4</div><br>
-      <button onclick="salah1()">Benar</button>
-      <button onclick="benar1()">salah</button>
-    <p id="soal1"></p>
+      <button id="salah1" onclick="salah1()">Benar</button>
+      <button id="benar1" onclick="benar1()">Salah</button>
+      <span id="icon2" class="icon"></span>
+      <p class="hilang bnr" id="bahas3">Jawaban anda benar</p>
+      <p class="hilang slh" id="bahas4">Jawaban anda salah, coba lagi!</p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
     <div id="warna2">3. p + 10 = 2p</div><br>
-      <button onclick="benar2()">benar</button>
-      <button onclick="salah2()">salah</button>
-    <p id="soal2"></p>
+      <button id="benar2" onclick="benar2()">Benar</button>
+      <button id="salah2" onclick="salah2()">Salah</button>
+      <span id="icon3" class="icon"></span>
+      <p class="hilang bnr" id="bahas5">Jawaban anda benar</p>
+      <p class="hilang slh" id="bahas6">Jawaban anda salah, coba lagi!</p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan penyelesaian setiap persamaan berikut.<br>4. x – 7 = 3</p>
-    <input type="text" id="input" value=""  placeholder=" ... " style="width: 28px; text-align: center;"></p>
+    <input type="text" id="input" value="" style="width: 28px; text-align: center;"></p>
                   <button onclick="pertama()">Cek</button>
         <p id="cek"></p>
         </div>
         
         <div class="mySlides">
         <p>Tentukan penyelesaian setiap persamaan berikut.<br>5. x - 2 = 8 – x</p>
-    <input type="text" id="input2" value="" placeholder=" ... " style="width: 28px; text-align: center;"> </p>
+    <input type="text" id="input2" value="" style="width: 28px; text-align: center;"> </p>
                   <button onclick="kedua()">Cek</button>
         <p id="ccek"></p>
         </div>
@@ -125,7 +148,7 @@
   </div>
 </section>
 
-<script src="pp1.js"></script>
+<script src="pp1_2.js"></script>
 
 <footer>
     <p><marquee>Copyright Siti Aisyah</marquee></p>

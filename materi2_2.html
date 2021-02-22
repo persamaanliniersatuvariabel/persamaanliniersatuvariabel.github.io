@@ -4,6 +4,7 @@
 <title>Multimedia Interaktif</title>
 <link rel="stylesheet" href="materi2.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery.js"></script>
 </head>
 <body>
 <header>
@@ -62,28 +63,53 @@
       <center><h3 style=" border: 3px solid rgb(218, 88, 88); border-radius: 10px; width: 135px; padding: 8px;">Latihan</h3></center>
       <p>Kerjakan latihan soal berikut!</p>
 
+      <button class="tujuan">Klik untuk melihat petunjuk</button><br>
+        <div id="tujuan" class="hilang">
+      			<ul class="noo">
+              <li>Latihan ini terdiri dari 5 soal!</li>
+      				<li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
+              <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
+      				<li>Jika jawaban kamu benar, akan muncul "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul "jawaban anda salah, coba lagi!"</li>
+      			</ul>
+			</div>
+
       <div class="slideshow-container">
 
         <div class="mySlides">
           <p>1. Tentukan penyelesaian dari persamaan x + 16 = 19, jika pengganti bilangan antara {1, 2, 3, 4, 5}?<br><br>
 			    <input type="text" id="input" value="" style="width: 28px; text-align: center;"> </p>
-          <button onclick="pertama()">Cek</button>
+          <button onclick="pertama()">Cek Jawaban</button>
 					<p id="cek"></p>
           </div>
           
           <div class="mySlides">
           <p>2. Tentukan penyelesaian dari persamaan y - 8 = 2, jika pengganti bilangan antara {6, 7, 8, 9, 10}?<br><br>
 		      <input type="text" id="input2" value="" style="width: 28px; text-align: center;"></p>
-          <button onclick="kedua()">Cek</button>
+          <button onclick="kedua()">Cek Jawaban</button>
 					<p id="ccek"></p>
           </div>
           
           <div class="mySlides">
           <p>3. Tentukan penyelesaian dari persamaan 7 = - 8 + a, jika pengganti bilangan antara {11, 12, 13, 14, 15}?<br><br>
 		      <input type="text" id="input3" value="" style="width: 28px; text-align: center;"> </p>
-          <button onclick="ketiga()">Cek</button>
+          <button onclick="ketiga()">Cek Jawaban</button>
 					<p id="cccek"></p>
           </div>
+
+          <div class="mySlides">
+          <p>3. Tentukan penyelesaian dari persamaan 2x + 1 = 5<br><br>
+          <input type="text" id="input4" value="" style="width: 28px; text-align: center;"> </p>
+          <button onclick="keempat()">Cek Jawaban</button>
+          <p id="cekk"></p>
+          </div>
+
+            <div class="mySlides">
+            <p>3. Tentukan penyelesaian dari persamaan $\frac{y}{7}$ = 3<br><br>
+            <input type="text" id="input5" value="" style="width: 28px; text-align: center;"> </p>
+            <button onclick="kelima()">Cek Jawaban</button>
+            <p id="cekkk"></p>
+            </div>
           
           
           <a class="pre" onclick="plusSlides(-1)">❮</a>
@@ -94,7 +120,9 @@
           <div class="dot-container">
           <span class="dot" onclick="currentSlide(1)">1</span> 
           <span class="dot" onclick="currentSlide(2)">2</span> 
-          <span class="dot" onclick="currentSlide(3)">3</span> 
+          <span class="dot" onclick="currentSlide(3)">3</span>
+          <span class="dot" onclick="currentSlide(4)">4</span> 
+          <span class="dot" onclick="currentSlide(5)">5</span>  
     </div>
     </div>
   </article>
@@ -109,9 +137,19 @@
   </div>
 </section>
 
+<script src="materi2.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 <footer>
     <p><marquee>Copyright Siti Aisyah</marquee></p>
 </footer>
-<script src="materi2.js"></script>
+
 </body>
 </html>

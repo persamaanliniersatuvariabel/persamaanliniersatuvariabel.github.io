@@ -58,3 +58,32 @@ function pertama() {
   }
    document.getElementById("cccek").innerHTML = jawaban;
  }
+
+ function keempat() {
+  var x = document.getElementById("input4").value;
+   var jawaban;
+   if (x == "2") {
+    jawaban = "Jawaban Anda Benar";
+   }else {
+     jawaban = "Jawaban Anda Salah, Coba lagi!";
+  }
+   document.getElementById("cekk").innerHTML = jawaban;
+ }
+
+ function kelima() {
+  var x = document.getElementById("input5").value;
+   var jawaban;
+   if (x == "21") {
+    jawaban = "Jawaban Anda Benar";
+   }else {
+     jawaban = "Jawaban Anda Salah, Coba lagi!";
+  }
+   document.getElementById("cekkk").innerHTML = jawaban;
+ }
+
+ var y = document.getElementById("tujuan");
+ var yy= document.querySelector('.tujuan');
+
+ yy.addEventListener("click",function(){
+ y.classList.toggle("hilang");
+ })
