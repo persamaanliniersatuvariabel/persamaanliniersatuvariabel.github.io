@@ -397,3 +397,10 @@ function ulang5(){
   document.getElementById("icon5").innerHTML = "";
   bahasslh.className = bahasslh.className.replace("tampil", "");
 }
+
+var y = document.getElementById("tujuan2");
+  var yy= document.querySelector('.tujuan2');
+
+  yy.addEventListener("click",function(){
+  y.classList.toggle("hilang");
+  })
