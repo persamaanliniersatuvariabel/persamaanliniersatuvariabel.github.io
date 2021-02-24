@@ -1,5 +1,5 @@
-var y = document.getElementById("tujuan1");
-var yy= document.querySelector('.tujuan1');
+var y = document.getElementById("tujuan");
+var yy= document.querySelector('.tujuan');
 
 yy.addEventListener("click",function(){
 y.classList.toggle("hilang");

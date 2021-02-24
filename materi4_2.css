@@ -306,7 +306,7 @@ h1{
     margin-bottom: 10px;
   }
 
-  .tujuan1{
+  .tujuan{
     background-color: #666666;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: none;
@@ -321,14 +321,14 @@ h1{
     margin-bottom: 10px;
   }
   
-  .tujuan1:hover {background-color: #b3b3b3}
+  .tujuan:hover {background-color: #b3b3b3}
   
-  .tujuan1:active {
+  .tujuan:active {
     background-color: #b3b3b3;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-  #tujuan1 {
+  #tujuan {
     width: 100%;
     height: auto;
     text-align: left;
@@ -901,6 +901,10 @@ h1{
     .no3:hover{
       background-color: gray;
       cursor: pointer;
+    }
+
+    #tujuan{
+      font-size: 15px;
     }
 
     .bawah a {
