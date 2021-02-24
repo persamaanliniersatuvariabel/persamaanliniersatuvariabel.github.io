@@ -4,30 +4,16 @@ var yy= document.querySelector('.tujuan');
 yy.addEventListener("click",function(){
 y.classList.toggle("hilang");
 })
-
-var z = document.getElementById("tujuan1");
-var zz= document.querySelector('.tujuan1');
-
-zz.addEventListener("click",function(){
-z.classList.toggle("hilang");
-})
   
   $(document).ready(function(){
     $(".contoh2").hide();
-    $(".tujuan1").hide();
           $(".no1").click(function(){
                 $(".contoh2").hide(0);
-                $(".tujuan1").hide(0);
-                $("#tujuan1").hide(0);
                 $(".contoh1").show(200);
-                $(".tujuan").show(200);
           });
           $(".no2").click(function(){
                 $(".contoh2").show(200);
-                $(".tujuan1").show(200);
                 $(".contoh1").hide(0);
-                $(".tujuan").hide(0);
-                $("#tujuan").hide(0);
           });
   });
   
