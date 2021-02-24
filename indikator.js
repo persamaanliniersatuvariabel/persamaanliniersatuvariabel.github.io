@@ -1,6 +1,6 @@
 var x = document.getElementById("indikator");
-  var xx= document.querySelector('.indikator');
+var xx= document.querySelector('.indikator');
 
-  xx.addEventListener("click",function(){
+xx.addEventListener("click",function(){
   x.classList.toggle("hilang");
-  })
+})

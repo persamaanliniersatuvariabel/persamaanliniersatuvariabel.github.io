@@ -259,7 +259,7 @@ h1{
   }
   #indikator {
     width: 100%;
-    height: 110px;
+    height: auto;
     text-align: left;
     background-color: #ffffff;
     border: 2px ridge;
@@ -550,15 +550,8 @@ h1{
       margin: 0px;
     }
   
-    #indikator {
-      width: 100%;
-      height: 240px;
-      text-align: left;
-      background-color: #ffffff;
-      border: 2px ridge;
-      border-radius: 4px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    #indikator{
+      font-size: 15px;
     }
 
     .bawah a {
