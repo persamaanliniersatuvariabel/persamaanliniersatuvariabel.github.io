@@ -15,8 +15,15 @@ h1{
     margin-top: 10px;
   }
 
+  h3{
+    font-family: 'Adobe Fangsong Std R';
+    font-size: 20px;
+  }
+
   h4{
-    font-size: 18px;
+    font-family: 'Adobe Fangsong Std R';
+    font-size: 20px;
+    padding-left: 1.1em;
   }
 
   .text {
@@ -46,6 +53,32 @@ h1{
     float: right;
     margin-right: 10px;
     margin-top: -50px;
+  }
+
+  .contohh{
+    border: 1px solid #7c3f43;
+    background-color: #955155;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px 10px 3px 10px;
+    font-family: 'Arno Pro Smbd Sm Text';
+  }
+
+  .contoh{
+    width: 150px;
+  }
+
+  .latihan{
+    border: 1px solid #7c3f43;
+    background-color: #955155;
+    border-radius: 5px 15px;
+    font-size: 20px;
+    width: fit-content;
+    padding: 8px 15px;
+  }
+
+  .gt{
+    width: 120px;
   }
   
   p.note{
@@ -559,6 +592,14 @@ h1{
 
     b{
       font-size: 15px;
+    }
+
+    .contoh{
+      width: 120px;
+    }
+
+    .gt{
+      width: 100px;
     }
 
     .animasi{

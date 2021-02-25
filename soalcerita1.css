@@ -49,6 +49,19 @@ h1{
     margin-right: 10px;
     margin-top: -50px;
   }
+
+  .contohh{
+    border: 1px solid #7c3f43;
+    background-color: #955155;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px 10px 3px 10px;
+    font-family: 'Arno Pro Smbd Sm Text';
+  }
+
+  .contoh{
+    width: 150px;
+  }
   
   p.note{
     border: 2px solid lightslategray;
@@ -535,6 +548,10 @@ h1{
     }
     h4{
       font-size: 16px;
+    }
+
+    .contoh{
+      width: 120px;
     }
 
     p.indent{

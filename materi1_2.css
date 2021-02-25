@@ -8,6 +8,33 @@ h1{
   h2{
     font-family: 'Adobe Fangsong Std R';
   }
+
+  h4{
+    border: 1px solid #7c3f43;
+    background-color: #955155;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px 10px 3px 10px;
+    font-family: 'Arno Pro Smbd Sm Text';
+  }
+
+  .contoh{
+    width: 150px;
+  }
+
+  .latihan{
+    border: 1px solid #7c3f43;
+    background-color: #955155;
+    border-radius: 5px 15px;
+    font-size: 20px;
+    width: fit-content;
+    padding: 8px 15px;
+  }
+
+  .gt{
+    width: 120px;
+  }
+
   .judul{
     border-bottom: 3px solid palevioletred;
     font-size: 28px;
@@ -714,6 +741,14 @@ h1{
 
     .gambarr{
       width: 100%;
+    }
+
+    .contoh{
+      width: 120px;
+    }
+  
+    .gt{
+      width: 100px;
     }
 
     .jwb{

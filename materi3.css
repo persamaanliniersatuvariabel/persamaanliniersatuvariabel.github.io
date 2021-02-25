@@ -8,6 +8,11 @@ h1{
   h2{
     font-family: 'Adobe Fangsong Std R';
   }
+
+  h3{
+    font-family: 'Adobe Fangsong Std R';
+    font-size: 20px;
+  }
   
   .judul{
     border-bottom: 3px solid palevioletred;
