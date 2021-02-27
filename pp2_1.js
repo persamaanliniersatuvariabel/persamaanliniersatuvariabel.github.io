@@ -70,7 +70,7 @@ function salah1(){
  function kedua() {
   var x = document.getElementById("input2").value;
    var jawaban;
-   if (x == "-3") {
+   if (x == "-6") {
     jawaban = "Jawaban Anda Benar";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
