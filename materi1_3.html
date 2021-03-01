@@ -66,16 +66,19 @@
       <button class="tujuan">Klik untuk melihat petunjuk</button><br>
         <div id="tujuan" class="hilang">
       			<ul class="noo">
-              <li>Latihan ini terdiri dari 5 soal!</li>
+              <li>Latihan ini terdiri dari 10 soal!</li>
+              <li>soal nomor 1-5</li>
       				<li>Pilihlah salah satu jawaban antara <b>Terbuka</b>, untuk kalimat terbuka atau <b>Tertutup</b>, untuk kalimat tertutup.</li>
-      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
+      				<li>soal nomor 6-10</li>
+              <li>Pilihlah salah satu jawaban antara <b>Persamaan</b> atau <b>Bukan</b></li>
+              <li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
       				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
       			</ul>
 			</div>
 
     <div class="slideshow-container">
 
-        <div class="mySlides">
+      <div class="mySlides">
          <p>Tentukan mana yang termasuk kalimat terbuka dan kalimat tertutup!</p>
             <div>1. x adalah gunung tertinggi di Indonesia</div><br>
             <button id="benar" onclick="benar()">Terbuka</button>
@@ -125,6 +128,57 @@
             <p class="hilang bnr" id="bahas9">Jawaban anda benar</p>
             <p class="hilang slh" id="bahas10">Jawaban anda salah, karena kalimat diatas bernilai salah (dapat dinyatakan nilai kebenarannya)</p>
         </div>
+
+        <div class="mySlides">
+          <p>Manakah yang merupakan persamaan linier satu variabel?</p>
+             <div>6. p + 2q = 6</div><br>
+             <button id="salah5" onclick="salah5()">Persamaan</button>
+             <button id="benar5" onclick="benar5()">Bukan</button>
+             <span id="icon6" class="icon"></span>
+             <p class="hilang bnr" id="bahas11">Jawaban anda benar</p>
+             <p class="hilang slh" id="bahas12">Jawaban anda salah</p>
+         </div>
+  
+         <div class="mySlides">
+          <p>Manakah yang merupakan persamaan linier satu variabel?</p>
+             <div>7. 3( x + 1 ) = 6</div><br>
+             <button id="benar6" onclick="benar6()">Persamaan</button>
+             <button id="salah6" onclick="salah6()">Bukan</button>
+             <span id="icon7" class="icon"></span>
+             <p class="hilang bnr" id="bahas13">Jawaban anda benar</p>
+             <p class="hilang slh" id="bahas14">Jawaban anda salah</p>
+         </div>
+  
+         <div class="mySlides">
+          <p>Manakah yang merupakan persamaan linier satu variabel?</p>
+             <div>8. 8x – 3 = 2x + 3</div><br>
+             <button id="benar7" onclick="benar7()">Persamaan</button>
+             <button id="salah7" onclick="salah7()">Bukan</button>
+             <span id="icon8" class="icon"></span>
+             <p class="hilang bnr" id="bahas15">Jawaban anda benar</p>
+             <p class="hilang slh" id="bahas16">Jawaban anda salah</p>
+         </div>
+  
+         <div class="mySlides">
+          <p>Manakah yang merupakan persamaan linier satu variabel?</p>
+             <div>9. $\frac{1}{2}y$ -3  ≤ 1</div><br>
+             <button id="salah8" onclick="salah8()">Persamaan</button>
+             <button id="benar8" onclick="benar8()">Bukan</button>
+             <span id="icon9" class="icon"></span>
+             <p class="hilang bnr" id="bahas17">Jawaban anda benar</p>
+             <p class="hilang slh" id="bahas18">Jawaban anda salah</p>
+         </div>
+  
+         <div class="mySlides">
+          <p>Manakah yang merupakan persamaan linier satu variabel?</p>
+             <div>10. x<sup>2</sup> = 15 - 2x</div><br>
+             <button id="salah9" onclick="salah9()">Persamaan</button>
+             <button id="benar9" onclick="benar9()">Bukan</button>
+             <span id="icon10" class="icon"></span>
+             <p class="hilang bnr" id="bahas19">Jawaban anda benar</p>
+             <p class="hilang slh" id="bahas20">Jawaban anda salah</p>
+         </div>
+  
         
         <a class="pre" onclick="plusSlides(-1)">❮</a>
         <a class="nex" onclick="plusSlides(1)">❯</a>
@@ -137,9 +191,13 @@
           <span class="dot" onclick="currentSlide(3)">3</span> 
           <span class="dot" onclick="currentSlide(4)">4</span>
           <span class="dot" onclick="currentSlide(5)">5</span>
+          <span class="dot" onclick="currentSlide(6)">6</span> 
+          <span class="dot" onclick="currentSlide(7)">7</span> 
+          <span class="dot" onclick="currentSlide(8)">8</span> 
+          <span class="dot" onclick="currentSlide(9)">9</span>
+          <span class="dot" onclick="currentSlide(10)">10</span>
         </div>       
   </div>
-  
 </div>
 
 </article>
@@ -156,6 +214,14 @@
 </section>
 
 <script src="materi1_1.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 
 <footer>
     <p><marquee>Copyright Siti Aisyah</marquee></p>

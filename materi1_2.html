@@ -68,6 +68,11 @@
       				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
       			</ul>
             <ul class="noo"><b>Contoh 2:</b><br><br>
+      				<li>Pilihlah salah satu jawaban antara <b>Persamaan</b> atau <b>Bukan</b></li>
+      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
+      			</ul>
+            <ul class="noo"><b>Contoh 2:</b><br><br>
       				<li>Ketika kamu mengklik kotak jawaban, warna kata pada soal akan berubah menjadi <span class="biru">warna biru</span>. Salin kata tersebut ke kotak jawaban!
 			        <li>Setelah kotak jawaban terisi semua, tekan tombol "Cek Jawaban".</li>
 			        <li>Jika jawaban kamu benar, maka akan muncul tulisan <span class="bnr">"Jawaban kamu benar"</span></li>
@@ -79,6 +84,7 @@
       <center>
           <button class="no1">&nbsp;Contoh 1</button>
           <button class="no2">&nbsp;Contoh 2</button>
+          <button class="no3">&nbsp;Contoh 3</button>
           </center>
           <br>
            <div class="contoh1">
@@ -132,8 +138,67 @@
 
            </div>
 
+           <div class="contoh2">
+            <table>
+              <tr>
+                <th colspan="3">Manakah yang merupakan persamaan linier satu variabel?</th>
+              </tr>
+              <tr>
+                <th>1.</th>
+                <th>4x + 5 = 9</th>
+                <th>
+                 <button class="cekulang" id="plsv1" onclick="plsv1()"><b>Persamaan</b></button>
+                 <button class="cekulang" id="bplsv1" onclick="bplsv1()"><b>Bukan</b></button>
+                 <span id="icon01" class="icon"></span>
+               </th>
+              </tr>
+
+              <tr class="hilang" id="persamaan2">
+                <th>2.</th>
+                <th>x<sup>2</sup> + 2x + 1 = 0</th>
+                <th>
+                 <button class="cekulang" id="plsv2" onclick="plsv2()"><b>Persamaan</b></button>
+                 <button class="cekulang" id="bplsv2" onclick="bplsv2()"><b>Bukan</b></button>
+                 <span id="icon02" class="icon"></span>
+               </th>
+              </tr>
             
-            <div class="contoh2 kotak">
+              <tr class="hilang" id="persamaan3">
+                <th>3.</th>
+                <th>3( x + 1 ) ≥ 9</th>
+                <th>
+                 <button class="cekulang" id="plsv3" onclick="plsv3()"><b>Persamaan</b></button>
+                 <button class="cekulang" id="bplsv3" onclick="bplsv3()"><b>Bukan</b></button>
+                 <span id="icon03" class="icon"></span>
+               </th>
+              </tr>
+
+              <tr class="hilang" id="persamaan4">
+                <th>4.</th>
+                <th>p + $\frac{1}{p}$ = 2$\frac{1}{2}$</th>
+                <th>
+                 <button class="cekulang" id="plsv4" onclick="plsv4()"><b>Persamaan</b></button>
+                 <button class="cekulang" id="bplsv4" onclick="bplsv4()"><b>Bukan</b></button>
+                 <span id="icon04" class="icon"></span>
+               </th>
+              </tr>
+            </table>
+            <br>
+              
+              <div class="hilang kotak" id="bahas">
+                <center>Pembahasan</center>
+                <ol>
+                  <li>a. 4x + 5 = 9, merupakan PLSV</li>
+                  <li>x<sup>2</sup> + 2x + 1 = 0, bukan PLSV karena mempunyai pangkat lebih dari satu</li>
+                  <li>3( x + 1 ) ≥ 9, bukan karena tanda hubung bukan sama dengan (=)</li>
+                  <li>p + $\frac{1}{p}$ = 2$\frac{1}{2}$, merupakan PLSV</li>
+                </ol>
+              </div>
+          
+          </div>
+
+            
+            <div class="contoh3 kotak">
             <p>Tulislah kalimat berikut menjadi sebuah persamaan linear satu variabel!</p>
             <p>1. Jumlah suatu bilangan <span id="h11" class="">n</span> dan <span id="h12" class="">7</span> sama dengan <span id="h13" class="">15</span>.</p>
             <br>
@@ -186,6 +251,15 @@
 </section>
 
 <script src="materi1.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 
 
 <footer>

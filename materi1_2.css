@@ -342,7 +342,7 @@ h1{
       color: white;
       background-color: #993333;
       font-family: sans-serif;
-      width: 45%;
+      width: 30%;
       padding: 10px;
       margin-right: 5px;
       margin-top: -15px;
@@ -366,6 +366,7 @@ h1{
       background-color: gray;
       cursor: pointer;
     }
+  
   
   .lanjut01, .lanjut02, .lanjut03 {
     background-color: #666666;
@@ -799,9 +800,19 @@ h1{
                 left: 135%;
                 }
 
-    .no1, .no2{
-    font-size: 16px
-    }
+                .no1, .no2, .no3 {
+                  display: inline-block;
+                  color: white;
+                  background-color: #993333;
+                  font-family: sans-serif;
+                  width: 50%;
+                  padding: 10px;
+                  margin: 2px -2px;
+                  cursor: pointer;
+                  border: 1px solid;
+                  border-radius: 5px;
+                  font-size: 15px
+                }
 
     #tujuan{
       font-size: 15px;

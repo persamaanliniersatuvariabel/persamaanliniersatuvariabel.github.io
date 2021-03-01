@@ -87,6 +87,11 @@ h1{
     text-align: justify;
   }
 
+  .animasi{
+    height:365px;
+    width:470px;
+  }
+
   nav {
     float: left;
     width: 20%;
@@ -223,6 +228,7 @@ h1{
     height: 55px;
     border: 1px solid #aaaaaa;
   }
+
   
   .indikator{
     background-color: #666666;
@@ -387,6 +393,7 @@ h1{
       height: 30px;
       width: 30px;
       margin: 0 2px;
+      padding: 3px;
       background-color: #bbb;
       border-style: groove;
       border-radius: 30%;
@@ -442,6 +449,11 @@ h1{
       width: 7%;
       float: right;
       margin-top: -30px;
+    }
+
+    .animasi{
+      height:200px;
+      width:260px;
     }
 
     .citi, .citie, .cities {

@@ -373,6 +373,7 @@ h1{
     height: 30px;
     width: 30px;
     margin: 0 2px;
+    padding: 3px;
     background-color: #bbb;
     border-style: groove;
     border-radius: 30%;

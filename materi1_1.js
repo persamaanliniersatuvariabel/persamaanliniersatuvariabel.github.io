@@ -100,6 +100,81 @@ function benar(){
     himpunan10.className = himpunan10.className.replace("hilang","");
   }
 
+  function benar5(){
+    var himpunan11 = document.getElementById("bahas11");
+    var bhim5 = document.getElementById("salah5");
+    bhim5.className += " hilang";
+    document.getElementById("icon6").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan11.className = himpunan11.className.replace("hilang","");
+  }
+  function salah5(){
+    var himpunan12 = document.getElementById("bahas12");
+    var him5 = document.getElementById("benar5");
+    him5.className += " hilang";
+    document.getElementById("icon6").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan12.className = himpunan12.className.replace("hilang","");
+  }
+
+  function benar6(){
+    var himpunan13 = document.getElementById("bahas13");
+    var bhim6 = document.getElementById("salah6");
+    bhim6.className += " hilang";
+    document.getElementById("icon7").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan13.className = himpunan13.className.replace("hilang","");
+  }
+  function salah6(){
+    var himpunan14 = document.getElementById("bahas14");
+    var him6 = document.getElementById("benar6");
+    him6.className += " hilang";
+    document.getElementById("icon7").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan14.className = himpunan14.className.replace("hilang","");
+  }
+
+  function benar7(){
+    var himpunan15 = document.getElementById("bahas15");
+    var bhim7 = document.getElementById("salah7");
+    bhim7.className += " hilang";
+    document.getElementById("icon8").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan15.className = himpunan15.className.replace("hilang","");
+  }
+  function salah7(){
+    var himpunan16 = document.getElementById("bahas16");
+    var him7 = document.getElementById("benar7");
+    him7.className += " hilang";
+    document.getElementById("icon8").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan16.className = himpunan16.className.replace("hilang","");
+  }
+
+  function benar8(){
+    var himpunan17 = document.getElementById("bahas17");
+    var bhim8 = document.getElementById("salah8");
+    bhim8.className += " hilang";
+    document.getElementById("icon9").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan17.className = himpunan17.className.replace("hilang","");
+  }
+  function salah8(){
+    var himpunan18 = document.getElementById("bahas18");
+    var him8 = document.getElementById("benar8");
+    him8.className += " hilang";
+    document.getElementById("icon9").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan18.className = himpunan18.className.replace("hilang","");
+  }
+
+  function benar9(){
+    var himpunan19 = document.getElementById("bahas19");
+    var bhim9 = document.getElementById("salah9");
+    bhim9.className += " hilang";
+    document.getElementById("icon10").innerHTML = "<img src='benar.jpg' width='15px'>";
+    himpunan19.className = himpunan19.className.replace("hilang","");
+  }
+  function salah9(){
+    var himpunan20 = document.getElementById("bahas20");
+    var him9 = document.getElementById("benar9");
+    him9.className += " hilang";
+    document.getElementById("icon10").innerHTML = "<img src='salah.png' width='15px'>";
+    himpunan20.className = himpunan20.className.replace("hilang","");
+  }
+
   var y = document.getElementById("tujuan");
   var yy= document.querySelector('.tujuan');
 

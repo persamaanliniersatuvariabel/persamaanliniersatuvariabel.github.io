@@ -5,17 +5,25 @@ yy.addEventListener("click",function(){
 y.classList.toggle("hilang");
 })
   
-  $(document).ready(function(){
-    $(".contoh2").hide();
-          $(".no1").click(function(){
-                $(".contoh2").hide(0);
-                $(".contoh1").show(200);
-          });
-          $(".no2").click(function(){
-                $(".contoh2").show(200);
-                $(".contoh1").hide(0);
-          });
-  });
+$(document).ready(function(){
+  $(".contoh2").hide();
+  $(".contoh3").hide();
+        $(".no1").click(function(){
+              $(".contoh2").hide(0);
+              $(".contoh3").hide(0);
+              $(".contoh1").show(200);
+        });
+        $(".no2").click(function(){
+              $(".contoh2").show(200);
+              $(".contoh1").hide(0);
+              $(".contoh3").hide(0);
+        });
+        $(".no3").click(function(){
+              $(".contoh3").show(200);
+              $(".contoh2").hide(0);
+              $(".contoh1").hide(0);
+        });
+});
   
 
 /*kumpulan 1*/
@@ -73,6 +81,73 @@ function bhim3(){
   document.getElementById("icon3").innerHTML = "<img src='salah.png' width='15px'>";
   himpunan3.className = himpunan3.className.replace("hilang","");
 }
+
+// plsv 1
+function plsv1(){
+  var persamaan = document.getElementById("persamaan2");
+  var bplsv = document.getElementById("bplsv1");
+  bplsv.className += " hilang";
+  document.getElementById("icon01").innerHTML = "<img src='benar.jpg' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+function bplsv1(){
+  var persamaan = document.getElementById("persamaan2");
+  var plsv = document.getElementById("plsv1");
+  plsv.className += " hilang";
+  document.getElementById("icon01").innerHTML = "<img src='salah.png' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+
+// plsv 2
+function plsv2(){
+  var persamaan = document.getElementById("persamaan3");
+  var bplsv = document.getElementById("bplsv2");
+  bplsv.className += " hilang";
+  document.getElementById("icon02").innerHTML = "<img src='benar.jpg' width='15px'>";
+  document.getElementById("icon02").innerHTML = "<img src='salah.png' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+function bplsv2(){
+  var persamaan = document.getElementById("persamaan3");
+  var plsv = document.getElementById("plsv2");
+  plsv.className += " hilang";
+  document.getElementById("icon02").innerHTML = "<img src='benar.jpg' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+
+// plsv 3
+function plsv3(){
+  var persamaan = document.getElementById("persamaan4");
+  var bplsv = document.getElementById("bplsv3");
+  bplsv.className += " hilang";
+  document.getElementById("icon03").innerHTML = "<img src='benar.jpg' width='15px'>";
+  document.getElementById("icon03").innerHTML = "<img src='salah.png' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+function bplsv3(){
+  var persamaan = document.getElementById("persamaan4");
+  var plsv = document.getElementById("plsv3");
+  plsv.className += " hilang";
+  document.getElementById("icon03").innerHTML = "<img src='benar.jpg' width='15px'>";
+  persamaan.className = persamaan.className.replace("hilang","");
+}
+
+// plsv 4
+function plsv4(){
+  var persamaan4 = document.getElementById("bahas");
+  var bplsv = document.getElementById("bplsv4");
+  bplsv.className += " hilang";
+  document.getElementById("icon04").innerHTML = "<img src='benar.jpg' width='15px'>";
+  persamaan4.className = persamaan4.className.replace("hilang","");
+}
+function bplsv4(){
+  var persamaan4 = document.getElementById("bahas");
+  var plsv = document.getElementById("plsv4");
+  plsv.className += " hilang";
+  document.getElementById("icon04").innerHTML = "<img src='salah.png' width='15px'>";
+  persamaan4.className = persamaan4.className.replace("hilang","");
+}
+
 
 //petunjuk
 function ubah1_1(){

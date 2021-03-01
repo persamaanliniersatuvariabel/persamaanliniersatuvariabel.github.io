@@ -526,6 +526,9 @@ th, td {
     transform: translateY(4px);
   }
 
+  .icon{
+    padding-left: 10px;
+  }
 
   .bnr{
     color:green;
@@ -620,7 +623,6 @@ th, td {
     .dot-container {
         text-align: center;
         padding: 10px;
-        background: #ddd;
     }
     
     .dot {
@@ -629,6 +631,7 @@ th, td {
       height: 30px;
       width: 30px;
       margin: 0 2px;
+      padding: 3px;
       background-color: #bbb;
       border-style: groove;
       border-radius: 30%;

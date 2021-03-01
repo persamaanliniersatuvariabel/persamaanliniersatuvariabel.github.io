@@ -66,60 +66,50 @@
         <div id="tujuan" class="hilang">
       			<ul class="noo">
               <li>Latihan ini terdiri dari 5 soal!</li>
-              <li>Soal 1-2 dengan cara dibawah ini!</li>
-              <li>Soal Pilihlah salah satu jawaban antara <b>benar</b> atau <b>salah</b></li>
-      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"></li>
-      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"></li>
-      				<li>Soal 3-5 dengan cara dibawah ini!</li>
               <li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
               <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
-      				<li>Jika jawaban kamu benar, akan muncul "jawaban anda benar"</li>
-      				<li>Jika jawaban kamu salah, akan muncul "jawaban anda salah, coba lagi!"</li>
+      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"> dan "jawaban anda salah, coba lagi!"</li>
       			</ul>
 			</div>
 
       <div class="slideshow-container">
-
-        <div class="mySlides">
-         <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
-      <div>1.	2(x – 1) = x(2 – x)</div><br>
-      <button id="benar" onclick="benar()">Benar</button>
-      <button id="salah" onclick="salah()">Salah</button>
-      <span id="icon1" class="icon"></span>
-      <p class="hilang bnr" id="bahas1">Jawaban anda benar</p>
-      <p class="hilang slh" id="bahas2">Jawaban anda salah, coba lagi!</p>
-        </div>
         
         <div class="mySlides">
-        <p>Tentukan mana yang termasuk persamaan linier satu variabel?</p>
-        <div>2.	$\frac{1}{x}$ + $\frac{1}{y}$ = 2</div><br>
-      <button id="salah1" onclick="salah1()">Benar</button>
-      <button id="benar1" onclick="benar1()">salah</button>
-      <span id="icon2" class="icon"></span>
-      <p class="hilang bnr" id="bahas3">Jawaban anda benar</p>
-      <p class="hilang slh" id="bahas4">Jawaban anda salah, coba lagi!</p>
-        </div>
-        
-        <div class="mySlides">
-        <p>Tentukan penyelesaian setiap persamaan berikut.<br>3. 2x + 3 = 9</p>
-        <input type="text" id="input" value="" style="width: 28px; text-align: center;"></p>
+        <p>Tentukan penyelesaian setiap persamaan berikut.<br>1. 2x + 3 = 9</p>
+        <input type="text" id="input" value="" style="width: 28px; text-align: center;"><span id="icon1" class="icon"></span></p>
         <button onclick="pertama()">Cek Jawaban</button>
         <p id="cek"></p>
         </div>
         
         <div class="mySlides">
-        <p>Tentukan penyelesaian setiap persamaan berikut.<br>4. -3x = 18</p>
-        <input type="text" id="input2" value="" style="width: 28px; text-align: center;"> </p>
+        <p>Tentukan penyelesaian setiap persamaan berikut.<br>2. -3x = 18</p>
+        <input type="text" id="input2" value="" style="width: 28px; text-align: center;"><span id="icon2" class="icon"></span></p>
         <button onclick="kedua()">Cek Jawaban</button>
         <p id="ccek"></p>
         </div>
 
         <div class="mySlides">
-          <p>Tentukan penyelesaian setiap persamaan berikut.<br>5. 5x -12 = 2(x + 6)</p>
-          <input type="text" id="input3" value="" style="width: 28px; text-align: center;"> </p>
+          <p>Tentukan penyelesaian setiap persamaan berikut.<br>3. $\frac{1}{2}$n = $\frac{3}{2}$</p>
+          <input type="text" id="input3" value="" style="width: 28px; text-align: center;"><span id="icon3" class="icon"></span></p>
           <button onclick="ketiga()">Cek Jawaban</button>
           <p id="cccek"></p>
           </div>
+        
+          <div class="mySlides">
+            <p>Tentukan penyelesaian setiap persamaan berikut.<br>4.	2m – 5 = 9 – 5m</p>
+            <input type="text" id="input4" value="" style="width: 28px; text-align: center;"><span id="icon4" class="icon"></span></p>
+            <button onclick="keempat()">Cek Jawaban</button>
+            <p id="cekk"></p>
+            </div>
+
+            <div class="mySlides">
+              <p>Tentukan penyelesaian setiap persamaan berikut.<br>5. 5x -12 = 2(x + 6)</p>
+              <input type="text" id="input5" value="" style="width: 28px; text-align: center;"><span id="icon5" class="icon"></span></p>
+              <button onclick="kelima()">Cek Jawaban</button>
+              <p id="cekkk"></p>
+              </div>
+        
     
         
         <a class="pre" onclick="plusSlides(-1)">❮</a>
