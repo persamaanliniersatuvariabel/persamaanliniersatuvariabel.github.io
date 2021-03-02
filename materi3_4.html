@@ -65,7 +65,12 @@
       <button class="tujuan">Klik untuk melihat petunjuk</button><br>
         <div id="tujuan" class="hilang">
       			<ul class="noo">
-              <li>Latihan ini terdiri dari 5 soal!</li>
+              <li>Latihan ini terdiri dari 9 soal!</li>
+              <li>soal nomor 1-4</li>
+              <li>Pilihlah salah satu jawaban antara <b>Persamaan</b> atau <b>Bukan</b></li>
+              <li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"> dan "jawaban anda salah"</li>
+              <li>soal nomor 5-9</li>
               <li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
               <li>Tekan tombol "cek jawaban", untuk mengoreksi jawaban anda</li>
       				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
@@ -76,6 +81,46 @@
 			</div>
 
         <div class="slideshow-container">
+
+          <div class="mySlides">
+            <p>Manakah yang merupakan pertidaksamaan linier satu variabel?</p>
+               <div>4x + 1 < 7</div><br>
+               <button id="benar5" onclick="benar5()">Pertidaksamaan</button>
+               <button id="salah5" onclick="salah5()">Bukan</button>
+               <span id="icon6" class="icon"></span>
+               <p class="hilang bnr" id="bahas11">Jawaban anda benar</p>
+               <p class="hilang slh" id="bahas12">Jawaban anda salah</p>
+           </div>
+    
+           <div class="mySlides">
+            <p>Manakah yang merupakan pertidakksamaan linier satu variabel?</p>
+               <div>2x + y = 0</div><br>
+               <button id="salah6" onclick="salah6()">Pertidaksamaan</button>
+               <button id="benar6" onclick="benar6()">Bukan</button>
+               <span id="icon7" class="icon"></span>
+               <p class="hilang bnr" id="bahas13">Jawaban anda benar</p>
+               <p class="hilang slh" id="bahas14">Jawaban anda salah</p>
+           </div>
+    
+           <div class="mySlides">
+            <p>Manakah yang merupakan pertidaksamaan linier satu variabel?</p>
+               <div>5p = 8 ≤ 3</div><br>
+               <button id="benar7" onclick="benar7()">Pertidaksamaan</button>
+               <button id="salah7" onclick="salah7()">Bukan</button>
+               <span id="icon8" class="icon"></span>
+               <p class="hilang bnr" id="bahas15">Jawaban anda benar</p>
+               <p class="hilang slh" id="bahas16">Jawaban anda salah</p>
+           </div>
+    
+           <div class="mySlides">
+            <p>Manakah yang merupakan pertidaksamaan linier satu variabel?</p>
+               <div>x<sup>2</sup> ≥ 6</div><br>
+               <button id="salah8" onclick="salah8()">Pertidaksamaan</button>
+               <button id="benar8" onclick="benar8()">Bukan</button>
+               <span id="icon9" class="icon"></span>
+               <p class="hilang bnr" id="bahas17">Jawaban anda benar</p>
+               <p class="hilang slh" id="bahas18">Jawaban anda salah</p>
+           </div>
 
             <div class="mySlides">
             <p>Tulis pertidaksamaan untuk setiap garis bilangan berikut.</p>
@@ -196,6 +241,10 @@
         <span class="dot" onclick="currentSlide(3)">3</span> 
         <span class="dot" onclick="currentSlide(4)">4</span>
         <span class="dot" onclick="currentSlide(5)">5</span>
+        <span class="dot" onclick="currentSlide(6)">6</span> 
+        <span class="dot" onclick="currentSlide(7)">7</span> 
+        <span class="dot" onclick="currentSlide(8)">8</span>
+        <span class="dot" onclick="currentSlide(9)">9</span>
       </div>    
 </div>
   </article>

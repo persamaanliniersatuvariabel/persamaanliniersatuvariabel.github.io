@@ -177,6 +177,70 @@ function ulang1(){
   bahasslh.className = bahasslh.className.replace("tampil", "");
 }
 
+//no2
+//petunjuk
+function ubah2_1(){
+  var nama = document.getElementById("h21");
+  nama.className += "tebalbiru";
+}
+function ubah2_2(){
+  var syarat = document.getElementById("h22");
+  syarat.className += "tebalbiru";
+}
+
+//cek jawaban
+function cek2(){
+  var var01 = document.getElementById("var01");
+  var ang01 = document.getElementById("ang01");
+  var ulang = document.getElementById("ulang2");
+  var bahasbnr = document.getElementById("bahasbnr2");
+  var bahasslh = document.getElementById("bahasslh2");
+
+
+  //cek
+  if(var01.value=="-1" && ang01.value=="2"){
+    document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
+    bahasbnr.className += "tampil";
+    document.getElementById('lanjut2').className = document.getElementById('lanjut2').className.replace('hilang','');
+  } else{
+    ulang.className += " tampil";
+    document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
+    bahasslh.className += "tampil";
+  }
+
+  if(var01.value=="" || ang01.value==""){
+    alert("Ups! Jawabanmu masih belum lengkap");
+  }
+
+  //boxmerah
+  if(var01.value!="-1"){
+    var01.className += " boxmerah";
+  }
+  if(ang01.value!="2"){
+    ang01.className += " boxmerah";
+  }
+}
+
+//ulang
+function ulang2(){
+  var nama = document.getElementById("h21");
+  var syarat = document.getElementById("h22");
+  var var1 = document.getElementById("var01");
+  var ang1 = document.getElementById("ang01");
+  var ulang = document.getElementById("ulang2");
+  var bahasslh = document.getElementById("bahasslh2");
+
+  nama.className = nama.className.replace("tebalbiru","");
+  syarat.className = syarat.className.replace("tebalbiru","");
+  var1.value = "";
+  ang1.value = "";
+  var1.className = var1.className.replace("boxmerah","");
+  ang1.className = ang1.className.replace("boxmerah","");
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon1").innerHTML = "";
+  bahasslh.className = bahasslh.className.replace("tampil", "");
+}
+
 $(document).ready(function(){
   $(".tampil01").hide();
         $(".lanjut01").click(function(){

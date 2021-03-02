@@ -98,7 +98,7 @@
                  <th>
                   <button class="cekulang" id="him1" onclick="him1()"><b>Pertidaksamaan</b></button>
                   <button class="cekulang" id="bhim1" onclick="bhim1()"><b>Bukan</b></button>
-                  <span id="icon1" class="icon"></span>
+                  <span id="icon1"></span>
                 </th>
                 <tr class="hilang" id="bahas1">
                   <th>Pembahasan</th>
@@ -111,7 +111,7 @@
                  <th>
                   <button class="cekulang" id="him2" onclick="him2()"><b>Pertidaksamaan</b></button>
                   <button class="cekulang" id="bhim2" onclick="bhim2()"><b>Bukan</b></button>
-                  <span id="icon2" class="icon"></span>
+                  <span id="icon2"></span>
                 </th>
                </tr>
                <tr class="hilang" id="bahas2">
@@ -125,7 +125,7 @@
                  <th>
                   <button class="cekulang" id="him3" onclick="him3()"><b>Pertidaksamaan</b></button>
                   <button class="cekulang" id="bhim3" onclick="bhim3()"><b>Bukan</b></button>
-                  <span id="icon3" class="icon"></span>
+                  <span id="icon3"></span>
                 </th>
                </tr>
                <tr class="hilang" id="bahas3">
@@ -139,7 +139,7 @@
                  <th>
                   <button class="cekulang" id="him4" onclick="him4()"><b>Pertidaksamaan</b></button>
                   <button class="cekulang" id="bhim4" onclick="bhim4()"><b>Bukan</b></button>
-                  <span id="icon4" class="icon"></span>
+                  <span id="icon4"></span>
                  </th>
                </tr>
                <tr class="hilang" id="bahas">
@@ -162,7 +162,25 @@
 
             
             <div class="contoh2 kotak">
-            <p>Tulislah kalimat berikut menjadi sebuah pertidaksamaan linear satu variabel!</p>
+              <p>1. Tulislah kalimat berikut menjadi sebuah pertidaksamaan linear satu variabel!</p>
+              <p><span id="h21" class="">-1</span> kurang dari <span id="h22" class="">2</span>.</p>
+              <br>
+              <input type="text" class="input1" id="var01" onclick="ubah2_1()" maxlength="2"> <
+              <input type="text" class="input1" id="ang01" onclick="ubah2_2()" maxlength="1"> 
+              <span id="icon2" class="icon"></span>
+              <br><br>
+              <button class="cekulang" onclick="cek2()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button><br><br>
+              <div class="bahas" id="bahasbnr2">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, persamaan dari kalimat tersebut adalah -1 < 2.
+              </div>
+              <div class="bahas" id="bahasslh2">
+                <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+              </div>
+
+            <div class="hilang" id="lanjut2">
+              <hr>
+            <p>2. Tulislah kalimat berikut menjadi sebuah pertidaksamaan linear satu variabel!</p>
             <p>Suatu bilangan <span id="h11" class="">m</span> ditambah <span id="h12" class="">5</span> hasilnya lebih dari atau sama dengan <span id="h13" class="">-7</span>.</p>
             <br>
             <input type="text" class="input1" id="var1" onclick="ubah1_1()" maxlength="1"> +
@@ -178,6 +196,7 @@
             <div class="bahas" id="bahasslh1">
               <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
             </div>
+              </div>
           </div>
 
           <div class="contoh3 kotak">
