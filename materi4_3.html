@@ -65,14 +65,14 @@
       <button class="tujuan">Klik untuk melihat petunjuk</button><br>
         <div id="tujuan" class="hilang">
       			<ul class="noo">
-              <li>Latihan ini terdiri dari 5 soal!</li>
-              <li>Soal 1-2 dengan cara dibawah ini!</li>
+              <li>Latihan ini terdiri dari 10 soal!</li>
+              <li>Soal 1-4 dengan cara dibawah ini!</li>
               <li>Isilah bagian kosong pada soal dengan cara menarik salah satu pilihan yang ada pada kotak abu-abu dan meletakkannya pada bagian kosong tersebut (<i>drag and drop</i>).</li>
               <li>Setelah menjawab soal, tekan tombol "Cek Jawaban"</li>
       				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px">dan tulisan <span class="bnr">"Jawaban kamu benar"</span></li>
       				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px">dan tulisan <span class="slh">"Jawaban kamu salah"</span></li>
               <li>Tekan tombol "Ulang" untuk mengulang menjawab soal</li>
-              <li>Soal 3-4 dengan cara dibawah ini!</li>
+              <li>Soal 5-10 dengan cara dibawah ini!</li>
               <li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
               <li>Tekan tombol "cek jawaban", untuk mengoreksi jawaban anda</li>
       				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
@@ -93,47 +93,99 @@
                 </tr>
               </table>
               <br>
-        </center>
-        Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari	p < 6<br><br>
-        p < 6 =  <span id="no1" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
-        <span id="icona" class="icon"></span>
-        <br>
-        <br>
-        <button class="cekulang" onclick="ceka()"><b>Cek Jawaban</b></button>
-        <button class="cekulang ulang" onclick="ulanga()" id="ulanga"><b>Ulang</b></button>
-        <br><br>
-        <div class="bahas" id="bahasbnra">
-            <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian p < 6 = {1, 2, 3, 4, 5}.
-        </div>
-        <div class="bahas" id="bahasslha">
-            <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
-        </div>   
+              </center>
+              Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari	p < 6<br><br>
+              p < 6 =  <span id="no1" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+              <span id="icona" class="icon"></span>
+              <br>
+              <br>
+              <button class="cekulang" onclick="ceka()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulanga()" id="ulanga"><b>Ulang</b></button>
+              <br><br>
+              <div class="bahas" id="bahasbnra">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian p < 6 = {1, 2, 3, 4, 5}.
+              </div>
+              <div class="bahas" id="bahasslha">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+              </div>   
+            </div>
+
+            <div class="mySlides">
+              <center>
+              <table class="kotak1">
+                <tr id="pil5" ondragover="allowDrop(event)">
+                    <td draggable='true' ondragstart='drag(event)' id='p15' class='pilihan'>{1, 2}</td>
+                    <td draggable='true' ondragstart='drag(event)' id='p16' class='pilihan'>{1, 2, 3}</td>
+                </tr>
+              </table>
+              <br>
+              </center>
+              Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari 	x + 5 ≤ 7<br><br>
+              x + 5 ≤ 7 = <span id="no3" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+              <span id="iconc" class="icon"></span>
+              <br>
+              <br>
+              <button class="cekulang" onclick="cekc()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulangc()" id="ulangc"><b>Ulang</b></button>
+              <br><br>
+              <div class="bahas" id="bahasbnrc">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian 	x + 5 ≤ 7 = {1, 2}.
+              </div>
+              <div class="bahas" id="bahasslhc">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+              </div>   
             </div>
 
             <div class="mySlides">
               <center>
               <table class="kotak1">
                 <tr id="pil4" ondragover="allowDrop(event)">
-                    <td draggable='true' ondragstart='drag(event)' id='p13' class='pilihan'>{1, 2, 3}</td>
+                    <td draggable='true' ondragstart='drag(event)' id='p13' class='pilihan'>{1, 2, 3, 4}</td>
                     <td draggable='true' ondragstart='drag(event)' id='p14' class='pilihan'>{1, 2, 3, 4, 5}</td>
                 </tr>
               </table>
               <br>
-        </center>
-        Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari -2p < 10<br><br>
-        -2p < 10 = <span id="no2" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
-        <span id="iconb" class="icon"></span>
-        <br>
-        <br>
-        <button class="cekulang" onclick="cekb()"><b>Cek Jawaban</b></button>
-        <button class="cekulang ulang" onclick="ulangb()" id="ulangb"><b>Ulang</b></button>
-        <br><br>
-        <div class="bahas" id="bahasbnrb">
-            <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian -2p < 10 = {1, 2, 3, 4, 5}.
-        </div>
-        <div class="bahas" id="bahasslhb">
-            <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
-        </div>   
+              </center>
+              Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari -2p < 10<br><br>
+              -2p < 10 = <span id="no2" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+              <span id="iconb" class="icon"></span>
+              <br>
+              <br>
+              <button class="cekulang" onclick="cekb()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulangb()" id="ulangb"><b>Ulang</b></button>
+              <br><br>
+              <div class="bahas" id="bahasbnrb">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian -2p < 10 = {1, 2, 3, 4, 5}.
+              </div>
+              <div class="bahas" id="bahasslhb">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+              </div>   
+            </div>
+
+            <div class="mySlides">
+              <center>
+              <table class="kotak1">
+                <tr id="pil8" ondragover="allowDrop(event)">
+                    <td draggable='true' ondragstart='drag(event)' id='p17' class='pilihan'>{1, 2}</td>
+                    <td draggable='true' ondragstart='drag(event)' id='p18' class='pilihan'>{1, 2, 3}</td>
+                </tr>
+              </table>
+              <br>
+              </center>
+              Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian dari 3x < x + 7 <br><br>
+              3x < x + 7  = <span id="no4" class="jawab" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+              <span id="icond" class="icon"></span>
+              <br>
+              <br>
+              <button class="cekulang" onclick="cekd()"><b>Cek Jawaban</b></button>
+              <button class="cekulang ulang" onclick="ulangd()" id="ulangd"><b>Ulang</b></button>
+              <br><br>
+              <div class="bahas" id="bahasbnrd">
+              <span class="bnr">Jawaban kamu benar</span>. Jadi, himpunan selesaian 	3x < x + 7  = {1, 2, 3}.
+              </div>
+              <div class="bahas" id="bahasslhd">
+              <span class="slh">Jawaban kamu salah</span>. Silahkan tekan tombol "Ulang"
+              </div>   
             </div>
 
             <div class="mySlides">
@@ -167,6 +219,25 @@
             </div>
 
             <div class="mySlides">
+              <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+              <p>x + 3 > 6</p>
+                  <input type="text" class="input1" id="var4" onclick="info4()" maxlength="1">
+                  <input type="text" class="input1" id="ang7" onclick="info5()" maxlength="1"> 
+                  <input type="text" class="input1" id="ang8" onclick="info6()" maxlength="2">
+              
+                  <span id="icon4" class="icon"></span>
+                  <br><br>
+                  <button class="cekulang" onclick="cek4()"><b>Cek Jawaban</b></button>
+                  <button class="cekulang ulang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button><br><br>
+                  <div class="bahas" id="bahasbnr4">
+                  <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket3"></span> > 6
+                  </div>
+                  <div class="bahas" id="bahasslh4">
+                    <span class="slh">Jawaban kamu salah</span>.<span id="ket3"></span> Silahkan tekan tombol "Ulang"
+              </div>
+          </div>
+
+            <div class="mySlides">
             <p>Tentukan penyelesaian pertidaksamaan berikut</p>
             <p>7 – 2x < 13</p>
                 <input type="text" class="input1" id="var2" onclick="info4()" maxlength="1">
@@ -185,24 +256,62 @@
             </div>
         </div>
 
-        <div class="mySlides">
-          <p>Tentukan penyelesaian pertidaksamaan berikut</p>
-          <p>2x + 8 ≥ -6 – 5x</p>
-              <input type="text" class="input1" id="var3" onclick="info4()" maxlength="1">
-              <input type="text" class="input1" id="ang5" onclick="info5()" maxlength="1"> 
-              <input type="text" class="input1" id="ang6" onclick="info6()" maxlength="2">
-          
-              <span id="icon3" class="icon"></span>
-              <br><br>
-              <button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
-              <button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br><br>
-              <div class="bahas" id="bahasbnr3">
-              <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket2"></span> > -2
-              </div>
-              <div class="bahas" id="bahasslh3">
-                <span class="slh">Jawaban kamu salah</span>.<span id="ket2"></span> Silahkan tekan tombol "Ulang"
+    <div class="mySlides">
+      <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+      <p>-5x < 20</p>
+          <input type="text" class="input1" id="var5" onclick="info4()" maxlength="1">
+          <input type="text" class="input1" id="ang9" onclick="info5()" maxlength="1"> 
+          <input type="text" class="input1" id="ang10" onclick="info6()" maxlength="2">
+      
+          <span id="icon5" class="icon"></span>
+          <br><br>
+          <button class="cekulang" onclick="cek5()"><b>Cek Jawaban</b></button>
+          <button class="cekulang ulang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button><br><br>
+          <div class="bahas" id="bahasbnr5">
+          <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket4"></span> > -4
           </div>
+          <div class="bahas" id="bahasslh5">
+            <span class="slh">Jawaban kamu salah</span>.<span id="ket4"></span> Silahkan tekan tombol "Ulang"
       </div>
+  </div>
+
+  <div class="mySlides">
+    <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+    <p>2(x + 1) < 1</p>
+        <input type="text" class="input1" id="var6" onclick="info4()" maxlength="1">
+        <input type="text" class="input1" id="ang11" onclick="info5()" maxlength="1"> 
+        <input type="text" class="input1" id="ang12" onclick="info6()" maxlength="4">
+    
+        <span id="icon6" class="icon"></span>
+        <br><br>
+        <button class="cekulang" onclick="cek6()"><b>Cek Jawaban</b></button>
+        <button class="cekulang ulang" onclick="ulang6()" id="ulang6"><b>Ulang</b></button><br><br>
+        <div class="bahas" id="bahasbnr6">
+        <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket5"></span> < -$\frac{1}{2}$ atau -0,5
+        </div>
+        <div class="bahas" id="bahasslh6">
+          <span class="slh">Jawaban kamu salah</span>.<span id="ket5"></span> Silahkan tekan tombol "Ulang"
+    </div>
+</div>
+
+<div class="mySlides">
+  <p>Tentukan penyelesaian pertidaksamaan berikut</p>
+  <p>2x + 8 ≥ -6 – 5x</p>
+      <input type="text" class="input1" id="var3" onclick="info4()" maxlength="1">
+      <input type="text" class="input1" id="ang5" onclick="info5()" maxlength="1"> 
+      <input type="text" class="input1" id="ang6" onclick="info6()" maxlength="2">
+  
+      <span id="icon3" class="icon"></span>
+      <br><br>
+      <button class="cekulang" onclick="cek3()"><b>Cek Jawaban</b></button>
+      <button class="cekulang ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button><br><br>
+      <div class="bahas" id="bahasbnr3">
+      <span class="bnr">Jawaban kamu benar</span>.Jadi Pertidaksamaan dari garis bilangan tersebut adalah <span id="ket2"></span> > -2
+      </div>
+      <div class="bahas" id="bahasslh3">
+        <span class="slh">Jawaban kamu salah</span>.<span id="ket2"></span> Silahkan tekan tombol "Ulang"
+  </div>
+</div>
 
         <a class="pre" onclick="plusSlides(-1)">❮</a>
         <a class="nex" onclick="plusSlides(1)">❯</a>
@@ -214,6 +323,11 @@
         <span class="dot" onclick="currentSlide(3)">3</span> 
         <span class="dot" onclick="currentSlide(4)">4</span>
         <span class="dot" onclick="currentSlide(5)">5</span>
+        <span class="dot" onclick="currentSlide(6)">6</span>
+        <span class="dot" onclick="currentSlide(7)">7</span>
+        <span class="dot" onclick="currentSlide(8)">8</span>
+        <span class="dot" onclick="currentSlide(9)">9</span>
+        <span class="dot" onclick="currentSlide(10)">10</span>
       </div>    
 </div>
   </article>
@@ -230,7 +344,14 @@
 </section>
 
 <script src="materi4_3.js"></script>
-
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 
 <footer>
     <p><marquee>Copyright Siti Aisyah</marquee></p>

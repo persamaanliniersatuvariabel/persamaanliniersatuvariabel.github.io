@@ -129,6 +129,11 @@ h1{
   .item:target .smenu{
     max-height: 10em;
   }
+
+  .no {
+    list-style-type: disc;
+    background-color: white;
+  }
   
   .atas a{
     float: right;
@@ -211,6 +216,13 @@ h1{
     height: 55px;
     border: 1px solid #aaaaaa;
   }
+
+  .kotak1 {
+    text-align: left;
+    width: 100%;
+    border: 1.5px dashed #aaaaaa;
+    padding: 5px 15px;
+}
 
   .batas{
     padding: 10px;
