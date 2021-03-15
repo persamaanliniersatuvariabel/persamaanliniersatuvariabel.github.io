@@ -171,6 +171,11 @@ article {
   overflow: auto;
 }
 
+.animasi{
+  width: 485; 
+  height: 402;
+}
+
 
 .bawah a {
   background-color: white;
@@ -293,6 +298,11 @@ footer {
   .citi, .citie{
     width: 100%;
     margin: 0px;
+  }
+  
+  .animasi{
+    width: 485px; 
+    height: 402px;
   }
 
   table{
