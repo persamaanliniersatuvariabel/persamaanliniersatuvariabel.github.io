@@ -176,6 +176,11 @@ article {
   height: 402;
 }
 
+.active1{
+  background-color: #b3a2a2;
+  color: white;
+  border-radius: 5px;
+}
 
 .bawah a {
   background-color: white;

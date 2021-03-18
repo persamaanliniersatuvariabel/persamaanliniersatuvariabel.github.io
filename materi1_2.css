@@ -223,6 +223,12 @@ h1{
     overflow: auto;
   }
 
+  .active1{
+    background-color: #b3a2a2;
+    color: white;
+    border-radius: 5px;
+  }
+
   .gambarr{
     width: 30%;
   }
@@ -428,6 +434,11 @@ h1{
   .bawah a:hover{
     background-color:  #d27979;
     color: white;
+  }
+
+  .activee{
+    background-color:  #d27979 !important;
+    color: white !important;
   }
   
   .hilang{

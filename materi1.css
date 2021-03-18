@@ -92,6 +92,12 @@ h1{
     width:470px;
   }
 
+  .active1{
+    background-color: #b3a2a2;
+    color: white;
+    border-radius: 5px;
+  }
+
   nav {
     float: left;
     width: 20%;
@@ -338,6 +344,11 @@ h1{
     .bawah a:hover{
       background-color:  #d27979;
       color: white;
+    }
+
+    .activee{
+      background-color:  #d27979 !important;
+      color: white !important;
     }
 
     .slideshow-container {
