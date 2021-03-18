@@ -41,7 +41,9 @@ p.indent{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
+
 header {
   background-color: #a6294b;
   padding: 10px;
@@ -108,7 +110,7 @@ p.rata{
 nav {
   float: left;
   width: 20%;
-  height: 550px;
+  height: 500px;
   background: #e6e6e6;
   padding: 5px;
 }
@@ -153,7 +155,7 @@ nav ul {
 }
 
 .item:target .smenu{
-  max-height: 10em;
+  max-height: 20em;
 }
 
 .atas a{
@@ -201,9 +203,9 @@ article {
   background-color: white;
   border: 1px solid #ff4da6;
   color: black;
-  margin: 10px;
-  width: 100%;
-  height: 450px;
+  margin: 0px;
+  width: 101%;
+  height: 480px;
   padding: 20px;
   overflow: auto;
 }
@@ -265,6 +267,12 @@ article {
 .animasi{
   height:365px;
   width:470px;
+}
+
+.active1{
+  background-color: #b3a2a2;
+  color: white;
+  /* border-radius: 5px; */
 }
 
 .grafik{
@@ -503,7 +511,7 @@ th, td {
   color: black;
   border: 2px solid #660033;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   text-align: center;
   text-decoration: none;
   display:inline-block;
@@ -512,6 +520,11 @@ th, td {
 .bawah a:hover{
   background-color:  #d27979;
   color: white;
+}
+
+.activee{
+  background-color:  #d27979 !important;
+  color: white !important;
 }
 
 .hilang{
@@ -650,7 +663,7 @@ section:after {
 }
 footer {
   background-color: #a6294b;
-  padding: 1px;
+  padding: 4px;
   text-align: center;
   color: white;
 }
@@ -659,6 +672,10 @@ footer {
     nav, article {
       width: 100%;
       height: auto;
+    }
+
+    body{
+      overflow: auto;
     }
   
     h2{
@@ -811,7 +828,7 @@ footer {
       text-align: center;
       text-decoration: none;
       display:inline-block;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     
   }

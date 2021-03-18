@@ -110,7 +110,7 @@ nav ul {
 }
 
 .item:target .smenu{
-  max-height: 10em;
+  max-height: 20em;
 }
 
 ul {
@@ -182,7 +182,7 @@ article {
 .active1{
   background-color: #b3a2a2;
   color: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .bawah a {
