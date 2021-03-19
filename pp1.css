@@ -362,7 +362,7 @@ h1{
 
     .contoh1, .contoh2, .contoh3{
       padding-left: 15px;
-      font-size: 18px;
+      /* font-size: 18px; */
       line-height: 1.5;
     }
     

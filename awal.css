@@ -167,9 +167,9 @@ article {
   background-color: white;
   border: 3px dashed #7d9c9c;
   color: black;
-  margin: 10px;
-  width: 123%;
-  height: 450px;
+  margin: 5px;
+  width: 125%;
+  height: 460px;
   padding: 10px;
   overflow: auto;
 }
@@ -251,26 +251,21 @@ table{
     width: 30%;
     padding: 10px;
     margin-right: 5px;
-    margin-top: -15px;
+    margin-top: -20px;
     cursor: pointer;
     border: 1px solid;
     border-radius: 5px;
     font-size: 18px
   }
   
-  .no1:hover{
+  .no1:hover, .no2:hover, .no3:hover{
     background-color: #7d9c9c;
     cursor: pointer;
+    border-style: outset;
   }
-  
-  .no2:hover{
-    background-color: #7d9c9c;
-    cursor: pointer;
-  }
-  
-  .no3:hover{
-    background-color: #7d9c9c;
-    cursor: pointer;
+
+  .active2{
+    background-color: #8e9999;
   }
 
 
@@ -282,7 +277,7 @@ section:after {
 
 footer {
   background-color: #a6294b;
-  padding: 4px;
+  padding: 5px;
   text-align: center;
   color: white;
 }
