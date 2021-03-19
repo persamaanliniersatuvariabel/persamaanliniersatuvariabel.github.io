@@ -309,9 +309,10 @@ footer {
   }
   
   .animasi{
-    width: 485px; 
-    height: 402px;
+    height:200px;
+    width:260px;
   }
+
 
   table{
     font-size: 15px;
