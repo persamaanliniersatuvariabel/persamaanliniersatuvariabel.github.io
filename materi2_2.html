@@ -68,8 +68,9 @@
               <li>Latihan ini terdiri dari 5 soal!</li>
       				<li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
               <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
-      				<li>Jika jawaban kamu benar, akan muncul "jawaban anda benar"</li>
-      				<li>Jika jawaban kamu salah, akan muncul "jawaban anda salah, coba lagi!"</li>
+      				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"> dan "jawaban anda salah, coba lagi!"</li>
+              <li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
       			</ul>
 			</div>
 
@@ -77,36 +78,41 @@
 
         <div class="mySlides">
           <p>1. Tentukan penyelesaian dari persamaan x + 16 = 19, jika pengganti bilangan antara {1, 2, 3, 4, 5}?<br><br>
-			    <input type="text" id="input" value="" style="width: 28px; text-align: center;"> </p>
+			    <input type="text" id="input" value="" style="width: 28px; text-align: center;">&ensp;<span id="icon1" class="icon"></span></p>
           <button onclick="pertama()">Cek Jawaban</button>
+          <button class="ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
 					<p id="cek"></p>
           </div>
           
           <div class="mySlides">
           <p>2. Tentukan penyelesaian dari persamaan y - 8 = 2, jika pengganti bilangan antara {6, 7, 8, 9, 10}?<br><br>
-		      <input type="text" id="input2" value="" style="width: 28px; text-align: center;"></p>
+		      <input type="text" id="input2" value="" style="width: 28px; text-align: center;">&ensp;<span id="icon2" class="icon"></span></p>
           <button onclick="kedua()">Cek Jawaban</button>
+          <button class="ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
 					<p id="ccek"></p>
           </div>
           
           <div class="mySlides">
           <p>3. Tentukan penyelesaian dari persamaan 7 = - 8 + a, jika pengganti bilangan antara {11, 12, 13, 14, 15}?<br><br>
-		      <input type="text" id="input3" value="" style="width: 28px; text-align: center;"> </p>
+		      <input type="text" id="input3" value="" style="width: 28px; text-align: center;">&ensp;<span id="icon3" class="icon"></span></p>
           <button onclick="ketiga()">Cek Jawaban</button>
+          <button class="ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button>
 					<p id="cccek"></p>
           </div>
 
           <div class="mySlides">
           <p>4. Tentukan penyelesaian dari persamaan 2x + 1 = 5<br><br>
-          <input type="text" id="input4" value="" style="width: 28px; text-align: center;"> </p>
+          <input type="text" id="input4" value="" style="width: 28px; text-align: center;">&ensp;<span id="icon4" class="icon"></span></p>
           <button onclick="keempat()">Cek Jawaban</button>
+          <button class="ulang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button>
           <p id="cekk"></p>
           </div>
 
             <div class="mySlides">
             <p>5. Tentukan penyelesaian dari persamaan $\frac{y}{7}$ = 3<br><br>
-            <input type="text" id="input5" value="" style="width: 28px; text-align: center;"> </p>
+            <input type="text" id="input5" value="" style="width: 28px; text-align: center;">&ensp;<span id="icon5" class="icon"></span></p>
             <button onclick="kelima()">Cek Jawaban</button>
+            <button class="ulang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button>
             <p id="cekkk"></p>
             </div>
           

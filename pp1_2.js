@@ -30,9 +30,11 @@ function showSlides(n) {
    var jawaban;
    if (x == "10") {
      jawaban = "Jawaban Anda Benar";
+     document.getElementById("cek").style.color = "green";
      document.getElementById("icon1").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
+     document.getElementById("cek").style.color = "red";
      document.getElementById("icon1").innerHTML = "<img src='salah.png' width='15px'>";
    }
    document.getElementById("cek").innerHTML = jawaban;
@@ -43,9 +45,11 @@ function showSlides(n) {
    var jawaban;
    if (x == "-6") {
     jawaban = "Jawaban Anda Benar";
+    document.getElementById("ccekk").style.color = "green";
     document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
+     document.getElementById("ccekk").style.color = "red";
      document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("ccek").innerHTML = jawaban;
@@ -56,9 +60,11 @@ function showSlides(n) {
    var jawaban;
    if (x == "13") {
     jawaban = "Jawaban Anda Benar";
+    document.getElementById("cccek").style.color = "green";
     document.getElementById("icon3").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
+     document.getElementById("cccek").style.color = "red";
      document.getElementById("icon3").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cccek").innerHTML = jawaban;
@@ -69,9 +75,11 @@ function showSlides(n) {
    var jawaban;
    if (x == "0,4" || "1/5") {
     jawaban = "Jawaban Anda Benar";
+    document.getElementById("cekk").style.color = "green";
     document.getElementById("icon4").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
+     document.getElementById("cekk").style.color = "red";
      document.getElementById("icon4").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cekk").innerHTML = jawaban;
@@ -82,9 +90,11 @@ function showSlides(n) {
    var jawaban;
    if (x == "5") {
     jawaban = "Jawaban Anda Benar";
+    document.getElementById("cekkk").style.color = "green";
     document.getElementById("icon5").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
      jawaban = "Jawaban Anda Salah, Coba lagi!";
+     document.getElementById("cekkk").style.color = "red";
      document.getElementById("icon5").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cekkk").innerHTML = jawaban;

@@ -245,6 +245,19 @@ h1{
     padding: 10px;
     border: 1px ridge;
   }
+
+  .cekulang{
+    padding:8px;
+    cursor:pointer;
+    }
+  
+    .ulang{
+    display:none;
+    }
+  
+    .tampil{
+    display: inline-block;
+    }
   
   .indikator{
     background-color: #666666;
