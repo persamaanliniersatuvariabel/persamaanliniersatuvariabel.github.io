@@ -58,12 +58,12 @@ function pertama() {
    var jawaban;
    if (x == "-6") {
     jawaban = "Jawaban anda benar, penyelesaian -3x = 18 adalah -6";
-    document.getElementById("ccekk").style.color = "green";
+    document.getElementById("ccek").style.color = "green";
     document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
     jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
      ulang.className += "tampil";
-     document.getElementById("ccekk").style.color = "red";
+     document.getElementById("ccek").style.color = "red";
      document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("ccek").innerHTML = jawaban;
@@ -82,28 +82,34 @@ function pertama() {
  function ketiga() {
   var x = document.getElementById("input3").value;
   var ulang = document.getElementById("ulang3");
+  var bahasbnr = document.getElementById("bahasbnr1");
+    var bahasslh = document.getElementById("bahasslh1");
    var jawaban;
    if (x == "3") {
-    jawaban = "Jawaban anda benar, penyelesaian 1/2 n=  3/2 adalah 3";
-    document.getElementById("cccek").style.color = "green";
+    bahasbnr.className += "tampil";
+    // jawaban = "Jawaban anda benar, penyelesaian 1/2 n=  3/2 adalah 3";
+    // document.getElementById("cccek").style.color = "green";
     document.getElementById("icon3").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
-     ulang.className += "tampil";
-     document.getElementById("cccek").style.color = "red";
+    ulang.className += "tampil";
+    // jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+    //  document.getElementById("cccek").style.color = "red";
      document.getElementById("icon3").innerHTML = "<img src='salah.png' width='15px'>";
+     bahasslh.className += "tampil";
   }
-   document.getElementById("cccek").innerHTML = jawaban;
+  //  document.getElementById("cccek").innerHTML = jawaban;
  }
 
  function ulang3(){
   var x = document.getElementById("input3");
   var ulang = document.getElementById("ulang3");
+  var bahasslh = document.getElementById("bahasslh1");
   
   input3.value = "";
   ulang.className = ulang.className.replace("tampil", "");
   document.getElementById("icon3").innerHTML = "";
-  document.getElementById("cccek").innerHTML = "";
+  // document.getElementById("cccek").innerHTML = "";
+  bahasslh.className = bahasslh.className.replace("tampil", "");
 }
 
  function keempat() {

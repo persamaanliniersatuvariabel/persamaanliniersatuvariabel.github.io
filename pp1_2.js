@@ -58,12 +58,12 @@ function showSlides(n) {
    var jawaban;
    if (x == "-6") {
     jawaban = "Jawaban anda benar, penyelesaian y + 4 = -2 adalah -6";
-    document.getElementById("ccekk").style.color = "green";
+    document.getElementById("ccek").style.color = "green";
     document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
     jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
      ulang.className += "tampil";
-     document.getElementById("ccekk").style.color = "red";
+     document.getElementById("ccek").style.color = "red";
      document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("ccek").innerHTML = jawaban;
@@ -109,28 +109,34 @@ function showSlides(n) {
  function keempat() {
   var x = document.getElementById("input4").value;
   var ulang = document.getElementById("ulang4");
+  var bahasbnr = document.getElementById("bahasbnr1");
+    var bahasslh = document.getElementById("bahasslh1");
    var jawaban;
    if (x == "0,4" || "1/5") {
-    jawaban = "Jawaban anda benar, penyelesaian t - 1/2=  1/3 adalah 1/5";
-    document.getElementById("cekk").style.color = "green";
+    bahasbnr.className += "tampil";
+    // jawaban = "Jawaban anda benar, penyelesaian t - 1/2=  1/3 adalah 1/5";
+    // document.getElementById("cekk").style.color = "green";
     document.getElementById("icon4").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
-     ulang.className += "tampil";
-     document.getElementById("cekk").style.color = "red";
+    ulang.className += "tampil";
+    // jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+    //  document.getElementById("cekk").style.color = "red";
      document.getElementById("icon4").innerHTML = "<img src='salah.png' width='15px'>";
+     bahasslh.className += "tampil";
   }
-   document.getElementById("cekk").innerHTML = jawaban;
+  //  document.getElementById("cekk").innerHTML = jawaban;
  }
 
  function ulang4(){
   var x = document.getElementById("input");
   var ulang = document.getElementById("ulang4");
+  var bahasslh = document.getElementById("bahasslh1");
   
   input4.value = "";
   ulang.className = ulang.className.replace("tampil", "");
   document.getElementById("icon4").innerHTML = "";
-  document.getElementById("cekk").innerHTML = "";
+  // document.getElementById("cekk").innerHTML = "";
+  bahasslh.className = bahasslh.className.replace("tampil", "");
 }
 
  function kelima() {

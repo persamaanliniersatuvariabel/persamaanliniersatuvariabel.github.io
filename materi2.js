@@ -137,28 +137,34 @@ function pertama() {
  function kelima() {
   var x = document.getElementById("input5").value;
   var ulang = document.getElementById("ulang5");
+  var bahasbnr = document.getElementById("bahasbnr1");
+    var bahasslh = document.getElementById("bahasslh1");
    var jawaban;
    if (x == "21") {
-    jawaban = "Jawaban anda benar, penyelesaian dari y/7=3 adalah x = 21";
-    document.getElementById("cekkk").style.color = "green";
+    bahasbnr.className += "tampil";
+    // jawaban = "Jawaban anda benar, penyelesaian dari y/7=3 adalah x = 21";
+    // document.getElementById("cekkk").style.color = "green";
      document.getElementById("icon5").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
     ulang.className += "tampil";
-    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
-     document.getElementById("cekkk").style.color = "red";
+    // jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+    //  document.getElementById("cekkk").style.color = "red";
      document.getElementById("icon5").innerHTML = "<img src='salah.png' width='15px'>";
+     bahasslh.className += "tampil";
   }
-   document.getElementById("cekkk").innerHTML = jawaban;
+  //  document.getElementById("cekkk").innerHTML = jawaban;
  }
 
  function ulang5(){
   var x = document.getElementById("input5");
   var ulang = document.getElementById("ulang5");
+  var bahasslh = document.getElementById("bahasslh1");
   
   input5.value = "";
   ulang.className = ulang.className.replace("tampil", "");
   document.getElementById("icon5").innerHTML = "";
-  document.getElementById("cekkk").innerHTML = "";
+  // document.getElementById("cekkk").innerHTML = "";
+  bahasslh.className = bahasslh.className.replace("tampil", "");
 }
 
  var y = document.getElementById("tujuan");
