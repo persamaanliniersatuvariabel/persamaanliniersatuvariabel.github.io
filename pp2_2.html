@@ -69,7 +69,8 @@
               <li>Isilah kotak yang kosong dengan jawaban yang tepat</li>
               <li>Tekan tombol cek jawaban, untuk mengoreksi jawaban anda</li>
       				<li>Jika jawaban kamu benar, akan muncul icon <img src="benar.jpg" width="15px"> dan "jawaban anda benar"</li>
-      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"> dan "jawaban anda salah, coba lagi!"</li>
+      				<li>Jika jawaban kamu salah, akan muncul icon <img src="salah.png" width="15px"> dan "jawaban anda salah"</li>
+              <li>Tekan tombol "Ulang" untuk mengulang menjawab soal.</li>
       			</ul>
 			</div>
 
@@ -79,6 +80,7 @@
         <p>Tentukan penyelesaian setiap persamaan berikut.<br>1. 2x + 3 = 9</p>
         <input type="text" id="input" value="" style="width: 28px; text-align: center;"><span id="icon1" class="icon"></span></p>
         <button onclick="pertama()">Cek Jawaban</button>
+        <button class="ulang" onclick="ulang1()" id="ulang1"><b>Ulang</b></button>
         <p id="cek"></p>
         </div>
         
@@ -86,6 +88,7 @@
         <p>Tentukan penyelesaian setiap persamaan berikut.<br>2. -3x = 18</p>
         <input type="text" id="input2" value="" style="width: 28px; text-align: center;"><span id="icon2" class="icon"></span></p>
         <button onclick="kedua()">Cek Jawaban</button>
+        <button class="ulang" onclick="ulang2()" id="ulang2"><b>Ulang</b></button>
         <p id="ccek"></p>
         </div>
 
@@ -93,6 +96,7 @@
           <p>Tentukan penyelesaian setiap persamaan berikut.<br>3. $\frac{1}{2}$n = $\frac{3}{2}$</p>
           <input type="text" id="input3" value="" style="width: 28px; text-align: center;"><span id="icon3" class="icon"></span></p>
           <button onclick="ketiga()">Cek Jawaban</button>
+          <button class="ulang" onclick="ulang3()" id="ulang3"><b>Ulang</b></button>
           <p id="cccek"></p>
           </div>
         
@@ -100,6 +104,7 @@
             <p>Tentukan penyelesaian setiap persamaan berikut.<br>4.	2m – 5 = 9 – 5m</p>
             <input type="text" id="input4" value="" style="width: 28px; text-align: center;"><span id="icon4" class="icon"></span></p>
             <button onclick="keempat()">Cek Jawaban</button>
+            <button class="ulang" onclick="ulang4()" id="ulang4"><b>Ulang</b></button>
             <p id="cekk"></p>
             </div>
 
@@ -107,6 +112,7 @@
               <p>Tentukan penyelesaian setiap persamaan berikut.<br>5. 5x -12 = 2(x + 6)</p>
               <input type="text" id="input5" value="" style="width: 28px; text-align: center;"><span id="icon5" class="icon"></span></p>
               <button onclick="kelima()">Cek Jawaban</button>
+              <button class="ulang" onclick="ulang5()" id="ulang5"><b>Ulang</b></button>
               <p id="cekkk"></p>
               </div>
         

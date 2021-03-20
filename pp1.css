@@ -252,6 +252,19 @@ h1{
     /* border-radius: 5px; */
   }
 
+  .cekulang{
+    padding:8px;
+    cursor:pointer;
+    }
+  
+    .ulang{
+    display:none;
+    }
+  
+    .tampil{
+    display: inline-block;
+    }
+
   table{
     width: 100%;
     font-weight: normal;

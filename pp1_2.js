@@ -27,78 +27,138 @@ function showSlides(n) {
   
   function pertama() {
   var x = document.getElementById("input").value;
+  var ulang = document.getElementById("ulang1");
    var jawaban;
    if (x == "10") {
-     jawaban = "Jawaban Anda Benar";
+     jawaban = "Jawaban anda benar, penyelesaian x – 7 = 3 adalah 10";
      document.getElementById("cek").style.color = "green";
      document.getElementById("icon1").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-     jawaban = "Jawaban Anda Salah, Coba lagi!";
+    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+     ulang.className += "tampil";
      document.getElementById("cek").style.color = "red";
      document.getElementById("icon1").innerHTML = "<img src='salah.png' width='15px'>";
    }
    document.getElementById("cek").innerHTML = jawaban;
  }
 
+ function ulang1(){
+  var x = document.getElementById("input");
+  var ulang = document.getElementById("ulang1");
+  
+  input.value = "";
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon1").innerHTML = "";
+  document.getElementById("cek").innerHTML = "";
+}
+
  function kedua() {
   var x = document.getElementById("input2").value;
+  var ulang = document.getElementById("ulang2");
    var jawaban;
    if (x == "-6") {
-    jawaban = "Jawaban Anda Benar";
+    jawaban = "Jawaban anda benar, penyelesaian y + 4 = -2 adalah -6";
     document.getElementById("ccekk").style.color = "green";
     document.getElementById("icon2").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-     jawaban = "Jawaban Anda Salah, Coba lagi!";
+    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+     ulang.className += "tampil";
      document.getElementById("ccekk").style.color = "red";
      document.getElementById("icon2").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("ccek").innerHTML = jawaban;
  }
 
+ function ulang2(){
+  var x = document.getElementById("input2");
+  var ulang = document.getElementById("ulang2");
+  
+  input2.value = "";
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon2").innerHTML = "";
+  document.getElementById("ccek").innerHTML = "";
+}
+
  function ketiga() {
   var x = document.getElementById("input3").value;
+  var ulang = document.getElementById("ulang3");
    var jawaban;
    if (x == "13") {
-    jawaban = "Jawaban Anda Benar";
+    jawaban = "Jawaban anda benar, penyelesaian x – 5 = 8 adalah 13";
     document.getElementById("cccek").style.color = "green";
     document.getElementById("icon3").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-     jawaban = "Jawaban Anda Salah, Coba lagi!";
+    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+     ulang.className += "tampil";
      document.getElementById("cccek").style.color = "red";
      document.getElementById("icon3").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cccek").innerHTML = jawaban;
  }
 
+ function ulang3(){
+  var x = document.getElementById("input3");
+  var ulang = document.getElementById("ulang3");
+  
+  input3.value = "";
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon3").innerHTML = "";
+  document.getElementById("cccek").innerHTML = "";
+}
+
  function keempat() {
   var x = document.getElementById("input4").value;
+  var ulang = document.getElementById("ulang4");
    var jawaban;
    if (x == "0,4" || "1/5") {
-    jawaban = "Jawaban Anda Benar";
+    jawaban = "Jawaban anda benar, penyelesaian t - 1/2=  1/3 adalah 1/5";
     document.getElementById("cekk").style.color = "green";
     document.getElementById("icon4").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-     jawaban = "Jawaban Anda Salah, Coba lagi!";
+    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+     ulang.className += "tampil";
      document.getElementById("cekk").style.color = "red";
      document.getElementById("icon4").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cekk").innerHTML = jawaban;
  }
 
+ function ulang4(){
+  var x = document.getElementById("input");
+  var ulang = document.getElementById("ulang4");
+  
+  input4.value = "";
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon4").innerHTML = "";
+  document.getElementById("cekk").innerHTML = "";
+}
+
  function kelima() {
   var x = document.getElementById("input5").value;
+  var ulang = document.getElementById("ulang5");
    var jawaban;
    if (x == "5") {
-    jawaban = "Jawaban Anda Benar";
+    jawaban = "Jawaban anda benar, penyelesaian x- 2 = 8 - x adalah 5";
     document.getElementById("cekkk").style.color = "green";
     document.getElementById("icon5").innerHTML = "<img src='benar.jpg' width='15px'>";
    }else {
-     jawaban = "Jawaban Anda Salah, Coba lagi!";
+    jawaban = "Jawaban anda salah, silahkan tekan tombol ulang";
+     ulang.className += "tampil";
      document.getElementById("cekkk").style.color = "red";
      document.getElementById("icon5").innerHTML = "<img src='salah.png' width='15px'>";
   }
    document.getElementById("cekkk").innerHTML = jawaban;
  }
+
+ function ulang5(){
+  var x = document.getElementById("input5");
+  var ulang = document.getElementById("ulang5");
+  
+  input5.value = "";
+  ulang.className = ulang.className.replace("tampil", "");
+  document.getElementById("icon5").innerHTML = "";
+  document.getElementById("cekkk").innerHTML = "";
+}
 
  var y = document.getElementById("tujuan");
  var yy= document.querySelector('.tujuan');
