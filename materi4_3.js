@@ -586,7 +586,7 @@ function ulang5(){
   }
 
   //cek
-  if(x!=0 && y!==0 && ang11.value=="<" && ang12.value=="-0,5"){
+  if(x!=0 && y!==0 && ang11.value=="<" && ang12.value =="-0,5"){
     document.getElementById("icon6").innerHTML = "<img src='benar.jpg' width='15px'>";
     bahasbnr.className += "tampil";
     document.getElementById('ket5').innerHTML = var6.value;
@@ -607,7 +607,7 @@ function ulang5(){
   if(ang11.value!="<"){
     ang11.className += " boxmerah";
   }
-  if(ang12.value!="-0,5"){
+  if(ang12.value !="-0,5"){
     ang12.className += " boxmerah";
   }
 }
