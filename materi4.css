@@ -116,7 +116,7 @@ h1{
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #3498db;
+    background: #a6294b;
     left: 0;
     top: 0;
     transition: 0.3s;
@@ -167,6 +167,7 @@ h1{
   
   .btn a:hover {
     background-color: #d9d9d9;
+    color: black;
   }
   
   article {
@@ -212,9 +213,19 @@ h1{
   }
 
   .active1{
-    background-color: #b3a2a2;
+    background-color: #aa8282;
     color: white;
     /* border-radius: 5px; */
+  }
+
+  .caption {
+    color: gray;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 10em;
+    text-align: left;
+    margin-bottom: 0px;
   }
   
   .kotak{
@@ -237,8 +248,8 @@ h1{
   }
 
   .gambar{
-    width:300px;
-    height:150px;
+    width:270px;
+    /* height:150px; */
     float: left;
   }
 

@@ -6,9 +6,9 @@ var y = document.getElementById("tujuan");
  })
 
 $(document).ready(function(){
-  $(".tampil").hide();
+  $(".tampil2").hide();
         $(".lanjut").click(function(){
-              $(".tampil").show(500);
+              $(".tampil2").show(500);
               $(".lanjut").hide();
         });
 });

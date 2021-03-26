@@ -67,6 +67,7 @@ nav {
   float: left;
   width: 20%;
   height: 500px;
+  min-height: 80vh;
   background: #e6e6e6;
   padding: 5px;
 }
@@ -98,7 +99,7 @@ nav ul {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #3498db;
+  background: #a6294b;
   left: 0;
   top: 0;
   transition: 0.3s;
@@ -138,6 +139,7 @@ article {
   width: 80%;
   background: #ffffff;
   height: 500px;
+  /* min-height: 100vh; */
 }
 
 .cities {
@@ -159,6 +161,7 @@ article {
   margin: 0px;
   width: 101%;
   height: 480px;
+  min-height: 80vh;
   padding: 10px;
   overflow: auto;
 }
@@ -180,7 +183,7 @@ article {
 }
 
 .active1{
-  background-color: #b3a2a2;
+  background-color: #aa8282;
   color: white;
   /* border-radius: 5px; */
 }
@@ -278,6 +281,9 @@ section:after {
 footer {
   background-color: #a6294b;
   padding: 5px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
   text-align: center;
   color: white;
 }
@@ -286,6 +292,7 @@ footer {
   nav, article {
     width: 100%;
     height: auto;
+    min-height: 0;
   }
 
   body{
@@ -352,3 +359,19 @@ footer {
     padding: 6px 12px;
   }
 }
+
+/* @media screen and (min-height: 722px) {
+     nav {
+    min-height: 100vh;
+    height: 100vh;
+  }
+
+  .article{
+    min-height: 100vh;
+  }
+
+  .citie{
+  min-height: 100vh;
+  height: 100vh;
+  }
+} */

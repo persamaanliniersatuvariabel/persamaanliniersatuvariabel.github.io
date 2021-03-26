@@ -96,8 +96,22 @@ h1{
     width:470px; */
   }
 
+  .mengamati{
+    width: 20%;
+    padding-left: 1.5em;
+  }
+
+  .caption {
+    color: gray;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
   .active1{
-    background-color: #b3a2a2;
+    background-color: #aa8282;
     color: white;
     /* border-radius: 5px; */
   }
@@ -138,7 +152,7 @@ h1{
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #3498db;
+    background: #a6294b;
     left: 0;
     top: 0;
     transition: 0.3s;
@@ -184,6 +198,7 @@ h1{
   
   .btn a:hover {
     background-color: #d9d9d9;
+    color: black;
   }
   
   article {
@@ -474,6 +489,11 @@ h1{
     .animasi{
       height: 196px;
       width:260px;
+    }
+
+    .mengamati{
+      width: 50%;
+      padding-left: 1.5em;
     }
 
     .citi, .citie, .cities {
