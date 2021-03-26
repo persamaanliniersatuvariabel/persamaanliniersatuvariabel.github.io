@@ -287,6 +287,14 @@ article {
   margin-bottom: 0px;
 }
 
+.hp{
+ display: none;
+}
+
+.destop{
+  display: block;
+}
+
 .caption1 {
   color: gray;
   font-style: italic;
@@ -763,6 +771,14 @@ footer {
       margin-top: -30px;
     }
 
+    .hp{
+      display: block;
+     }
+
+     .destop{
+      display: none;
+    }
+
     b{
       font-size: 15px;
     }
@@ -792,6 +808,10 @@ footer {
     .animasi{
       height:196px;
       width:260px;
+    }
+
+    .mengamati{
+      width: 50%;
     }
 
     .grafik{
