@@ -168,7 +168,7 @@ article {
 
 .citi {
   background-color: white;
-  border: 3px dashed #7d9c9c;
+  border: 2.5px dashed #7d9c9c;
   color: black;
   margin: 5px;
   width: 125%;
@@ -370,7 +370,7 @@ footer {
     min-height: 100vh;
   }
 
-  .citie{
+  .citie, citi{
   min-height: 100vh;
   height: 100vh;
   }

@@ -47,6 +47,10 @@ selanjutnya.addEventListener('click', function () {
             kelasfix = "VII B";
         } else if (kelasnya.value == "3") {
             kelasfix = "VII C";
+        } else if (kelasnya.value == "4") {
+            kelasfix = "VII D";
+        } else if (kelasnya.value == "5") {
+            kelasfix = "VII E";
         } 
         cek += 1;
     }

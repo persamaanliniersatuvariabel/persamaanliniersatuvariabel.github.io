@@ -46,13 +46,14 @@ function mencari() {
       kelasfix = "VII B";
   } else if (kelasnya.value == "3") {
       kelasfix = "VII C";
-  } //else if (kelasnya.value == "4") {
-  //     kelasfix = "IX D";
-  // } else if (kelasnya.value == "5") {
-  //     kelasfix = "IX E";
-  // } else if (kelasnya.value == "6") {
-  //     kelasfix = "IX F";
-  // } else if (kelasnya.value == "7") {
+  } else if (kelasnya.value == "4") {
+      kelasfix = "IX D";
+  } else if (kelasnya.value == "5") {
+      kelasfix = "IX E";
+  } else if (kelasnya.value == "6") {
+      kelasfix = "IX F";
+  }
+  // else if (kelasnya.value == "7") {
   //     kelasfix = "IX G";
   // }
 
