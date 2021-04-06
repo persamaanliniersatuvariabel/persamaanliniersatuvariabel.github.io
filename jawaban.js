@@ -98,18 +98,18 @@ function readlah() {
 
             if (kelasfix == taskvalue.kelas) {
                 let mm = '';
-                mm = `<tr><td >${taskvalue.nama}</td><td >${taskvalue.nilai}</td>`;
+                mm = '<tr><td >${taskvalue.nama}</td><td >${taskvalue.nilai}</td>';
                 // console.log(taskvalue.jawabsiswa[0]);
 
 
                 for (let i = 0; i < jwbfixx.length; i++) {
                     if (taskvalue.jawabsiswa[i] == jwbfixx[i]) {
-                        mm += `<td class="benar">${taskvalue.jawabsiswa[i]}</td>`;
+                        mm += '<td class="benar">${taskvalue.jawabsiswa[i]}</td>';
                     } else {
-                        mm += `<td class="salah">${taskvalue.jawabsiswa[i]}</td>`;
+                        mm += '<td class="salah">${taskvalue.jawabsiswa[i]}</td>';
                     }
                 }
-                mm += `</tr>`;
+                mm += '</tr>';
                 tmp.innerHTML += mm;
             }
 

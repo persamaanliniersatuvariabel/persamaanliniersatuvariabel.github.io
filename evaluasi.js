@@ -353,8 +353,10 @@ dat.onreadystatechange = function () {
         // cek jawaban
         let selesai = document.querySelector('.selesai');
         let pil_user = [];
-        new_jwb_urut = [];
-        new_jwb_urut_no = [];
+        jawabannya = [];
+        jawabannya_no = [];
+        // new_jwb_urut = [];
+        // new_jwb_urut_no = [];
 
         selesai.addEventListener('click', function () {
             let sarat = 0;
@@ -404,6 +406,15 @@ dat.onreadystatechange = function () {
 
                 }
 
+                for (let i = 0; i < cek.length; i++) {
+                    for (let j = 0; j < cek.length; j++) {
+                        if (i == cek[j]) {
+                            jawabannya.push(pil_user[j]);
+                            jawabannya_no.push(cek[j]);
+                        }
+                    }
+                }
+
                 // for (let i = 0; i < cek.length; i++) {
                 //     for (let j = 0; j < cek.length; j++) {
                 //         if (i == cek[j]) {
@@ -423,7 +434,7 @@ dat.onreadystatechange = function () {
                 let harinya = hari();
                 let waktunya = waktu();
 
-                createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya);
+                createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya, jawabannya);
                 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value.toUpperCase();
@@ -528,7 +539,7 @@ function hari() {
 }
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jawab) {
     counter += 1;
     var task = {
         id: counter,
@@ -537,7 +548,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         kelas: kelas,
         nilai: nilai,        
         waktu: waktunya,
-        hari: hari
+        hari: hari,
+        jawabsiswa: jawab
     }
 
     let database = firebase.database().ref("kuis1/" + counter);
