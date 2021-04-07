@@ -13,7 +13,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-let selanjutnya = document.querySelector('.lanjut');
+  let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
 namanya = document.getElementById('nama');
 kelasnya = document.getElementById('kelas');
@@ -42,18 +42,19 @@ selanjutnya.addEventListener('click', function () {
     } else {
         kelasnya.className = kelasnya.className.replace('tt_salah', '');
         if (kelasnya.value == "1") {
-            kelasfix = "VII A";
+            kelasfix = "IX A";
         } else if (kelasnya.value == "2") {
-            kelasfix = "VII B";
+            kelasfix = "IX B";
         } else if (kelasnya.value == "3") {
-            kelasfix = "VII C";
+            kelasfix = "IX C";
         } else if (kelasnya.value == "4") {
-            kelasfix = "VII D";
+            kelasfix = "IX D";
         } else if (kelasnya.value == "5") {
-            kelasfix = "VII E";
+            kelasfix = "IX E";
         } 
         cek += 1;
     }
+        
 
     if (sekolah.value == "") {
         if (sekolah.className.indexOf('tt_salah') == -1) {
@@ -114,7 +115,6 @@ dat.onreadystatechange = function () {
         // ---------------------------------
         // ambil data tertentu
 
-        
         for (let i = 0; i < cek.length; i++) {
             let nilai = cek[i];
 
@@ -128,7 +128,6 @@ dat.onreadystatechange = function () {
             let jwb = [jwb0, jwb1, jwb2, jwb3];
 
             jwbs.push(bnr);
-           
 
             // ---------------------------------
             // rangkai konten soal;
@@ -142,7 +141,7 @@ dat.onreadystatechange = function () {
             no.setAttribute('class', 'no');
 
             let soal = document.createElement('p');
-            let text_soal = document.createTextNode('Soal ');
+            let text_soal = document.createTextNode('Nomor ');
 
             let span = document.createElement('span');
             let text_span = document.createTextNode(i + 1);
@@ -189,9 +188,6 @@ dat.onreadystatechange = function () {
             let soall = document.createElement('div');
             soall.setAttribute('class', 'soall');
 
-            let gambar = document.createElement('img');
-            gambar.setAttribute('class', 'gambar');
-
             for (let ii = 0; ii < 4; ii++) {
                 let bg_pilihan = document.createElement('label');
                 bg_pilihan.setAttribute('class', 'bg_pilihan');
@@ -211,7 +207,6 @@ dat.onreadystatechange = function () {
 
                 let textnya = document.createElement('span');
                 textnya.setAttribute('class', 'textnya');
-
 
                 let nav_pilihan = document.createElement('span');
                 nav_pilihan.setAttribute('class', 'nav_pilihan');
@@ -361,8 +356,6 @@ dat.onreadystatechange = function () {
         let pil_user = [];
         jawabannya = [];
         jawabannya_no = [];
-        // new_jwb_urut = [];
-        // new_jwb_urut_no = [];
 
         selesai.addEventListener('click', function () {
             let sarat = 0;
@@ -394,8 +387,8 @@ dat.onreadystatechange = function () {
                             if (pils_soal[j].attributes.name.nodeValue == 'radio' + i) {
                                 if (pils_soal[j].checked == true) {
                                     // cek jawaban dengan kunci
-                                    console.log(pils_soal[j].value);
-                                    console.log(jwbs[i]);
+                                    // console.log(pils_soal[j].value);
+                                    // console.log(jwbs[i]);
                                     pil_user.push(pils_soal[j].value);
                                     if (pils_soal[j].value == jwbs[i]) {
                                         hasilakhir = hasilakhir + 5;
@@ -420,23 +413,16 @@ dat.onreadystatechange = function () {
                         }
                     }
                 }
+                // console.log("jwb_user_urut_no :" + jawabannya_no);
+                // console.log("jwb_user_urut :" + jawabannya);
 
-                // for (let i = 0; i < cek.length; i++) {
-                //     for (let j = 0; j < cek.length; j++) {
-                //         if (i == cek[j]) {
-                //             new_jwb_urut.push(pil_user[j]);
-                //             new_jwb_urut_no.push(cek[j]);
-                //         }
-                //     }
-                // }
-                // console.log("jwb_user_urut_no :" + new_jwb_urut_no);
-                // console.log("jwb_user_urut :" + new_jwb_urut);
                 // simpan kedatabase----------
-                console.log(namanya.value);
-                console.log(sekolah);
-                console.log(kelasfix);
-                console.log(hasilakhir);
-
+                // console.log(namanya.value);
+                // console.log(sekolah.value);
+                // console.log(kelasfix);
+                // console.log(hasilakhir);
+                
+                
                 let harinya = hari();
                 let waktunya = waktu();
 
@@ -449,11 +435,11 @@ dat.onreadystatechange = function () {
                 sekolahinput.innerText = sekolah.value.toUpperCase();
 
                 let kelasinput = document.querySelector('.kelas');
-                kelasinput.innerText = kelasnya.value.toUpperCase(); 
+                kelasinput.innerText = kelasfix;  
                 
                 let hariinput = document.querySelector('.hari');
                 hariinput.innerText = harinya;
-
+                
                 let waktuinput = document.querySelector('.waktu');
                 waktuinput.innerText = waktunya;
 
@@ -481,7 +467,6 @@ dat.onreadystatechange = function () {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
             }
 
-
         });
 
         // ---------------------------------
@@ -501,16 +486,14 @@ dat.onreadystatechange = function () {
                     }
                 }
             });
-        }
-
-
-
+        }                                   
 
     }
 
 }
 dat.open('GET', 'evaluasi3.json', true);
 dat.send();
+
 
 
 // menyimpan ke dalam databasenya
@@ -562,4 +545,3 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jawab) {
     database.set(task);
 
 }
-
