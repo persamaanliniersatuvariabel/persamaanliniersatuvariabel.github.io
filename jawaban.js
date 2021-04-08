@@ -34,6 +34,22 @@
       kuisfix = kuisnya.value;
       console.log(kuisfix);
       var task = firebase.database().ref(kuisfix);
+
+      let tab1 = document.querySelector('.Isi1');
+      let tab2 = document.querySelector('.Isi2');
+
+      if (kuisnya.value == "kuis1/ || kuis2/") {
+        if(tab1.className.indexOf("hilang") != -1){
+            tab1.className = tab1.className.replace(" hilang", "");
+            tab2.className += " hilang";
+        }
+    }
+      else if(kuisnya.value == "evaluasi/") {
+        if(tab2.className.indexOf("hilang") != -1){
+            tab2.className = tab2.className.replace(" hilang", "");
+            tab1.className += " hilang";
+        }
+    }
   
       tmp.innerHTML = "";
       if (kelasnya.value == "1") {
