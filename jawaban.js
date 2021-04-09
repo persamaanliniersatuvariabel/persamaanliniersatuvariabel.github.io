@@ -21,6 +21,7 @@
   
   let tmp = document.querySelector('.disini');
   tmp.innerHTML = "";
+
   kelasnya = document.getElementById('kelas');
   // sekolah = document.getElementById('sekolah');
   let kelasfix = '';
@@ -29,27 +30,10 @@
   let cek11 = 0;
   kuisfix = kuisnya.value;
   
-  
   function readlah() {
       kuisfix = kuisnya.value;
       console.log(kuisfix);
       var task = firebase.database().ref(kuisfix);
-
-      let tab1 = document.querySelector('.Isi1');
-      let tab2 = document.querySelector('.Isi2');
-
-      if (kuisnya.value == "kuis1/ || kuis2/") {
-        if(tab1.className.indexOf("hilang") != -1){
-            tab1.className = tab1.className.replace(" hilang", "");
-            tab2.className += " hilang";
-        }
-    }
-      else if(kuisnya.value == "evaluasi/") {
-        if(tab2.className.indexOf("hilang") != -1){
-            tab2.className = tab2.className.replace(" hilang", "");
-            tab1.className += " hilang";
-        }
-    }
   
       tmp.innerHTML = "";
       if (kelasnya.value == "1") {
@@ -71,10 +55,30 @@
       // } else if (sekolah.value == "2") {
       //     sekolahfix = "SMP Negeri";
       // }
-  
-  
-      let jwbfixx = [];
-  
+
+    //   let tab1 = document.querySelector('.Isi1');
+    //   let tab2 = document.querySelector('.Isi2');
+
+    //   if (kuisfix == "kuis1/") {
+    //     if(tab1.className.indexOf("hilang") != -1){
+    //         tab1.className = tab1.className.replace(" hilang", "");
+    //         tab2.className += " hilang";
+    //     }
+    // }
+    //   else if (kuisfix == "kuis2/") {
+    //     if(tab1.className.indexOf("hilang") != -1){
+    //         tab1.className = tab1.className.replace(" hilang", "");
+    //         tab2.className += " hilang";
+    //     }
+    // }
+    //   else if(kuisfix == "evaluasi/") {
+    //     if(tab2.className.indexOf("hilang") != -1){
+    //         tab2.className = tab2.className.replace(" hilang", "");
+    //         tab1.className += " hilang";
+    //     }
+    // }
+
+
       let jwb1 = ["d", "d", "d", "b", "a", "a", "c", "a", "a", "b"];
       if (kuisfix == "kuis1/") {
           let hhh = `<tr><td class="table-info  tulis" colspan="2">Kunci Jawaban </td>`;
@@ -85,7 +89,8 @@
           tmp.innerHTML += hhh;
           jwbfixx = jwb1;
       }
-  
+
+
       let jwb2 = ["b", "c", "c", "b", "a", "a", "a", "b", "b", "b"];
       if (kuisfix == "kuis2/") {
           let hhh = `<tr><td class="table-info  tulis" colspan="2">Kunci Jawaban </td>`;
@@ -96,7 +101,7 @@
           tmp.innerHTML += hhh;
           jwbfixx = jwb2;
       }
-  
+
       let evaluasi = ["b", "d", "c", "a", "c", "b", "a", "d", "b", "c", "b", "a", "b", "a", "d", "a", "d", "c", "b", "a"];
       if (kuisfix == "evaluasi/") {
           let hhh = `<tr><td class="table-info  tulis" colspan="2">Kunci Jawaban </td>`;
@@ -137,6 +142,8 @@
       }
   
   }
+
+
   
   window.onload = function () {
       kelasnya = document.getElementById('kelas');
