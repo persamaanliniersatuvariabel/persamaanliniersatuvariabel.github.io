@@ -42,15 +42,15 @@ selanjutnya.addEventListener('click', function () {
     } else {
         kelasnya.className = kelasnya.className.replace('tt_salah', '');
         if (kelasnya.value == "1") {
-            kelasfix = "IX A";
+            kelasfix = "VII A";
         } else if (kelasnya.value == "2") {
-            kelasfix = "IX B";
+            kelasfix = "VII B";
         } else if (kelasnya.value == "3") {
-            kelasfix = "IX C";
+            kelasfix = "VII C";
         } else if (kelasnya.value == "4") {
-            kelasfix = "IX D";
+            kelasfix = "VII D";
         } else if (kelasnya.value == "5") {
-            kelasfix = "IX E";
+            kelasfix = "VII E";
         } 
         cek += 1;
     }
