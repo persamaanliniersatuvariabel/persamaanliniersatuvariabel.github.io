@@ -4,24 +4,27 @@
 }
 
 body{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(kosong.jpg);
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: center;
-  font-family: Century Gothic;
+  background-position: center top;
+  /* font-family: Century Gothic; */
 }
 
 header{
   width:98%;
   text-align: center;
+  font-family: roboto;
   font-size: 20px;
   font-weight: bold ;
   margin:1vw;
   padding:1vw 0 1vw 0;
-  border-bottom:10px solid rgb(201, 211, 201);
+  border-bottom:8px dotted rgb(170, 58, 58);
 }
 
 h1{
-  color: #fff;
+  color: white;
 }
 
 .materi{
@@ -74,6 +77,10 @@ h1{
     nav, article {
       width: 100%;
       height: auto;
+    }
+
+    body{
+      background-position: bottom right;
     }
 
     .materi{
