@@ -4,7 +4,7 @@
   }
   
   body{
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(background.png);
+    background: url(background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -24,7 +24,7 @@
   }
   
   h1{
-    color: white;
+    color: brown;
   }
   
   .materi{
@@ -52,7 +52,7 @@
     font-family: 'cambria';
     font-weight: bold;
     font-size: 25px;
-    color: white;
+    color: brown;
     text-decoration: none;
     display:inline-block;
   }
