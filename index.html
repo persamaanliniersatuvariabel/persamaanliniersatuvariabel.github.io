@@ -1,44 +1,52 @@
-<!DOCTYPE html>
-<html>
+ <html>
 <head>
   <link rel="icon" type="image/svg" href="stability.svg">
-<title>Persamaan dan Pertidaksamaan Linier Satu Variabel</title>
-<link rel="stylesheet" href="style.css">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
+
   <header>
-      <h1>Persamaan dan Pertidaksamaan Linier Satu Variabel</h1>
-  </header>
+    <h1>Persamaan dan Pertidaksamaan Linier Satu Variabel</h1>
+</header>
 
-  <div class="materi">
-    <center>
-    <a href="home.html">
-      <img src="a.png" width="70%" class="ef start"><br>
-      <p>Materi</p>
-    </a>
-  </center>
-</div>
+  <div id="login_div" class="main-div">
+    <h3>Selamat Datang pada Media Pembelajaran Interaktif</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
 
-<div class="kikd">
-  <center>
-    <a href="kikdpk.html">
-      <img src="aa.png" width="55%" class="ef"><br>
-      <p>KI, KD, & PK</p>
-    </a>
-  </center>
-</div>
+    <button onclick="login()">Login</button><br>
+    <button onclick="signup()">Sign Up</button>
+  </div>
 
-<div class="info">
-  <center>
-    <a href="informasi.html">
-      <img src="aaa.png" width="50%" class="ef"><br>
-      <p>Informasi</p>
-    </a>
-  </center>
-</div>
-<script src="jquery.js"></script>
-<script src="index.js"></script>
-<script src="pgawal.js"></script>
+  <div id="user_div" class="loggedin-div">
+    <!-- <h3>Welcome User</h3> -->
+    <p style="margin-left: 30px;" id="user_para"></p>
+    <a href="index.html">Masuk Media Pembelajaran</a><br>
+    <button onclick="logout()" style="margin-left: 18px;">Logout</button>
+  </div>
+
+
+<!-- MASUKKAN KODE YANG TELAH ANDA COPY DI NOMOR 4 -->
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQhkrFFaD8E7rPtIPojOEhgBEZIVhC7nc",
+    authDomain: "sitiaisyah29-908bf.firebaseapp.com",
+    databaseURL: "https://sitiaisyah29-908bf-default-rtdb.firebaseio.com",
+    projectId: "sitiaisyah29-908bf",
+    storageBucket: "sitiaisyah29-908bf.appspot.com",
+    messagingSenderId: "116183119026",
+    appId: "1:116183119026:web:fc997b43ef6f0028ed85ab",
+    measurementId: "G-Y0FYEEWYP7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+  <script src="login.js"></script>
 
 </body>
 </html>
