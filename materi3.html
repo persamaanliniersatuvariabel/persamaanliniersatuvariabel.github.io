@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Multimedia Interaktif</title>
+  <link rel="icon" type="image/svg" href="stability.svg">
+<title>Pengertian Pertidaksamaan Linier Satu Variabel</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="materi3.css">
 </head>
 <body>
 <header>
+  
   <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
   <a href="index.html"><img src="home.svg" class="home"></a>
 </header>
@@ -40,7 +42,7 @@
        <a href="#materi2" class="active1">B. Pertidaksamaan Linier Satu Variabel</a>
       </div>
         <div class="smenu">
-          <a href="materi3.html#materi2" class="active1">&ensp;1. Pengertian PTLSV</a>
+          <a href="materi3.html#materi2" class="active1">&ensp;1. Pengertian PTLSV<span id="done"></span></a>
           <a href="materi4.html#materi2">&ensp;2. Penyelesaian PtLSV</a>
           <a href="soalcerita2.html#materi2">&ensp;3. Soal Cerita</a>
           <a href="kuis2.html">&ensp;Kuis</a>
@@ -52,12 +54,23 @@
           <a href="evaluasi.html">Evaluasi</a>
       </div>
     </li>
+
+    <li class="item">
+      <div class="btn">
+        <a href="History.html">History</a>
+      </div>
+  </li>
+
   </ul> 
 </nav>
 
 <section>
 <article>
-  <div class="cities" id="KTT">
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+
+  <div onscroll="myFunction()" class="cities">
     <center><h2 class="judul">Pertidaksamaan Linier Satu Variabel</h2></center>
       <button class="indikator">Klik untuk melihat Tujuan Pembelajaran</button>
         <div id="indikator" class="hilang">
@@ -123,7 +136,48 @@
     <a href="materi3_1.html#materi2">Selanjutnya</a>
     </center>
   </div>
+  <div class="ket">
+    Total Halaman : <span id="banyak">0</span><br>
+    Scrolled <span id="demo">0</span> times
+  </div>
 </footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+<script src="History.js"></script>
+
+<script>
+ var elem = document.getElementById("myBar");
+  var totall=document.getElementById("banyak")
+  var bar = localStorage.getItem("prog");
+  var ttl = localStorage.getItem("total");
+  
+  totall.innerHTML = ttl;
+  var width = bar;
+  elem.style.width = width + '%'; 
+  elem.innerHTML=width + '%';
+
+  var x = 0;
+  function myFunction() {
+  document.getElementById("demo").innerHTML = x += 1;
+  document.getElementById("done").innerHTML = "<img src='checklist.svg' width='20px'>";
+
+    if (localStorage.getItem("hal17") == 0 ){
+
+      localStorage.setItem("hal17", "1");
+
+      var bar = parseInt (localStorage.getItem("prog"));
+      bar = bar + 3;
+
+      var ttl = parseInt (localStorage.getItem("total"));
+      ttl = ttl + 1;
+
+      localStorage.setItem("prog", bar);
+      localStorage.setItem("total", ttl);
+
+    }
+}
+ </script>
 
 </body>
 </html>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Multimedia Interaktif</title>
+  <link rel="icon" type="image/svg" href="stability.svg">
+<title>Pengertian Persamaan Linier Satu Variabel</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel="stylesheet" href="materi1.css">
 </head>
 <body>
@@ -14,7 +16,7 @@
 
 <section>
 <nav>
-  <ul>
+  <ul class="metismenu" id="menu">
     <li class="item">
       <div class="btn">
           <a href="home.html">Apersepsi</a>
@@ -26,7 +28,7 @@
        <a href="#materi1" class="active1">A. Persamaan Linier Satu Variabel</a>
       </div>
         <div class="smenu">
-           <a href="materi1.html#materi1" class="active1">&ensp;1. Pengertian PLSV</a>
+           <a href="materi1.html#materi1" class="active1">&ensp;1. Pengertian PLSV<span id="done"></span></a>
            <a href="materi2.html#materi1">&ensp;2. Subtitusi</a>
            <a href="pp1.html#materi1">&ensp;3. Penjumlahan/Pengurangan</a>
            <a href="pp2.html#materi1">&ensp;4. Perkalian/Pembagian</a>
@@ -52,12 +54,29 @@
           <a href="evaluasi.html">Evaluasi</a>
       </div>
     </li>
+
+    <li class="item">
+      <div class="btn">
+        <a href="History.html">History</a>
+      </div>
+  </li>
+
+  <!-- <li class="item">
+    Total Halaman : <span id="banyak"></span>
+    <p>Scrolled <span id="demo">0</span> times.</p>
+  </li> -->
+  
   </ul> 
 </nav>
 
 <section>
 <article>
-  <div class="cities">
+
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    
+  <div onscroll="myFunction()" class="cities">
     <center><h2 class="judul">Persamaan Linier Satu Variabel</h2></center>
       <button class="indikator">Klik untuk melihat Tujuan Pembelajaran</button>
         <div id="indikator" class="hilang">
@@ -120,10 +139,53 @@
     <a href="materi1_1.html#materi1">2</a>
     <a href="materi1_2.html#materi1">3</a>
     <a href="materi1_3.html#materi1">4</a>
-    <a href="materi1_1.html#materi1">Selanjutnya</a>
+    <a href="materi1_1.html#materi1" id="next">Selanjutnya</a>
     </center>
+  </div>
+  <div class="ket">
+    Total Halaman : <span id="banyak">0</span><br>
+    Scrolled <span id="demo">0</span> times
   </div>
 </footer>
 
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+<script src="History.js"></script>
+
+<script>
+  var elem = document.getElementById("myBar");
+  var totall=document.getElementById("banyak");
+  var bar = localStorage.getItem("prog");
+  var ttl = localStorage.getItem("total");
+  
+  totall.innerHTML = ttl;
+  var width = bar;
+  elem.style.width = width + '%'; 
+  elem.innerHTML=width + '%';
+
+  var x = 0;
+  function myFunction() {
+  document.getElementById("demo").innerHTML = x += 1;
+  document.getElementById("done").innerHTML = "<img src='checklist.svg' width='20px'>";
+
+    if (localStorage.getItem("hal2") == 0 ){
+
+      localStorage.setItem("hal2", "1");
+
+      var bar = parseInt (localStorage.getItem("prog"));
+      bar = bar + 3;
+
+      var ttl = parseInt (localStorage.getItem("total"));
+      ttl = ttl + 1;
+
+      localStorage.setItem("prog", bar);
+      localStorage.setItem("total", ttl);
+
+    }
+}
+
+</script>
 </body>
 </html>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="stability.svg">
     <title>Evaluasi</title>
-    <link rel="shortcut icon" type="icon" href="../../img/ico.png">
     <link rel="stylesheet" type="text/css" href="isi1.css">
     <link rel="stylesheet" type="text/css" href="lat.css">
     <script src="jquery.js"></script>
@@ -32,10 +32,13 @@
                 <!-- BADAN KONTEN -->
 
                 <div class="inti-konten">
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                      </div>
                     <div class="data" id="data">
                         <div class="data_diri">
-                            <nav class="petunjuk ">
-                                <i class="far fa-hand-point-right"></i>&nbsp; Petunjuk
+                            <nav class="petunjuk" style="color:lavenderblush;">
+                                Petunjuk pengisian data <b style="font-size: 15px;">(klik untuk sembunyikan petunjuk)</b>
                             </nav>
 
                             <div class="isinya">   
@@ -65,12 +68,17 @@
                             </label>
 
                             <div class="lanjut">MULAI</div>
+                            <div class="kett">
+                                Total Halaman : <span id="banyak">0</span><br>
+                            </div>
                         </div>
                     </div>
 
                     <!-- KONTEN KIRI -->
                     <div class="kiri hilang" id="kiri">
-                        
+                        <article>
+                            <div id="timer">45 : 00</div>
+                        </article>
                         
                     </div>
                     <!-- BATAS KONTEN KIRI -->
@@ -153,7 +161,7 @@
                             </div>
 
                         </div>
-                    <div class="selesai">SELESAI</div>
+                    <div class="selesai" id="next">SELESAI</div>
 
                     </div>
                     <!-- BATAS KONTEN KANAN -->
@@ -209,7 +217,7 @@
                                         <p class="hari ket_hasilnya">Senin</p>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr style="display: none;">
                                     <td class="ket_hasil">
                                         <p>WAKTU SELESAI</p>
                                     </td>
@@ -252,8 +260,47 @@
                     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 
     <script src="evaluasi3.js"></script>
-    <script src="button.js"></script>
+    <script>
+        var elem = document.getElementById("myBar");
+var totall=document.getElementById("banyak")
+var bar = localStorage.getItem("prog");
+var ttl = localStorage.getItem("total");
 
+totall.innerHTML = ttl;
+var width = bar;
+elem.style.width = width + '%'; 
+elem.innerHTML=width + '%';
+
+  var next = document.getElementById('next');
+  next.addEventListener('click',function(){
+
+  if (localStorage.getItem("hal30") == 0 ){
+
+    localStorage.setItem("hal30", "1");
+
+    var bar = parseInt (localStorage.getItem("prog"));
+    bar = bar + 5;
+
+    var ttl = parseInt (localStorage.getItem("total"));
+    ttl = ttl + 1;
+
+    localStorage.setItem("prog", bar);
+    localStorage.setItem("total", ttl);
+
+  }
+});
+       </script>
+    <script>let petunjuknya = document.querySelectorAll('.petunjuk');
+        let isinya = document.querySelectorAll('.isinya');
+        for (let i = 0; i < petunjuknya.length; i++) {
+              petunjuknya[i].addEventListener('click', function () {
+              if (isinya[i].className.indexOf('hilang') == -1) {
+                    isinya[i].className += ' hilang';
+              } else {
+                    isinya[i].className = isinya[i].className.replace('hilang', '');
+              }
+              })
+        }</script>
 </body>
 
 </html>

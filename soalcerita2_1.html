@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Multimedia Interaktif</title>
+  <link rel="icon" type="image/svg" href="stability.svg">
+<title>Contoh Soal 8</title>
 <link rel="stylesheet" href="soalcerita1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="jquery.js"></script>
@@ -42,7 +43,7 @@
             <div class="smenu">
               <a href="materi3.html#materi2">&ensp;1. Pengertian PTLSV</a>
               <a href="materi4.html#materi2">&ensp;2. Penyelesaian PtLSV</a>
-              <a href="soalcerita2.html#materi2" class="active1">&ensp;3. Soal Cerita</a>
+              <a href="soalcerita2.html#materi2" class="active1">&ensp;3. Soal Cerita<span id="done"></span></a>
               <a href="kuis2.html">&ensp;Kuis</a>
             </div>
         </li>
@@ -52,12 +53,23 @@
                 <a href="evaluasi.html">Evaluasi</a>
               </div>
          </li>
+
+         <li class="item">
+          <div class="btn">
+            <a href="History.html">History</a>
+          </div>
+      </li>
+
     </ul> 
   </nav>
 
   <section>
   <article>
-    <div class="cities" id="KTT">
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <div onscroll="myFunction()" class="cities">
       <center><h2 class="judul">Pertidaksamaan Linier Satu Variabel</h2></center>
       <h4 class="contohh"><img src="contoh1.PNG" class="contoh"></h4>
       <button class="tujuan">Klik untuk melihat petunjuk</button><br>
@@ -156,7 +168,48 @@
         <a href="kuis2.html">Selanjutnya</a>
     </center>
   </div>
+  <div class="ket">
+    Total Halaman : <span id="banyak">0</span><br>
+    Scrolled <span id="demo">0</span> times
+  </div>
 </footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+<script src="History.js"></script>
+
+<script>
+  var elem = document.getElementById("myBar");
+  var totall=document.getElementById("banyak")
+  var bar = localStorage.getItem("prog");
+  var ttl = localStorage.getItem("total");
+  
+  totall.innerHTML = ttl;
+  var width = bar;
+  elem.style.width = width + '%'; 
+  elem.innerHTML=width + '%';
+
+  var x = 0;
+  function myFunction() {
+  document.getElementById("demo").innerHTML = x += 1;
+  document.getElementById("done").innerHTML = "<img src='checklist.svg' width='20px'>";
+
+    if (localStorage.getItem("hal27") == 0 ){
+
+      localStorage.setItem("hal27", "1");
+
+      var bar = parseInt (localStorage.getItem("prog"));
+      bar = bar + 3;
+
+      var ttl = parseInt (localStorage.getItem("total"));
+      ttl = ttl + 1;
+
+      localStorage.setItem("prog", bar);
+      localStorage.setItem("total", ttl);
+
+    }
+}
+ </script>
 
 </body>
 </html>

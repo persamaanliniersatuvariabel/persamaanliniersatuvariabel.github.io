@@ -3,7 +3,7 @@
 }
 
 h2{
-    font-family: 'Adobe Fangsong Std R';
+    font-family: 'tekton pro';
     font-size: 20px;
   }
 
@@ -14,7 +14,7 @@ h2{
   }
 
 body {
-    font-family: Adobe Fangsong Std R;
+    font-family: 'tekton pro cond';
   }
 
 header{
@@ -24,6 +24,29 @@ header{
     color: white;
     height: 100px;
   }
+
+  article {
+    width: fit-content;
+    float: right;
+    margin-top: 27px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #b66161;
+    border-radius: 5px;
+    padding: 1.8px;
+    overflow: hidden;
+}
+
+article .count {
+    padding: 5px;
+}
+
+article #timer {
+    padding: 5px;
+    /* color: crimson; */
+    background-color: white;
+    border-radius: 2px;
+}
 
 .clear {
     clear: both;
@@ -95,7 +118,7 @@ ul li .besarrr {
 /* Desktop version  */
 @media (min-width : 992px) {
     h2{
-        font-family: 'Adobe Fangsong Std R';
+        font-family: 'tekton pro';
         margin-top: 15px;
         font-size: 30px;
     }

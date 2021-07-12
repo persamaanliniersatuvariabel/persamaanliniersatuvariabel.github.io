@@ -13,6 +13,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  let wktu = document.querySelector('.waktu');
+  let nilaiwktu=0;
+
   let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
 namanya = document.getElementById('nama');
@@ -74,6 +77,33 @@ selanjutnya.addEventListener('click', function () {
         document.getElementById('data').className += ' hilang';
         document.getElementById('kiri').className = document.getElementById('kiri').className.replace('hilang', '');
         document.getElementById('kanan').className = document.getElementById('kanan').className.replace('hilang', '');
+
+        wktu.classList.toggle('hilang');
+          // waktu
+              countDownDate = new Date().getTime();
+              //waktu 30 menit
+            //   countDownDate += 1801000;
+              //waktu 45 menit
+              countDownDate += 2700000;
+            //   countDownDate += 12000;
+              //15 detik
+            //   countDownDate += 17000;
+              var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+                  
+              // Perhitungan waktu untuk menit dan detik
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  
+              document.getElementById("timer").innerHTML = minutes + ":" + seconds;
+                  
+              if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("timer").innerHTML = "Waktu Selesai";
+                  nilaiwktu=1;
+              }
+              }, 1000);
 
     }
 
@@ -357,6 +387,107 @@ dat.onreadystatechange = function () {
         jawabannya = [];
         jawabannya_no = [];
 
+        var xx =setInterval(function(){
+            if(nilaiwktu ==1){
+                console.log("ok");
+                clearInterval(xx);
+
+                hasilakhir = 0;
+                benarr = 0;
+                salahh = jwbs.length;
+
+                let pils_soal = document.querySelectorAll('input');
+
+
+                for (let i = 0; i < jwbs.length; i++) {
+                    for (let j = 0; j < pils_soal.length; j++) {
+
+                        if (j == 0) {
+
+                        } else {
+                            // menonaktifkan pilihan
+                            // pils_soal[j].setAttribute('disabled', 'true');
+
+                            if (pils_soal[j].attributes.name.nodeValue == 'radio' + i) {
+                                if (pils_soal[j].checked == true) {
+                                    // cek jawaban dengan kunci
+                                  //   console.log(pils_soal[j].value);
+                                  //   console.log(jwbs[i]);
+                                    pil_user.push(pils_soal[j].value);
+                                    if (pils_soal[j].value == jwbs[i]) {
+                                        hasilakhir = hasilakhir + 10;
+                                        benarr = benarr + 1;
+                                    } else {
+                                        hasilakhir = hasilakhir;
+                                    }
+                                }
+                                else{
+                                  pil_user.push("x");
+                              }
+                            }
+                        }
+                    }
+                }
+                for (let i = 0; i < cek.length; i++) {
+                    for (let j = 0; j < cek.length; j++) {
+                        if (i == cek[j]) {
+                            jawabannya.push(pil_user[j]);
+                            jawabannya_no.push(cek[j]);
+                        }
+                    }
+                }
+
+              let waktunya = waktu();
+              let harinya = hari();
+              let barnya = bar;
+
+              createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, barnya, waktunya, harinya, jawabannya);
+
+              let namainput = document.querySelector('.nama');
+              namainput.innerText = namanya.value.toUpperCase();
+
+              let sekolahinput = document.querySelector('.sekolah');
+              sekolahinput.innerText = sekolah.value.toUpperCase();
+
+              let kelasinput = document.querySelector('.kelas');
+              kelasinput.innerText = kelasfix;
+              
+              let hariinput = document.querySelector('.hari');
+              hariinput.innerText = harinya;
+
+              let waktuinput = document.querySelector('.waktu');
+              waktuinput.innerText = waktunya;
+
+              let hasillinput = document.querySelector('.hasill');
+              hasillinput.innerText = hasilakhir;
+
+              let kirihilang = document.querySelector('.kiri');
+              kirihilang.className += ' hilang';
+
+              let kananhilang = document.querySelector('.kanan');
+              kananhilang.className += ' hilang';
+
+              let datanya = document.querySelector('.dataaa');
+              datanya.className = datanya.className.replace('hilang', '');
+
+              if(hasilakhir>=71){
+                  let next = document.getElementById("next");
+                  next.className = next.className.replace("hilang","");
+              } else {
+                  let ulang = document.getElementById("ulang");
+                  ulang.className = ulang.className.replace("hilang","");
+              }
+
+              wktu.classList.toggle('hilang');
+
+              
+              //nilai disimpan ke local storage
+          localStorage.setItem("nkuis1",hasilakhir);
+          console.log(localStorage);
+
+          }
+      },1000);
+
         selesai.addEventListener('click', function () {
             let sarat = 0;
 
@@ -425,8 +556,9 @@ dat.onreadystatechange = function () {
                 
                 let harinya = hari();
                 let waktunya = waktu();
+                let barnya = bar;
 
-                createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, waktunya, harinya, jawabannya);
+                createTask(sekolah.value.toUpperCase(), namanya.value.toUpperCase(), kelasfix, hasilakhir, barnya, waktunya, harinya, jawabannya);
                 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value.toUpperCase();
@@ -528,14 +660,15 @@ function hari() {
 }
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jawab) {
+function createTask(sekolah, nama, kelas, nilai, bar, waktunya, hari, jawab) {
     counter += 1;
     var task = {
         id: counter,
         sekolah: sekolah,
         nama: nama,
         kelas: kelas,
-        nilai: nilai,        
+        nilai: nilai,  
+        progres: bar,      
         waktu: waktunya,
         hari: hari,
         jawabsiswa: jawab

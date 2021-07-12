@@ -10,6 +10,31 @@ mjx-container {
     padding: 0 !important;
 }
 
+.kett{
+   margin-top: 40px;
+   margin-left: 10px;
+   font-size: 18px;
+  }
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(196, 193, 193);
+    border-radius: 2px;
+    margin-top: 8px;
+  }
+  
+  #myBar {
+    height: 25px;
+    background-color: #04AA6D;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+    color: white;
+    transition-property: width;
+       transition-duration: 2s;
+      transition-timing-function: ease-in;
+  }
+
 .text {
     font-size: 20px;
     font-weight: bold;
@@ -563,13 +588,13 @@ a {
         box-sizing: border-box;
         border: 2px solid rgb(9, 64, 82);
         padding-top: 10px 0px;
-        height: 77vh !important;
+        height: 75vh !important;
     }
 
     label {
         width: 500px;
         display: inline-block;
-        margin-left: 26%;
+        margin-left: 33%;
         font-size: 1.6vw;
         margin-top: 10px;
 
@@ -613,7 +638,7 @@ a {
         margin-bottom: 20px;
         font-weight: bold;
         text-align: center;
-        margin-left: 40%;
+        margin-left: 47%;
         font-size: 1.6vw !important;
     }
 

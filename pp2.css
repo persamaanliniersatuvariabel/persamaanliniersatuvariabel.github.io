@@ -6,7 +6,7 @@ h1{
 }
 
 h2{
-  font-family: 'Adobe Fangsong Std R';
+  font-family: 'tekton pro';
 }
 .judul{
   border-bottom: 3px solid palevioletred;
@@ -15,12 +15,12 @@ h2{
 }
 
 h3{
-  font-family: 'Adobe Fangsong Std R';
+  font-family: 'tekton pro';
   font-size: 20px;
 }
 
 h4{
-  font-family: 'Adobe Fangsong Std R';
+  font-family: 'tekton pro';
   font-size: 20px;
   padding-left: 1.1em;
 }
@@ -40,7 +40,7 @@ p.indent{
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'tekton pro cond';
   overflow: hidden;
 }
 
@@ -58,6 +58,21 @@ header {
   float: right;
   margin-right: 10px;
   margin-top: -50px;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: rgb(196, 193, 193);
+  margin-bottom: 8px;
+}
+
+#myBar{
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  font-size: 13px;
+  line-height: 30px;
+  color: white;
 }
 
 .contohh{
@@ -111,6 +126,7 @@ nav {
   float: left;
   width: 20%;
   height: 500px;
+  min-height: 80vh;
   background: #e6e6e6;
   padding: 5px;
 }
@@ -206,7 +222,8 @@ article {
   color: black;
   margin: 0px;
   width: 101%;
-  height: 480px;
+  height: 445px;
+  min-height: 68vh;
   padding: 20px;
   overflow: auto;
 }
@@ -575,15 +592,29 @@ th, td {
   margin-bottom: 10px;
 }
 
+.ket{
+  float: right;
+  margin-right: 20px;
+}
+
+#banyak{
+  color: white;
+}
+
+.bawah{
+  margin-left: 38%;
+}
+
 .bawah a {
   background-color: white;
+  float: left;
   color: black;
   border: 2px solid #660033;
   border-radius: 8px;
   padding: 8px 15px;
   text-align: center;
   text-decoration: none;
-  display:inline-block;
+  /* display:inline-block; */
 }
 
 .bawah a:hover{
@@ -733,6 +764,9 @@ section:after {
 footer {
   background-color: #a6294b;
   padding: 4px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
   text-align: center;
   color: white;
 }
@@ -741,6 +775,7 @@ footer {
     nav, article {
       width: 100%;
       height: auto;
+      min-height: 0;
     }
 
     body{
@@ -900,15 +935,17 @@ footer {
       height:25px;
       }
 
+      .ket{
+        display: none;
+      }
+    
+      .bawah{
+        margin-left: 6%;
+      }
+
     .bawah a {
-      background-color: white;
-      color: black;
-      border: 2px solid #660033;
-      border-radius: 8px;
       padding: 6px 12px;
-      text-align: center;
-      text-decoration: none;
-      display:inline-block;
+      /* display:inline-block; */
       margin-bottom: 5px;
     }
     

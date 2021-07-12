@@ -15,7 +15,7 @@
   <section>
     <center>
         <div style="margin-top: 30px;">
-        <button class="no1">&nbsp;Kompetensi Inti</button>
+        <button class="no1 activee">&nbsp;Kompetensi Inti</button>
         <button class="no2"></i>&nbsp;Kompetensi Dasar</button>
         <button class="no3"></i>&nbsp;Peta Konsep</button>
         </div>
@@ -57,7 +57,36 @@
 
 </section>
 
-<script src="pp2.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".contoh2").hide();
+    $(".contoh3").hide();
+          $(".no1").click(function(){
+                $(".contoh2").hide(0);
+                $(".contoh3").hide(0);
+                $(".contoh1").show(200);
+                $(".no1").addClass("activee");
+                $(".no2").removeClass("activee");
+                $(".no3").removeClass("activee");
+          });
+          $(".no2").click(function(){
+                $(".contoh2").show(200);
+                $(".contoh1").hide(0);
+                $(".contoh3").hide(0);
+                $(".no2").addClass("activee");
+                $(".no1").removeClass("activee");
+                $(".no3").removeClass("activee");
+          });
+          $(".no3").click(function(){
+                $(".contoh3").show(200);
+                $(".contoh2").hide(0);
+                $(".contoh1").hide(0);
+                $(".no3").addClass("activee");
+                $(".no2").removeClass("activee");
+                $(".no1").removeClass("activee");
+          });
+  });
+  </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}

@@ -63,6 +63,7 @@
                               <td class="ukr3">${taskvalue.kelas}</td>
                               <td class="ukr1">${taskvalue.sekolah}</td>
                               <td class="ukr3">${taskvalue.nilai}</td>
+                              <td class="ukr3">${taskvalue.progres} %</td>
                               <td class="ukr2">${taskvalue.hari}</td>
                               <td class="ukr2">${taskvalue.waktu}</td>
                               <td class="hps" onclick ="hapus(${taskvalue.id})"><button type="button" class="btn btn-outline-danger">Hapus</button></td>

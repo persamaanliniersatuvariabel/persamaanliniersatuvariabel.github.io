@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluasi</title>
-    <link rel="shortcut icon" type="icon" href="../../img/ico.png">
+    <link rel="icon" type="image/svg" href="stability.svg">
+    <title>Kuis 1</title>
     <link rel="stylesheet" type="text/css" href="isi1.css">
     <link rel="stylesheet" type="text/css" href="lat.css">
     <script src="jquery.js"></script>
@@ -14,17 +14,20 @@
 
 <body>
     <header>
-        <h2>Persamaan dan Pertidaksamaan Linier Satu Variabel</h2>
+        <h2>Kuis Persamaan Linier Satu Variabel</h2>
             <a href="index.html"><img src="home.svg" class="home"></a>
       </header>      
 
                 <!-- BADAN KONTEN -->
 
                 <div class="inti-konten">
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                      </div>
                     <div class="data" id="data">
                         <div class="data_diri">
-                            <nav class="petunjuk">
-                                <i class="far fa-hand-point-right"></i>&nbsp; Petunjuk
+                            <nav class="petunjuk" style="color:lavenderblush;">
+                                Petunjuk pengisian data <b style="font-size: 15px;">(klik untuk sembunyikan petunjuk)</b>
                             </nav>
 
                             <div class="isinya">   
@@ -57,12 +60,17 @@
                             </label> -->
 
                             <div class="lanjut">MULAI</div>
+                            <div class="kett">
+                                Total Halaman : <span id="banyak">0</span><br>
+                            </div>
                         </div>
                     </div>
 
                     <!-- KONTEN KIRI -->
                     <div class="kiri hilang" id="kiri">
-                        
+                        <article>
+                            <div id="timer">30 : 00</div>
+                        </article>
                         
                     </div>
                     <!-- BATAS KONTEN KIRI -->
@@ -70,7 +78,7 @@
 
                     <!-- KONTEN DI KANAN -->
                     <div class="kanan hilang" id="kanan">
-
+                        <!-- <h3><center>Kuis</center></h3> -->
                         <div class="bg_nav">
                             <div class="bg_full">
                                 <p class="text">Nomor Soal</p>
@@ -115,7 +123,7 @@
                             </div>
 
                         </div>
-                    <div class="selesai">SELESAI</div>
+                    <div class="selesai" id="next">SELESAI</div>
 
                     </div>
                     <!-- BATAS KONTEN KANAN -->
@@ -171,7 +179,7 @@
                                         <p class="hari ket_hasilnya">Senin</p>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr style="display: none;">
                                     <td class="ket_hasil">
                                         <p>WAKTU SELESAI</p>
                                     </td>
@@ -215,8 +223,22 @@
                     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
                     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 
-    <script src="evaluasi.js"></script>
+    <script src="evaluasii.js"></script>
     <script src="mathjax.js"></script>
+    <script>
+    let petunjuknya = document.querySelectorAll('.petunjuk');
+        let isinya = document.querySelectorAll('.isinya');
+        for (let i = 0; i < petunjuknya.length; i++) {
+              petunjuknya[i].addEventListener('click', function () {
+              if (isinya[i].className.indexOf('hilang') == -1) {
+                    isinya[i].className += ' hilang';
+              } else {
+                    isinya[i].className = isinya[i].className.replace('hilang', '');
+              }
+              })
+        }
+    </script>
+
 </body>
 
 </html>

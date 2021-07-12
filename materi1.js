@@ -103,7 +103,6 @@ function plsv2(){
   var persamaan = document.getElementById("persamaan3");
   var bplsv = document.getElementById("bplsv2");
   bplsv.className += " hilang";
-  document.getElementById("icon02").innerHTML = "<img src='benar.jpg' width='15px'>";
   document.getElementById("icon02").innerHTML = "<img src='salah.png' width='15px'>";
   persamaan.className = persamaan.className.replace("hilang","");
 }
